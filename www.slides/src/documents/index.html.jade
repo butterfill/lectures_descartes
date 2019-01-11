@@ -1,0 +1,82 @@
+---
+layout: 'frontpage'
+title: 'Index of Lectures'
+---
+
+
+html
+  body
+
+    .hero-unit
+      h1 Descartes
+      p --- by s.butterfill@warwick.ac.uk
+      p A course at the University of Warwick.
+    
+    .row
+      .span4
+        #before_taking(style="padding-right:1em;")
+          //- h2 Before deciding whether to take the module
+          //- ul
+          //-   li
+          //-     a(href='/pdf/joint_action_lecture_outline.pdf', target="_blank") About this course (a handout)
+        
+      .span4(style='border-left: 1px dotted grey; border-right: 1px dotted grey;margin-right: -1px;margin-left: -1px;')
+        #essays(style="padding-right:1em;padding-left:1em")
+          h2 Essays, readings and tasks for seminars
+          ul
+            li 
+              a(href='https://yyrama.butterfill.com/course/view/Descartes', target="_blank") Seminar tasks --- undergraduates
+            li 
+              a(href='https://moodle.warwick.ac.uk/mod/resource/view.php?id=643835', target="_blank") Essay questions for assessed work --- undergraduates
+
+      .span4
+        #practical_info
+          h2 Practical Info
+          p For timings, past exam papers, permission to the take module as an unusual option and everything else, please see:
+          ul
+            li
+              a(target='_blank',href="https://moodle.warwick.ac.uk/course/view.php?id=28722") for PH145
+        
+  
+    .row
+      //- main content: lecture outlines &c
+      .span9
+        #slides_and_handouts
+          h2 Slides and Handouts
+          p You can find slides and handout below, together with an outline of each lecture.
+          p Please note that these may be continuously revised.
+
+        //- now do a section for each lecture
+        each lecture in getCollection("lectures").toJSON()
+          if lecture.hidden && getEnvironment() === 'static'
+            //- pass
+          else
+            div(id='#{lecture.basename}')
+              .page-header
+                h2: a(href='#{lecture.url}',target='_blank') #{lecture.title}
+                if lecture.lecture_date
+                  p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
+                p 
+                  a(href='#{lecture.url}',target='_blank') slides
+                  |  , 
+                  a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
+              
+                .units(style='border-left: 1px dotted grey;margin-left: -1px;')
+                  div(style="padding-left:2em;")
+                    if lecture.units
+                      - each unit_num in lecture.units
+                        - unit = get_unit(unit_num)
+                        h3
+                          a(href="#{unit.url}") #{unit.title}
+                          //- span(style="font-size:50%;color:grey;")  (#{unit_num})
+                        if unit.tags && unit.tags.length && unit.tags.length > 0
+                          p(style="text-align:right;margin:0;padding:0;margin-top:-2.5em;") 
+                            each t in unit.tags
+                              span.label.label-info #{t}
+                              | 
+                        p #{unit.description}
+                        if unit.book && unit.book.length > 0 
+                          p Reading:  §#{unit.book.join(', §')}
+                        if unit.exercises && unit.exercises.length > 0 
+                          p Exercises (regular): #{unit.exercises.join(', ')}
+            

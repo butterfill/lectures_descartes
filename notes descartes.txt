@@ -1,0 +1,102 @@
+Descartes notes.
+
+# Intro
+
+Descartes was a serious mathematician and physicist. Eg. explanation of the rainbow appearing bowed (Sorell 2001). He revolutionised the study of nature (quotes from Wilson). In writing philosophy, and in particular in writing the meditations, he had a very specific purpose: ‘In order to make his physics acceptable he had either to revise it in a way that would conciliate the Church, or to disguise its consequences, or to erect the whole doctrine on principles that not even the most hidebound of his religious critics could object to. Eventually, in the Meditations and the Principles of Philosophy, he adopted the third of these approaches’ (Sorell 2001, p. 36). He wanted to show that his scientific approach was compatible with prevailing theological views. And he wanted to show that close consideration of the nature of human cognition provided support for his methods over those of his opponents. As he wrote in the Principles, ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics, the trunk is Physics, and the branches which come out of this trunk are all the other sciences ...’ (Principles p. 186; AT IX–2, 14; HR I, 211). This is nicely encapsulated in a much-quoted passage from a letter to Mersenne:  ‘these six Meditations contain all the foundations of my Physics. But please do not tell people, for that might make it harder for supporters of Aristotle to approve them. I hope that readers will gradually get used to my principles and recognize their truth, before they notice that they destroy the principles of Aristotle’ (3. 297–8).
+
+Why Descartes? Sorell 2001 (end): philosophers are still trying to lay that ghost to rest. What is our aim? To learn from Descartes. (So refutation is merely a means, not an end.)
+
+
+
+# Start with sensory perception
+
+Essay question: What, according to Descartes, is the relation between a sensory perception and the thing perceived? 
+
+Issue : the mind’s relation to the world (resemblance vs Descartes)
+
+1. What is the Meditations about? This quote sums it up best for me:
+
+‘I have been in the habit of misusing the order of nature. For the proper
+purpose of the sensory perceptions given me by nature is simply to inform the
+mind of what is beneficial or harmful for the composite of which the mind is a
+part; and to this extent they are sufficiently clear and distinct. But I misuse
+them by treating them as reliable touchstones for immediate judgements about
+the essential nature of the bodies located outside us; yet this is an area
+where they provide only very obscure information.’ (VI, pp. 57--8)
+
+Significance: fits with Descartes’ scientific revolution. 
+
+Background: Simmons’ arguments for Descartes having a bio-functionalist account of sensations (among other, incompatible accounts); agreement that Descartes opposed earlier theory (‘According to the scholastic theory, the forms that entered the senses and thereafter the mind from external objects made the contents of the senses and the mind like the external objects: the objects, the senses, and the mind were supposed to have in them the very same forms.’ Sorell 2001 p. 75).
+
+Illustration: judgements about forces (spiral)
+
+Contemporary relevance: Lots of philosophers still make use of intuitions in philosophy (give examples). Descartes provides a powerful argument against them ...
+
+Challenge to Descartes’ own methods: What if reason itself is not primarily to discover the truth but to ‘inform the mind of what is beneficial or harmful’?  (Cf. Rules for the Direction of the Mind p. 14): ‘By intuition I ... mean the conception of a clear and attentive mind, which is so easy and distinct that there can be no room for doubt about what we are understanding ... the indubitable conception of a clear and attentive mind which proceeds solely from the light of reason’
+
+NEED: examples where reason goes wrong. (Non-eucidean geometry?)
+
+
+# The use of reason
+
+Examples: shape and motion to predict physical phenomena (‘in the whole history of Physics people have only tried to imagine some causes to explain the phenomena of nature, without hardly ever having succeeded. Compare my hypotheses with the hypotheses of others. Compare all their real qualities, their substantial forms, their elements and their other countless hypotheses with my single hypothesis that all bodies are composed of parts’ (2. 196) quoted in Sorell 2001 p. 40); cogito ergo sum
+
+
+# Explaining the rainbow
+
+Wrong picture of Descartes: knowledge rests on reason alone.
+
+Why? Because Descartes wanted to explain why the rainbow appears as to be bowed. Descartes therefore thinks we can use reason to explain sensory perception. So minimally sensory perceptions are things which stand in need of explanation --- they are things about which we can ask questions.
+
+
+
+# The Dreaming Argument
+
+[Essay question: What does Descartes’ argument from dreaming aim to show?  What is the argument? Does it succeed?]
+
+See Wilson 1978 on the interpretation of the dream argument. (Two interpretations to consider.)
+
+‘Historically, there are at least two distinct dream-related doubts. The one doubt undermines the judgment that I am presently awake — call this the ‘Now Dreaming Doubt’. The other doubt undermines the judgment that I am ever awake (i.e., in the way normally supposed) — call this the ‘Always Dreaming Doubt’’ \citep{newman:2016_descartes}
+
+
+# Error
+
+[Essay question: How does Descartes explain the possibility of error? Is his explanation correct?]
+
+Source : Williams ch 6 esp p. 155 ff.
+
+background : ‘Descartes’s question was: why should I, created and sustained by a God who is no deceiver, ever be mistaken? This comes in effect to two questions, one about himself, and one about God. Why should I sometimes be mistaken? And why has God created me as a being who can sometimes be mistaken – i.e. why has he not made me perfect? The second of these questions Descartes will not try to answer: God’s purposes are inscrutable’ p. 151
+
+# The cartesian circle 
+
+[Essay question: What is the purported problem of the Cartesian Circle?  How, if at all, can it be avoided while staying close to Descartes’ arguments?]
+
+Broughton pp. 175 ff is excellent on this
+
+# Doubt
+
+Enduring question is what could be doubted?
+Also, Why doubt?
+
+A PUZZLE: I “am finally compelled to admit that there is not one of my former beliefs about which a doubt may not properly be raised” (Med. 1, AT 7:21). How to reconcile this with the analysis of knowledge as that which there can be no doubt concerning?
+
+See \citep{newman:2016_descartes} on knowledge: 
+
+     ‘I distinguish the two as follows: there is conviction when there remains some reason which might lead us to doubt, but knowledge is conviction based on a reason so strong that it can never be shaken by any stronger reason.’ (1640 letter to Regius, AT 3:65) 
+
+    ‘But since I see that you are still stuck fast in the doubts which I put forward in the First Meditation, and which I thought I had very carefully removed in the succeeding Meditations, I shall now expound for a second time the basis on which it seems to me that all human certainty can be founded.’ // ‘First of all, as soon as we think that we correctly perceive something, we are spontaneously convinced that it is true. Now if this conviction is so firm that it is impossible for us ever to have any reason for doubting what we are convinced of, then there are no further questions for us to ask: we have everything that we could reasonably want. … For the supposition which we are making here is of a conviction so firm that it is quite incapable of being destroyed; and such a conviction is clearly the same as the most perfect certainty.’ (Replies 2, AT 7:144–45)
+
+Doesn’t this imply that at the end of Meditation 1 we have no knowledge at all? Worse, if ‘there is not one of my former beliefs about which a doubt may not properly be raised’ then doesn’t the meditator start with no knowledge at all?  [Why isn’t this just terminological --- shows that Descartes wanted to establish things with certainty?]
+
+
+# §§other notes
+
+2. What is metaphysics? ‘metaphysics provides the roots for the tree of science’ (Wilson) (Principles). ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics, the trunk is Physics, and the branches which come out of this trunk are all the other sciences ...’ (Principles p. 186; AT IX–2, 14; HR I, 211).
+
+Contemporary relevance: Ct Beebee’s conception of metaphysics (no relation to science evident at all).
+
+
+3. Why is certainty important?  ‘The main reason why we can find nothing in ordinary philosophy which is so evident and certain as to be beyond dispute is that students of the subject first of all are not content to acknowledge what is clear and certain, but on the basis of merely probably conjectures venture also to make assertions on obscure matters about which nothing is known; they then gradually come to have complete faith in these assertions, ... The result is that the only conclusions they can draw are ones which apparently rest on some such obscure proposition, and which are accordingly uncertain.’ (Rules for the Direction of the Mind, p. 14)
+
+
+4. What is the argument from dreaming? (Wilson p. 31ff).
