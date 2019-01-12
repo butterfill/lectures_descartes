@@ -17,26 +17,86 @@ include ../../fragments/descartes_mixins
 
 //- +insert_unit({unit:'the_question', title_slide:false, images:images, handout:true})
 
++slide
+  .notes: :t
+    Essay question for this lecture:
+    What, according to Descartes, is the relation between a sensory perception and the thing perceived?
+  img.handout.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+  .handout.notes: :t
+    The diagram shows a thin curved metal tube.
+    Imagine you are looking down the tube.
+    A metal ball is put into the end of the tube indicated by the arrow.
+    The ball is then shot out of the other end of the tube at high speed.
+    Please draw the past the ball will follow after it comes out of the tube \citep{mccloskey:1980_curvilinear}.
+  p.right.source McCloskey et al, 1980 figure 1 (part)
+  .notes: :t
+    [Start with folk physics error (trajectories)
+    Later: Also use Freyd representational momentum: it is based on sensroy erros!]
 
-+slide_middle
++slide_middle({bkg:'cat_photo_bendo.jpg'})
+  +hide('img.bkg', 0)
+  .notes: :t
+    The picture Descartes opposes on two counts: (i) extension is the single essence of all external bodies,
+    and (ii) we do not know essence through sensory perception.
   p How can we acquire knowledge about the 
     span.essential-nature essential nature
     span  of the bodies located outside us?
   .slide
     +invert('.essential-nature')
   .slide
-    p.em-above.indent Each body has a form, which is its essential nature.
+    p.em-above.indent Each body has a 
+      span.form form
+      span , which is its essential nature.
   .slide
-    +uninvert('.essential-nature')
+    +invert('.form')
+    .notes: :t
+      What is that?
+    .notes.handout: :t
+      What is an Aristotelian form?
+      It ‘is not a subset of the properties that the organism [or thing] has, but rather a set of those that are 
+      proper to it, and towards which it strives or tends. Why does an acorn develop into an oak rather than 
+      a pig? Because of its special relation to the form that defines oak: it develops as it does because, 
+      while still an acorn, it lacks some of the properties that oaks have, and is somehow drawn towards 
+      instantiating that form more fully’ \citep[p.~10]{bennett:2003_learning}.
   .slide
-    p.em-above When a body is perceived, its form thereby enters the mind. 
-    p: :t
-      ‘According to the scholastic theory, the forms that
+    +show('img.bkg')
+    .notes: :t
+      It’s cat form is what makes a cat catty,
+      and what makes the kitten grow into a cat (when things go well).
+  .slide
+    +fade('img.bkg', 0)
+    +blur('img.bkg', '5px')
+    +uninvert('.essential-nature, .form')
+  .slide
+    p.em-above.indent.form-enters-mind When a body is perceived, its form thereby enters the mind. 
+  .slide
+    +line-through('.form-enters-mind')
+    .notes: :t
+      No, be serious. How could a form enter the mind?
+      When you perceive a cat, it’s not that the cat gets inside your mind.
+      (Sounds painful.)
+      So how could the form enter your mind?
+  .slide
+    +hide('img.bkg')
+    .notes It’s that cat distracting us. Let’s get serious.
+  .slide
+    p.em-above.indent When a body is perceived, your sensory perception resembles the body’s form.
+  .slide
+    p.em-above.indent Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.
+    .notes: :t
+      This is based on:      ‘According to the scholastic theory, the forms that
       entered the senses and thereafter the mind from external objects made the
       contents of the senses and the mind like the external objects: the objects, the
-      senses, and the mind were supposed to have in them the very same forms.’ Sorell
+      senses, and the mind were supposed to have in them the very same forms’ (Sorell
       2001 p. 75).
-
+  .slide
+    +reset
+      p.huge-glow(style='transform:rotate(-45deg)').center not 
+        br
+        span Descartes’ view
+      .notes: :t
+        In fact Descartes wanted to oppose this view.
+        Why did he want to oppose it? And how Descartes oppose it?
 
 +slide_timer({hide:true})
   p.notes.handout.show(style='line-height:1.66em;')
@@ -111,14 +171,207 @@ include ../../fragments/descartes_mixins
     +blur('span span:not(.beneficial)', '5px')
   .slide
     +unblur('.essential-nature, .of-bodies')
-  
 
+mixin knowledgeQuestion()
+  span How can we acquire knowledge about the essential nature of the bodies located outside us?
 +slide_middle
-  p How can we acquire knowledge about the essential nature of the bodies located outside us?
+  p related passage [*TODO: move to handout]
+  p: :t
+    My nature, then, in this limited sense, does indeed teach me to avoid what induces a feeling of pain and to seek out what induces feelings of pleasure, and so
+    on. But it does not appear to teach us to draw any conclusions from these sensory perceptions about things located outside us without waiting until
+    the intellect has examined the matter. For knowledge of the truth about such things seems to belong to the mind alone, not to the combination of mind and body. 
+
++slide_timer({hide:true})
+  p: +knowledgeQuestion
   .slide
     .hem-around-children
-      p.indent Sensory perceptions provide only very obscure information about the essential nature of bodies.
+      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
       p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
   .slide
-    .hem-around-children
-      p.indent Or ... ?
+    +blur('p:not(.main-claim)')
+  +show-timer('timer1')
+    .notes How might you defend this claim? (That sensory perceptions provide only very obscure information about the essential nature of bodies.)
+  +start-timer('timer1')
+  //- .slide
+  //-   .hem-around-children
+  //-     p.indent Or ... ?
+
+
+
++slide
+  .notes: :t
+    Recall this question
+  img.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+  p.right.source McCloskey et al, 1980 figure 1 (part)
+
++slide
+  img.fig.handout.show(src='img/mccloskey_1980_fig2d.png', style='filter:invert(1)')
+  p.right.source McCloskey et al, 1980 figure 2D
+  +reset: +middle
+    .slide
+      +style('img.fig', {filter:'invert(1) blur(2px)'})
+      p.notes.handout.show.buridan: :t
+        The person who sets the ball moving impresses in it a certain impetus,
+        [which acts] in the direction toward which the mover was moving the body,
+        either up or down, or laterally, or circularly’ (Buridan, 13xx; cited by McCloskey et al).
+    .slide
+      +blur('.buridan, .source')
+      p.em-above But what does this tell us about sensory perceptions?
+      .notes: :t
+        People make wrong judgements. So what?
+        What does this tell us about sensory perceptions?
+
+
++slide_middle
+  p.center representational momentum
+  .notes.handout: :t
+    Sometimes when adult humans observe a moving object that disappears, they will misremember the location of its disappearance in way that reflects its momentum; this effect is called \emph{representational momentum} \citep{freyd:1984_representational,hubbard:2010_rm}.
+  .notes.handout: :t
+    The trajectories implied by representational momentum reveal that the effect reflects impetus mechanics rather than Newtonian principles \citep{freyd:1994_representational,kozhevnikov:2001_impetus,hubbard:2001_representational,hubbard:2013_launching}.
+    And these trajectories are independent of subjects' scientific knowledge
+    \citep{freyd:1994_representational,kozhevnikov:2001_impetus}.
+    Representational momentum therefore reflects judgement-independent expectations about objects’ movements which 
+    track momentum in accordance with a principle of impetus.%
+    \footnote{
+    Note that momentum is only one of several factors which may influence mistakes about the location at which a moving object disappears \citep[p.\ 842]{hubbard:2005_representational}.
+    %:
+    %\begin{quote}
+    %`The empirical evidence is clear that (1) displacement does not always correspond to predictions based on physical principles and (2) variables unrelated to physical principles (e.g., the presence of landmarks, target identity, or expectations regarding a change in target direction) can influence displacement.'
+    %
+    %...
+    %
+    %`information based on a naive understanding of physical principles or on subjective consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target'
+    %\end{quote}
+    }
+
+
++slide
+  .lower
+    +img_clip('hubbard_2005_fig1a.png', 'rect(0,215,999,0)')
+  .top
+    +img_clip('hubbard_2005_fig1a.png', 'rect(0,215,999,0)')
+  .slide
+    +clip('.lower img',  'rect(0,345,999,0)')
+    +blur('.top img')
+  .slide
+    +clip('.top img',  'rect(0,345,999,0)')
+    +clip('.lower img',  'rect(0,515,999,0)')
+  .slide
+    +clip('.top img',  'rect(0,515,999,0)')
+    +clip('.lower img',  'auto')
+  p.source Hubbard 2005, figure 1a; redrawn from Freyd and Finke 1984, figure 1
+
++slide
+  +img('hubbard_2005_fig1b.png', 'max-width:700px')
+  p.source Hubbard 2005, figure 1b; drawn from Freyd and Finke 1984, table 1
+  .notes: :t
+    \textbf{Representational momentum suggests that there are automatic processes
+    which predict the future trajectories of physical objects.}
+
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘the representational momentum memory shift for a ball following a spiral path after exiting a tube is greater than the memory shift for a ball following the physically correct linear path. A curvilinear path, midway between the spiral and straight paths, produces shifts midway between those for the other two paths’
+  .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+  .slide
+    p.em-above.notes.handout.show: :t
+      Yet ‘our subjects had relatively accurate conscious knowledge of the trajectory of a ball exiting 
+      a spiral tube (63% to 83% chose the correct path; only 4% chose the spiral path).’
+    .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct’
+    .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+  p.source Freyd & Jones, 1994 p. 975
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.hide.tick ✓
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+      +blur('p:not(.main-claim, .tick)', '2px', 0)
+      .notes: :t
+        This is all by way of a demonstration that Descartes was right.
+        Sensory perceptions really do provide only very obscure information about the essential nature of bodies.
+    .slide
+      +show('.tick')
+    .slide
+      +blur('.tick, .main-claim')
+      +unblur('.knowledge-question')
+      .notes: :t
+        Just one small problem: how are we going to answer this question?
+      .notes: :t
+        Plan:
+        1. leave question hanging for now.
+        2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
+        3. then: discuss relation of sensory perceptions to its objects (Simmons)
+        4. then: return to the question (through mathematics)
+        5. Why is this the right way to start? Metaphysics as root of physics; method of doubt
+        used to show that sensory perceptions unreliable, whereas pure intellect is reliable.
+        (Descartes was a little unclear about his aim.
+        This matters because we should evaluate his arguments against his aims.
+        Same applies to you: always state your aim at the start of your essays.
+        Now Descartes has an excuse: doing so might have caused his execution
+        (and his works were put on the Index, etc).
+        You don’t have any such excuse, at least not as far as I’m concerned.)
+
+
+
+
++slide
+  p.notes.handout.show: :t
+    ‘In putting forward an account of light, the first thing that I want to draw to your attention 
+    is that it is possible for there to be a difference between the sensation that we have of it, 
+    that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
+    and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
+    or in the Sun that we term ‘light’.’
+  .notes.handout.ctd \citep[p. 3 (AT 3)][]{descartes:1998_world}
+  p.right.grey-text The World (AT 3)
+
+  p.notes.handout.show: :t
+    ‘if words, which signify something only through human convention, are sufficient to make us think of
+    things to which they bear no resemblance, why could not Nature also have established some sign
+    which would make us have a sensation of light, even if that sign had in it nothing that resembled
+    this sensation? And is it not thus that Nature has established laughter and tears, to make us read
+    joy and sorrow on the face of men?’
+  .notes.handout.ctd \citep[p. 4 (AT 4)][]{descartes:1998_world}
+
+  p.notes.handout.show: :t
+    ‘Do you think that, when we attend solely to the sound of words without attending to their
+    signification, the idea of that sound which is formed in our thought is at all like the object that
+    is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
+    these actions which is in any way similar to the idea of the sound that they cause us to imagine.
+    And most philosophers maintain that sound is only a certain vibration of the air striking our ears.4
+    Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
+    of making us think of the sound, it would have to make us think about the motion of the parts of the
+    air that are vibrating against our ears.’
+  .notes.handout.ctd \citep[p. 4--5 (AT 5)][]{descartes:1998_world}
+
++slide_middle
+  p: +knowledgeQuestion
+  .notes: :t
+    So how did Descartes answer his question?
+  .slide
+    p.indent Through reason alone.
+  .slide
+    p: :t
+      ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+      these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
+      regarding them’ (PP 2:64, CSM 1:247). 
+   .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
+
++slide_middle
+  .notes Bennett mentions  something Turnbull says about Aristotle's science:
+  p: :t
+    Aristotelian physics ‘is reasonably effective for organizing bodies of knowledge. From the 
+    perspective of modern physical and biological science, however, it is severely crippled by 
+    its close linkage with what Wilfrid Sellars calls ‘the manifest image’, i.e. what is available 
+    to us by means of our very limited sense organs. . . . The tie to entities known through 
+    perception prevents access to—much less the discoveries of—modern physics (and, consequently, 
+    chemistry and biology). (Turnbull 1988: 120)
