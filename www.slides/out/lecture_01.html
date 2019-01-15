@@ -1,5 +1,125 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg"><head><!-- (c) copyright 2013-7 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Lecture 01 | Descartes</title><meta name="description" content="Slides for lectures by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, Descartes"/><meta name="author" content=""/><meta name="url" content="https://descartes.butterfill.com/"/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
---><link  rel="stylesheet" href="https://descartes.butterfill.com/vendor/for.slides.all.css" /><link  rel="stylesheet" href="https://descartes.butterfill.com/styles/steve_deck_style.css" /></head><body><script defer="defer"  src="https://descartes.butterfill.com/vendor/for.slides.all.min.js"></script><script defer="defer"  src="https://descartes.butterfill.com/vendor/deepstream.js"></script><script defer="defer"  src="https://descartes.butterfill.com/scripts/remote.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul></div></div></div></div><div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <!-- (c) copyright 2013-7 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 01 | Descartes</title>
+    <meta name="description" content="Slides for lectures by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, Descartes"/>
+    <meta name="author" content=""/>
+    <meta name="url" content="https://descartes.butterfill.com/"/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/for.slides.all.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/for.slides.all.min.js"></script><script defer="defer"  src="/vendor/deepstream.js"></script><script defer="defer"  src="/scripts/remote.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 <script>window.deckSlideActions = [];
 addAction = function(o) {
@@ -7,41 +127,370 @@ addAction = function(o) {
   var thisScriptEl = scripts[ scripts.length - 1 ];
   o.scriptEl = thisScriptEl;
   deckSlideActions.push(o);
-}</script>
+}
+</script>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<div class="notes notes-header-tex">\title {Descartes \\ Lecture 01}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\maketitle</div><div id="title-slide" class="slide"><img src="https://descartes.butterfill.com/img/bkg/sunclouds/01.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div class="fade-in"><div style="" class="title-block"><div class="title-container"><h1 class="title1 fade-in">Lecture 01<span>:</span></h1><h1 class="title2 fade-in">Descartes</h1><h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3></div></div></div><div class="handout">\def \ititle {Lecture 01}</div><div class="handout">\def \isubtitle {Descartes}</div><div class="handout">\begin{center}</div><div class="handout">{\Large</div><div class="handout">\textbf{\ititle}: \isubtitle</div><div class="handout">}</div><div class="handout">&nbsp;</div><div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div><div class="handout">\end{center}</div></div><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Essay question for this lecture:
-What, according to Descartes, is the relation between a sensory perception and the thing perceived?</div><img src="img/mccloskey_1980_fig1b.png" style="filter:invert(1)" class="handout show"/><div class="handout notes">The diagram shows a thin curved metal tube.
+
+<div class="notes notes-header-tex">\title {Descartes \\ Lecture 01}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/bkg/sunclouds/01.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="fade-in">
+    <div style="" class="title-block">
+      <div class="title-container">
+        <h1 class="title1 fade-in">Lecture 01<span>:</span>
+        </h1>
+        <h1 class="title2 fade-in">Descartes</h1>
+        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Lecture 01}</div>
+  <div class="handout">\def \isubtitle {Descartes}</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}: \isubtitle</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+</div>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes handout">\emph{Overall Topic}:
+What, according to Descartes, is the relation between a sensory perception and the thing perceived?
+        </div>
+        <div class="notes handout">\emph{Question for this Lecture}: 
+How can we acquire knowledge about the essential nature
+of the bodies located outside us?
+        </div>
+        <div class="notes handout">\emph{Argument of this Lecture}: 
+\begin{enumerate}
+\item Sensory perceptions provide only very obscure information about the essential nature of bodies.
+\item Therefore, we cannot acquire knowledge about the essential nature of the bodies located outside us through sensory perceptions alone.
+\end{enumerate}
+        </div><img src="img/mccloskey_1980_fig1b.png" style="filter:invert(1)" class="handout show"/>
+        <div class="handout notes">\section{Exercise}
+The diagram shows a thin curved metal tube.
 Imagine you are looking down the tube.
 A metal ball is put into the end of the tube indicated by the arrow.
 The ball is then shot out of the other end of the tube at high speed.
-Please draw the past the ball will follow after it comes out of the tube \citep{mccloskey:1980_curvilinear}.</div><p class="right source">McCloskey et al, 1980 figure 1 (part)</p><div class="notes">[Start with folk physics error (trajectories)
-Later: Also use Freyd representational momentum: it is based on sensroy erros!]</div></div></div></div></section><section style="" class="slide"><img src="https://descartes.butterfill.com/img/cat_photo_bendo.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">The picture Descartes opposes on two counts: (i) extension is the single essence of all external bodies,
-and (ii) we do not know essence through sensory perception.</div><p>How can we acquire knowledge about the <span class="essential-nature">essential nature</span><span> of the bodies located outside us?</span></p><div class="slide"><div data-what=".essential-nature" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".essential-nature" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><p class="em-above indent">Each body has a <span class="form">form</span><span>, which is its essential nature.</span></p></div><div class="slide"><div data-what=".form" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".form" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">What is that?</div><div class="notes handout">What is an Aristotelian form?
+Please draw the past the ball will follow after it comes out of the tube \citep{mccloskey:1980_curvilinear}.
+        </div>
+        <p class="right source">McCloskey et al, 1980 figure 1 (part)</p>
+        <div class="notes">[Start with folk physics error (trajectories)
+Later: Also use Freyd representational momentum: it is based on sensroy erros!]
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/cat_photo_bendo.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <div class="notes">The picture Descartes opposes on two counts: (i) extension is the single essence of all external bodies,
+and (ii) we do not know essence through sensory perception.
+          </div>
+          <p>How can we acquire knowledge about the <span class="essential-nature">essential nature</span><span> of the bodies located outside us?</span></p>
+          <div class="slide">
+            <div data-what=".essential-nature" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".essential-nature" data-cls="bkg-invert" class="dv dv-addclass"></div>
+          </div>
+          <div class="slide">
+            <p class="em-above indent">Each body has a <span class="form">form</span><span>, which is its essential nature.</span></p>
+          </div>
+          <div class="slide">
+            <div data-what=".form" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".form" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">What is that?
+            </div>
+            <div class="notes handout">\section{Forms}
+What is an Aristotelian form?
 It ‘is not a subset of the properties that the organism [or thing] has, but rather a set of those that are 
 proper to it, and towards which it strives or tends. Why does an acorn develop into an oak rather than 
 a pig? Because of its special relation to the form that defines oak: it develops as it does because, 
 while still an acorn, it lacks some of the properties that oaks have, and is somehow drawn towards 
-instantiating that form more fully’ \citep[p.~10]{bennett:2003_learning}.</div></div><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">It’s cat form is what makes a cat catty,
-and what makes the kitten grow into a cat (when things go well).</div></div><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".essential-nature, .form" data-cls="bkg-invert" class="dv dv-removeclass"></div></div><div class="slide"><p class="em-above indent form-enters-mind">When a body is perceived, its form thereby enters the mind. </p></div><div class="slide"><div data-what=".form-enters-mind" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div><div class="notes">No, be serious. How could a form enter the mind?
+instantiating that form more fully’ \citep[p.~10]{bennett:2003_learning}.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">It’s cat form is what makes a cat catty,
+and what makes the kitten grow into a cat (when things go well).
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what=".essential-nature, .form" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+          </div>
+          <div class="slide">
+            <p class="em-above indent form-enters-mind">When a body is perceived, its form thereby enters the mind. </p>
+          </div>
+          <div class="slide">
+            <div data-what=".form-enters-mind" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
+            <div class="notes">No, be serious. How could a form enter the mind?
 When you perceive a cat, it’s not that the cat gets inside your mind.
 (Sounds painful.)
-So how could the form enter your mind?</div></div><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">It’s that cat distracting us. Let’s get serious.</div></div><div class="slide"><p class="em-above indent">When a body is perceived, your sensory perception resembles the body’s form.</p></div><div class="slide"><p class="em-above indent">Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.</p><div class="notes">This is based on:      ‘According to the scholastic theory, the forms that
+So how could the form enter your mind?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">It’s that cat distracting us. Let’s get serious.</div>
+          </div>
+          <div class="slide">
+            <p class="em-above indent">When a body is perceived, your sensory perception resembles the body’s form.</p>
+          </div>
+          <div class="slide">
+            <p class="em-above indent">Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.</p>
+            <div class="notes">This is based on:      ‘According to the scholastic theory, the forms that
 entered the senses and thereafter the mind from external objects made the
 contents of the senses and the mind like the external objects: the objects, the
 senses, and the mind were supposed to have in them the very same forms’ (Sorell
-2001 p. 75).</div></div><div class="slide"><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><p style="transform:rotate(-45deg)" class="huge-glow center">not <br/><span>Descartes’ view</span></p><div class="notes">In fact Descartes wanted to oppose this view.
-Why did he want to oppose it? And how Descartes oppose it?</div></div></div></div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div id="timer1" class="timer-outer"><div class="timer center timer-90s hide"><div class="mask"></div></div><div class="timer-90s-block-wrapper"><div class="timer-90s-block"></div></div></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="line-height:1.66em;" class="notes handout show"><span class="step99 hide"><span>‘I have been in the habit of misusing the order of nature. For</span></span><span class="purpose hide"><span>‘the proper purpose of [...] </span></span><span class="perceptions"><span>sensory perceptions</span></span><span class="step2 hide"> <span>[...] is simply to inform the </span><span>mind of </span><span class="beneficial">what is beneficial or harmful</span><span> [...]; </span></span><br/><span class="step3 hide"> <span>and to this extent they are sufficiently </span><span class="clear-word">clear</span><span> and </span><span class="distinct">distinct</span><span>. </span></span><br/><span class="step4 hide"> <span>But I misuse </span><span>them by treating them as reliable touchstones for immediate judgements about </span><span>the </span><span class="essential-nature">essential nature</span><span class="of-bodies"> of the bodies located outside us</span><span>; </span></span><br/><span class="step5 hide"> <span>yet this is an area </span><span>where they provide only very obscure information.’ </span></span></p><div class="notes handout ctd">\citep[pp.~57-8]{descartes:1985_csm2} </div><p class="right grey-text">Descartes, Meditation IV</p><div class="slide"><div data-what=".purpose" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="#timer1 .timer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">What is the proper purpose of sensory perceptions? (Have a guess.)</div></div><div class="slide"><div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div></div><div class="slide"><div data-what="#timer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".step4" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".step5" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".distinct" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".distinct" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">What does this mean?</div></div><div class="slide"><div data-what=".distinct" data-cls="bkg-invert" class="dv dv-removeclass"></div></div><div class="slide"><div data-what=".essential-nature" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".essential-nature" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">What is this?</div></div><div class="slide"><div data-what=".essential-nature" data-cls="bkg-invert" class="dv dv-removeclass"></div></div><div class="slide"><div data-what="#timer1 .timer" data-cls="running" class="dv dv-removeclass"></div><div data-what="#timer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div><div class="notes">What else is unclear in this passage?
-(Make sure you keep notes on everything that is unclear.)</div></div><div class="slide"><div data-what="#timer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="span span:not(.beneficial)" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".essential-nature, .of-bodies" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>related passage [*TODO: move to handout]</p><p>My nature, then, in this limited sense, does indeed teach me to avoid what induces a feeling of pain and to seek out what induces feelings of pleasure, and so
+2001 p. 75).
+            </div>
+          </div>
+          <div class="slide">
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+              <p style="transform:rotate(-45deg)" class="huge-glow center">not <br/><span>Descartes’ view</span></p>
+              <div class="notes">In fact Descartes wanted to oppose this view.
+Why did he want to oppose it? And how Descartes oppose it?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div id="timer1" class="timer-outer">
+            <div class="timer center timer-90s hide">
+              <div class="mask"></div>
+            </div>
+            <div class="timer-90s-block-wrapper">
+              <div class="timer-90s-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <div class="handout">    \section{Key Quote from \emph{Meditations}}</div>
+            <p style="line-height:1.66em;" class="notes handout show"><span class="step99 hide"><span>‘I have been in the habit of misusing the order of nature. For</span></span><span class="purpose hide"><span>‘the proper purpose of [...] </span></span><span class="perceptions"><span>sensory perceptions</span></span><span class="step2 hide"> <span>[...] is simply to inform the </span><span>mind of </span><span class="beneficial">what is beneficial or harmful</span><span> [...]; </span></span><br/><span class="step3 hide"> <span>and to this extent they are sufficiently </span><span class="clear-word">clear</span><span> and </span><span class="distinct">distinct</span><span>. </span></span><br/><span class="step4 hide"> <span>But I misuse </span><span>them by treating them as reliable touchstones for immediate judgements about </span><span>the </span><span class="essential-nature">essential nature</span><span class="of-bodies"> of the bodies located outside us</span><span>; </span></span><br/><span class="step5 hide"> <span>yet this is an area </span><span>where they provide only very obscure information.’ </span></span></p>
+            <div class="notes handout ctd">\citep[pp.~57-8]{descartes:1985_csm2} </div>
+            <p class="right grey-text">Descartes, Meditation IV</p>
+            <div class="slide">
+              <div data-what=".purpose" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1 .timer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+              <div class="notes">What is the proper purpose of sensory perceptions? (Have a guess.)</div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+              <div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".step4" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".step5" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".distinct" data-cls="transition-04" class="dv dv-addclass"></div>
+              <div data-what=".distinct" data-cls="bkg-invert" class="dv dv-addclass"></div>
+              <div class="notes">What does this mean?
+              </div>
+            </div>
+            <div class="slide">
+              <div data-what=".distinct" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".essential-nature" data-cls="transition-04" class="dv dv-addclass"></div>
+              <div data-what=".essential-nature" data-cls="bkg-invert" class="dv dv-addclass"></div>
+              <div class="notes">What is this?
+              </div>
+            </div>
+            <div class="slide">
+              <div data-what=".essential-nature" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1 .timer" data-cls="running" class="dv dv-removeclass"></div>
+              <div data-what="#timer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+              <div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div>
+              <div class="notes">What else is unclear in this passage?
+(Make sure you keep notes on everything that is unclear.)
+              </div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what="span span:not(.beneficial)" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".essential-nature, .of-bodies" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>related passage [*TODO: move to handout]</p>
+          <p>My nature, then, in this limited sense, does indeed teach me to avoid what induces a feeling of pain and to seek out what induces feelings of pleasure, and so
 on. But it does not appear to teach us to draw any conclusions from these sensory perceptions about things located outside us without waiting until
-the intellect has examined the matter. For knowledge of the truth about such things seems to belong to the mind alone, not to the combination of mind and body.</p></div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div id="timer1" class="timer-outer"><div class="timer center timer-90s hide"><div class="mask"></div></div><div class="timer-90s-block-wrapper"><div class="timer-90s-block"></div></div></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p><span>How can we acquire knowledge about the essential nature of the bodies located outside us?</span></p><div class="slide"><div class="hem-around-children"><p class="indent main-claim">Sensory perceptions provide only very obscure information about the essential nature of bodies.</p><p class="indent">∴ Not by treating sensory perceptions as a basis for judgements about them.</p></div></div><div class="slide"><div data-what="p:not(.main-claim)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="#timer1 .timer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">How might you defend this claim? (That sensory perceptions provide only very obscure information about the essential nature of bodies.)</div></div><div class="slide"><div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div></div>
-
-</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Recall this question</div><img src="img/mccloskey_1980_fig1b.png" style="filter:invert(1)" class="show"/><p class="right source">McCloskey et al, 1980 figure 1 (part)</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="img/mccloskey_1980_fig2d.png" style="filter:invert(1)" class="fig handout show"/><p class="right source">McCloskey et al, 1980 figure 2D</p><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="slide"><div data-what="img.fig" data-css="{&quot;filter&quot;:&quot;invert(1) blur(2px)&quot;}" class="dv dv-style"></div><p class="notes handout show buridan">The person who sets the ball moving impresses in it a certain impetus,
+the intellect has examined the matter. For knowledge of the truth about such things seems to belong to the mind alone, not to the combination of mind and body.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div id="timer1" class="timer-outer">
+            <div class="timer center timer-90s hide">
+              <div class="mask"></div>
+            </div>
+            <div class="timer-90s-block-wrapper">
+              <div class="timer-90s-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p><span>How can we acquire knowledge about the essential nature of the bodies located outside us?</span>
+            </p>
+            <div class="slide">
+              <div class="hem-around-children">
+                <p class="indent main-claim">Sensory perceptions provide only very obscure information about the essential nature of bodies.</p>
+                <p class="indent">∴ Not by treating sensory perceptions as a basis for judgements about them.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div data-what="p:not(.main-claim)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1 .timer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+              <div class="notes">How might you defend this claim? (That sensory perceptions provide only very obscure information about the essential nature of bodies.)</div>
+            </div>
+            <div class="slide">
+              <div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+              <div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall this question
+        </div><img src="img/mccloskey_1980_fig1b.png" style="filter:invert(1)" class="show"/>
+        <p class="right source">McCloskey et al, 1980 figure 1 (part)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="img/mccloskey_1980_fig2d.png" style="filter:invert(1)" class="fig show"/>
+        <p class="right source">McCloskey et al, 1980 figure 2D</p>
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+          <div style="" class="container_12">
+            <div class="grid_12 ">
+              <div class="words">
+                <div class="middle">
+                  <div class="slide">
+                    <div data-what="img.fig" data-css="{&quot;filter&quot;:&quot;invert(1) blur(2px)&quot;}" class="dv dv-style"></div>
+                    <div class="handout">\section{Impetus}</div>
+                    <p class="notes handout show buridan">The person who sets the ball moving impresses in it a certain impetus,
 [which acts] in the direction toward which the mover was moving the body,
-either up or down, or laterally, or circularly’ (Buridan, 13xx; cited by McCloskey et al).</p></div><div class="slide"><div data-what=".buridan, .source" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="em-above">But what does this tell us about sensory perceptions?</p><div class="notes">People make wrong judgements. So what?
-What does this tell us about sensory perceptions?</div></div></div></div></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">representational momentum</p><div class="notes handout">Sometimes when adult humans observe a moving object that disappears, they will misremember the location of its disappearance in way that reflects its momentum; this effect is called \emph{representational momentum} \citep{freyd:1984_representational,hubbard:2010_rm}.</div><div class="notes handout">The trajectories implied by representational momentum reveal that the effect reflects impetus mechanics rather than Newtonian principles \citep{freyd:1994_representational,kozhevnikov:2001_impetus,hubbard:2001_representational,hubbard:2013_launching}.
+either up or down, or laterally, or circularly’ (Buridan, 13xx; cited by McCloskey et al).
+                    </p>
+                  </div>
+                  <div class="slide">
+                    <div data-what=".buridan, .source" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+                    <p class="em-above">But what does this tell us about sensory perceptions?</p>
+                    <div class="notes">People make wrong judgements. So what?
+What does this tell us about sensory perceptions?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">\section{Perceiving Impetus}</div>
+          <p class="center">representational momentum</p>
+          <div class="notes handout">Sometimes when adult humans observe a moving object that disappears, they will misremember the location of its disappearance in way that reflects its momentum; this effect is called \emph{representational momentum} \citep{freyd:1984_representational,hubbard:2010_rm}.
+          </div>
+          <div class="notes handout">The trajectories implied by representational momentum reveal that the effect reflects impetus mechanics rather than Newtonian principles \citep{freyd:1994_representational,kozhevnikov:2001_impetus,hubbard:2001_representational,hubbard:2013_launching}.
 And these trajectories are independent of subjects' scientific knowledge
 \citep{freyd:1994_representational,kozhevnikov:2001_impetus}.
 Representational momentum therefore reflects judgement-independent expectations about objects’ movements which 
@@ -56,10 +505,115 @@ Note that momentum is only one of several factors which may influence mistakes a
 %
 %`information based on a naive understanding of physical principles or on subjective consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target'
 %\end{quote}
-}</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="lower"><div style="position:relative;"><img src="https://descartes.butterfill.com/img/hubbard_2005_fig1a.png" style="clip: rect(0,215,999,0); position: absolute; max-width:720px; max-height:550px;"/></div></div><div class="top"><div style="position:relative;"><img src="https://descartes.butterfill.com/img/hubbard_2005_fig1a.png" style="clip: rect(0,215,999,0); position: absolute; max-width:720px; max-height:550px;"/></div></div><div class="slide"><div data-what=".lower img" data-css="{&quot;clip&quot;:&quot;rect(0,345,999,0)&quot;}" class="dv dv-style"></div><div data-what=".top img" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".top img" data-css="{&quot;clip&quot;:&quot;rect(0,345,999,0)&quot;}" class="dv dv-style"></div><div data-what=".lower img" data-css="{&quot;clip&quot;:&quot;rect(0,515,999,0)&quot;}" class="dv dv-style"></div></div><div class="slide"><div data-what=".top img" data-css="{&quot;clip&quot;:&quot;rect(0,515,999,0)&quot;}" class="dv dv-style"></div><div data-what=".lower img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div></div><p class="source">Hubbard 2005, figure 1a; redrawn from Freyd and Finke 1984, figure 1</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="https://descartes.butterfill.com/img/hubbard_2005_fig1b.png" style="max-width:700px"/><p class="source">Hubbard 2005, figure 1b; drawn from Freyd and Finke 1984, table 1</p><div class="notes">\textbf{Representational momentum suggests that there are automatic processes
-which predict the future trajectories of physical objects.}</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="notes handout show">‘the representational momentum memory shift for a ball following a spiral path after exiting a tube is greater than the memory shift for a ball following the physically correct linear path. A curvilinear path, midway between the spiral and straight paths, produces shifts midway between those for the other two paths’</p><div class="notes handout ctd">\citep[p.~975]{freyd:1994_representational}</div><div class="slide"><p class="em-above notes handout show">Yet ‘our subjects had relatively accurate conscious knowledge of the trajectory of a ball exiting 
-a spiral tube (63% to 83% chose the correct path; only 4% chose the spiral path).’</p><div class="notes handout ctd">\citep[p.~975]{freyd:1994_representational}</div></div><div class="slide"><p class="em-above notes handout show">‘subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct’</p><div class="notes handout ctd">\citep[p.~975]{freyd:1994_representational}</div></div><p class="source">Freyd & Jones, 1994 p. 975</p></div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center huge-glow-180 hide tick">✓</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="knowledge-question"><span>How can we acquire knowledge about the essential nature of the bodies located outside us?</span></p><div class="hem-around-children"><p class="indent main-claim">Sensory perceptions provide only very obscure information about the essential nature of bodies.</p><p class="indent">∴ Not by treating sensory perceptions as a basis for judgements about them.</p></div><div data-what="p:not(.main-claim, .tick)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">This is all by way of a demonstration that Descartes was right.
-Sensory perceptions really do provide only very obscure information about the essential nature of bodies.</div></div></div></div></div><div class="slide"><div data-what=".tick" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".tick, .main-claim" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".knowledge-question" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Just one small problem: how are we going to answer this question?</div><div class="notes">Plan:
+}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="lower">
+          <div style="position:relative;"><img src="/img/hubbard_2005_fig1a.png" style="clip: rect(0,215,999,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        </div>
+        <div class="top">
+          <div style="position:relative;"><img src="/img/hubbard_2005_fig1a.png" style="clip: rect(0,215,999,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        </div>
+        <div class="slide">
+          <div data-what=".lower img" data-css="{&quot;clip&quot;:&quot;rect(0,345,999,0)&quot;}" class="dv dv-style"></div>
+          <div data-what=".top img" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+        </div>
+        <div class="slide">
+          <div data-what=".top img" data-css="{&quot;clip&quot;:&quot;rect(0,345,999,0)&quot;}" class="dv dv-style"></div>
+          <div data-what=".lower img" data-css="{&quot;clip&quot;:&quot;rect(0,515,999,0)&quot;}" class="dv dv-style"></div>
+        </div>
+        <div class="slide">
+          <div data-what=".top img" data-css="{&quot;clip&quot;:&quot;rect(0,515,999,0)&quot;}" class="dv dv-style"></div>
+          <div data-what=".lower img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+        </div>
+        <p class="source">Hubbard 2005, figure 1a; redrawn from Freyd and Finke 1984, figure 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="/img/hubbard_2005_fig1b.png" style="max-width:700px"/>
+        <p class="source">Hubbard 2005, figure 1b; drawn from Freyd and Finke 1984, table 1</p>
+        <div class="notes">\textbf{Representational momentum suggests that there are automatic processes
+which predict the future trajectories of physical objects.}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="notes handout show">‘the representational momentum memory shift for a ball following a spiral path after exiting a tube is greater than the memory shift for a ball following the physically correct linear path. A curvilinear path, midway between the spiral and straight paths, produces shifts midway between those for the other two paths’
+          </p>
+          <div class="notes handout ctd">\citep[p.~975]{freyd:1994_representational}</div>
+          <div class="slide">
+            <p class="em-above notes handout show">Yet ‘our subjects had relatively accurate conscious knowledge of the trajectory of a ball exiting 
+a spiral tube (63% to 83% chose the correct path; only 4% chose the spiral path).’
+            </p>
+            <div class="notes handout ctd">\citep[p.~975]{freyd:1994_representational}</div>
+          </div>
+          <div class="slide">
+            <p class="em-above notes handout show">‘subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct’
+            </p>
+            <div class="notes handout ctd">\citep[p.~975]{freyd:1994_representational}</div>
+          </div>
+          <p class="source">Freyd & Jones, 1994 p. 975</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center huge-glow-180 hide tick">✓</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="knowledge-question"><span>How can we acquire knowledge about the essential nature of the bodies located outside us?</span>
+            </p>
+            <div class="hem-around-children">
+              <p class="indent main-claim">Sensory perceptions provide only very obscure information about the essential nature of bodies.</p>
+              <p class="indent">∴ Not by treating sensory perceptions as a basis for judgements about them.</p>
+            </div>
+            <div data-what="p:not(.main-claim, .tick)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+            <div class="notes">This is all by way of a demonstration that Descartes was right.
+Sensory perceptions really do provide only very obscure information about the essential nature of bodies.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".tick" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    </div>
+    <div class="slide">
+      <div data-what=".tick, .main-claim" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+      <div data-what=".knowledge-question" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">Just one small problem: how are we going to answer this question?
+      </div>
+      <div class="notes">Plan:
 1. leave question hanging for now.
 2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
 3. then: discuss relation of sensory perceptions to its objects (Simmons)
@@ -71,26 +625,90 @@ This matters because we should evaluate his arguments against his aims.
 Same applies to you: always state your aim at the start of your essays.
 Now Descartes has an excuse: doing so might have caused his execution
 (and his works were put on the Index, etc).
-You don’t have any such excuse, at least not as far as I’m concerned.)</div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="notes handout show">‘In putting forward an account of light, the first thing that I want to draw to your attention 
+You don’t have any such excuse, at least not as far as I’m concerned.)
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout">\section{Against Resemblance}</div>
+        <div class="handout">Do sensory perceptions resemble their causes?</div>
+        <p class="notes handout show">‘In putting forward an account of light, the first thing that I want to draw to your attention 
 is that it is possible for there to be a difference between the sensation that we have of it, 
 that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
 and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
-or in the Sun that we term ‘light’.’</p><div class="notes handout ctd">\citep[p. 3 (AT 3)][]{descartes:1998_world}</div><p class="right grey-text">The World (AT 3)</p><p class="notes handout show">‘if words, which signify something only through human convention, are sufficient to make us think of
+or in the Sun that we term ‘light’.’
+        </p>
+        <div class="notes handout ctd">\citep[][p. 3 (AT 3)]{descartes:1998_world}</div>
+        <p class="right grey-text">The World (AT 3)</p>
+        <p class="notes handout show">‘if words, which signify something only through human convention, are sufficient to make us think of
 things to which they bear no resemblance, why could not Nature also have established some sign
 which would make us have a sensation of light, even if that sign had in it nothing that resembled
 this sensation? And is it not thus that Nature has established laughter and tears, to make us read
-joy and sorrow on the face of men?’</p><div class="notes handout ctd">\citep[p. 4 (AT 4)][]{descartes:1998_world}</div><p class="notes handout show">‘Do you think that, when we attend solely to the sound of words without attending to their
+joy and sorrow on the face of men?’
+        </p>
+        <div class="notes handout ctd">\citep[][p. 4 (AT 4)]{descartes:1998_world}</div>
+        <p class="notes handout show">‘Do you think that, when we attend solely to the sound of words without attending to their
 signification, the idea of that sound which is formed in our thought is at all like the object that
 is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
 these actions which is in any way similar to the idea of the sound that they cause us to imagine.
 And most philosophers maintain that sound is only a certain vibration of the air striking our ears.4
 Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
 of making us think of the sound, it would have to make us think about the motion of the parts of the
-air that are vibrating against our ears.’</p><div class="notes handout ctd">\citep[p. 4--5 (AT 5)][]{descartes:1998_world}</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p><span>How can we acquire knowledge about the essential nature of the bodies located outside us?</span></p><div class="notes">So how did Descartes answer his question?</div><div class="slide"><p class="indent">Through reason alone.</p></div><div class="slide"><p>‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+air that are vibrating against our ears.’
+        </p>
+        <div class="notes handout ctd">\citep[][p. 4--5 (AT 5)]{descartes:1998_world}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p><span>How can we acquire knowledge about the essential nature of the bodies located outside us?</span>
+          </p>
+          <div class="notes">So how did Descartes answer his question?
+          </div>
+          <div class="slide">
+            <p class="indent">Through reason alone.</p>
+          </div>
+          <div class="slide">
+            <p>‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
 these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
-regarding them’ (PP 2:64, CSM 1:247).</p></div><div class="notes">Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Bennett mentions  something Turnbull says about Aristotle's science:</div><p>Aristotelian physics ‘is reasonably effective for organizing bodies of knowledge. From the 
+regarding them’ (PP 2:64, CSM 1:247).
+            </p>
+          </div>
+          <div class="notes">Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Bennett mentions  something Turnbull says about Aristotle's science:</div>
+          <p class="notes handout show">Aristotelian physics ‘is reasonably effective for organizing bodies of knowledge. From the 
 perspective of modern physical and biological science, however, it is severely crippled by 
 its close linkage with what Wilfrid Sellars calls ‘the manifest image’, i.e. what is available 
 to us by means of our very limited sense organs. . . . The tie to entities known through 
 perception prevents access to—much less the discoveries of—modern physics (and, consequently, 
-chemistry and biology). (Turnbull 1988: 120)</p></div></div></div></div></section></div></body></html>
+chemistry and biology)’
+          </p>
+          <div class="notes handout ctd"> (Turnbull 1988, p. 120 cited by \citealp{bennett:2003_learning}.)</div>
+          <p class="right grey-text">Turnbull 1988, p. 120</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

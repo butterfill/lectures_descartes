@@ -18,11 +18,23 @@ include ../../fragments/descartes_mixins
 //- +insert_unit({unit:'the_question', title_slide:false, images:images, handout:true})
 
 +slide
-  .notes: :t
-    Essay question for this lecture:
+  .notes.handout: :t
+    \emph{Overall Topic}:
     What, according to Descartes, is the relation between a sensory perception and the thing perceived?
+  .notes.handout: :t
+    \emph{Question for this Lecture}: 
+    How can we acquire knowledge about the essential nature
+    of the bodies located outside us?
+  .notes.handout: :t
+    \emph{Argument of this Lecture}: 
+    \begin{enumerate}
+    \item Sensory perceptions provide only very obscure information about the essential nature of bodies.
+    \item Therefore, we cannot acquire knowledge about the essential nature of the bodies located outside us through sensory perceptions alone.
+    \end{enumerate}
+
   img.handout.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
   .handout.notes: :t
+    \section{Exercise}
     The diagram shows a thin curved metal tube.
     Imagine you are looking down the tube.
     A metal ball is put into the end of the tube indicated by the arrow.
@@ -52,6 +64,7 @@ include ../../fragments/descartes_mixins
     .notes: :t
       What is that?
     .notes.handout: :t
+      \section{Forms}
       What is an Aristotelian form?
       It ‘is not a subset of the properties that the organism [or thing] has, but rather a set of those that are 
       proper to it, and towards which it strives or tends. Why does an acorn develop into an oak rather than 
@@ -99,6 +112,7 @@ include ../../fragments/descartes_mixins
         Why did he want to oppose it? And how Descartes oppose it?
 
 +slide_timer({hide:true})
+  .handout     \section{Key Quote from \emph{Meditations}}
   p.notes.handout.show(style='line-height:1.66em;')
     span.step99.hide
       span ‘I have been in the habit of misusing the order of nature. For
@@ -205,11 +219,12 @@ mixin knowledgeQuestion()
   p.right.source McCloskey et al, 1980 figure 1 (part)
 
 +slide
-  img.fig.handout.show(src='img/mccloskey_1980_fig2d.png', style='filter:invert(1)')
+  img.fig.show(src='img/mccloskey_1980_fig2d.png', style='filter:invert(1)')
   p.right.source McCloskey et al, 1980 figure 2D
   +reset: +middle
     .slide
       +style('img.fig', {filter:'invert(1) blur(2px)'})
+      .handout \section{Impetus}
       p.notes.handout.show.buridan: :t
         The person who sets the ball moving impresses in it a certain impetus,
         [which acts] in the direction toward which the mover was moving the body,
@@ -223,6 +238,7 @@ mixin knowledgeQuestion()
 
 
 +slide_middle
+  .handout \section{Perceiving Impetus}
   p.center representational momentum
   .notes.handout: :t
     Sometimes when adult humans observe a moving object that disappears, they will misremember the location of its disappearance in way that reflects its momentum; this effect is called \emph{representational momentum} \citep{freyd:1984_representational,hubbard:2010_rm}.
@@ -325,13 +341,15 @@ section.slide
 
 
 +slide
+  .handout \section{Against Resemblance}
+  .handout Do sensory perceptions resemble their causes?
   p.notes.handout.show: :t
     ‘In putting forward an account of light, the first thing that I want to draw to your attention 
     is that it is possible for there to be a difference between the sensation that we have of it, 
     that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
     and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
     or in the Sun that we term ‘light’.’
-  .notes.handout.ctd \citep[p. 3 (AT 3)][]{descartes:1998_world}
+  .notes.handout.ctd \citep[][p. 3 (AT 3)]{descartes:1998_world}
   p.right.grey-text The World (AT 3)
 
   p.notes.handout.show: :t
@@ -340,7 +358,7 @@ section.slide
     which would make us have a sensation of light, even if that sign had in it nothing that resembled
     this sensation? And is it not thus that Nature has established laughter and tears, to make us read
     joy and sorrow on the face of men?’
-  .notes.handout.ctd \citep[p. 4 (AT 4)][]{descartes:1998_world}
+  .notes.handout.ctd \citep[][p. 4 (AT 4)]{descartes:1998_world}
 
   p.notes.handout.show: :t
     ‘Do you think that, when we attend solely to the sound of words without attending to their
@@ -351,7 +369,7 @@ section.slide
     Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
     of making us think of the sound, it would have to make us think about the motion of the parts of the
     air that are vibrating against our ears.’
-  .notes.handout.ctd \citep[p. 4--5 (AT 5)][]{descartes:1998_world}
+  .notes.handout.ctd \citep[][p. 4--5 (AT 5)]{descartes:1998_world}
 
 +slide_middle
   p: +knowledgeQuestion
@@ -368,10 +386,12 @@ section.slide
 
 +slide_middle
   .notes Bennett mentions  something Turnbull says about Aristotle's science:
-  p: :t
+  p.notes.handout.show: :t
     Aristotelian physics ‘is reasonably effective for organizing bodies of knowledge. From the 
     perspective of modern physical and biological science, however, it is severely crippled by 
     its close linkage with what Wilfrid Sellars calls ‘the manifest image’, i.e. what is available 
     to us by means of our very limited sense organs. . . . The tie to entities known through 
     perception prevents access to—much less the discoveries of—modern physics (and, consequently, 
-    chemistry and biology). (Turnbull 1988: 120)
+    chemistry and biology)’
+  .notes.handout.ctd  (Turnbull 1988, p. 120 cited by \citealp{bennett:2003_learning}.)
+  p.right.grey-text Turnbull 1988, p. 120
