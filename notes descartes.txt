@@ -89,6 +89,18 @@ See \citep{newman:2016_descartes} on knowledge:
 Doesn’t this imply that at the end of Meditation 1 we have no knowledge at all? Worse, if ‘there is not one of my former beliefs about which a doubt may not properly be raised’ then doesn’t the meditator start with no knowledge at all?  [Why isn’t this just terminological --- shows that Descartes wanted to establish things with certainty?]
 
 
+# The self
+
+‘You went without sleep long enough, you made your brain stand up and walk around day after day after day no matter how tired you felt—you did push-ups and sit-ups on the cold stone floor until your muscles burned, you scratched and slapped yourself and dug at your own flesh with your bloodied nails to keep awake—and before long you didn’t know which was which, if you were awake or asleep. Everything got blended together. A sensation like pain—only worse, because it wasn’t a pain in your body; the pain was your mind and your mind was you. You were pain itself.’
+--- Justin Cronin, The Passage
+
+‘He had believed once that he would be formed by the architecture of war, but now, he realized, he had been erased by it.’
+--- Margret Atwood, A God in Ruins
+
+‘It could be said that in the chaos of combat, the man known as Satch Dodd ceased to exist, even to himself; and when the dust cleared, and he found himself still standing, he experienced a rush of raw existence, as if he’d been shot from a cannon back into the world.’
+--- Justin Cronin, The Twelve
+
+
 # §§other notes
 
 2. What is metaphysics? ‘metaphysics provides the roots for the tree of science’ (Wilson) (Principles). ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics, the trunk is Physics, and the branches which come out of this trunk are all the other sciences ...’ (Principles p. 186; AT IX–2, 14; HR I, 211).
@@ -100,3 +112,18 @@ Contemporary relevance: Ct Beebee’s conception of metaphysics (no relation to 
 
 
 4. What is the argument from dreaming? (Wilson p. 31ff).
+
+‘if words, which signify something only through human convention, are sufficient to make us think of
+things to which they bear no resemblance, why could not Nature also have estab- lished some sign
+which would make us have a sensation of light, even if that sign had in it nothing that resembled
+this sensation? And is it not thus that Nature has established laughter and tears, to make us read
+joy and sorrow on the face of men?’
+
+‘Do you think that, when we attend solely to the sound of words without attending to their
+signification, the idea of that sound which is formed in our thought is at all like the object that
+is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
+these actions which is in any way similar to the idea of the sound that they cause us to imagine.
+And most philosophers maintain that sound is only a certain vibration of the air striking our ears.4
+Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
+of making us think of the sound, it would have to make us think about the motion of the parts of the
+air that are vibrating against our ears.’
