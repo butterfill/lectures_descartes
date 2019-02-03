@@ -1,0 +1,120 @@
+---cson
+layout: 'deck_unit'
+title: "The Proper Purpose of Sensory Perceptions"
+tags: []
+description: """
+  ‘the proper purpose of [...] 
+  sensory perceptions
+  is simply to inform the 
+  mind of 
+  what is beneficial or harmful’
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
+
++slide
+  img.handout.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+  p.right.source McCloskey et al, 1980 figure 1 (part)
+  .notes: :t
+    [Don’t ask them about their answers yet ... that comes later]
+    Descartes was right.
+    Your senses do not acquiant you with the essential nature of bodies.
+    Why am I so sure?
+    I’ll come back to this later
+
+
++slide_timer({hide:true})
+  .handout     \section{Key Quote from \emph{Meditations}}
+  p.notes.handout.show(style='line-height:1.66em;')
+    span.step99.hide
+      span ‘I have been in the habit of misusing the order of nature. For
+    span.purpose.hide: span ‘the proper purpose of [...] 
+    span.perceptions: span sensory perceptions
+    span.step2.hide  
+      span [...] is simply to inform the 
+      span mind of 
+      span.beneficial what is beneficial or harmful
+      span  [...]; 
+    br
+    span.step3.hide 
+      span and to this extent they are sufficiently 
+      span.clear-word clear
+      span  and 
+      span.distinct distinct
+      span . 
+    br
+    span.step4.hide 
+      span But I misuse 
+      span them by treating them as reliable touchstones for immediate judgements about 
+      span the 
+      span.essential-nature essential nature
+      span.of-bodies  of the bodies located outside us
+      span ; 
+    br
+    span.step5.hide 
+      span yet this is an area 
+      span where they provide only very obscure information.’ 
+  .notes.handout.ctd \citep[pp.~57-8]{descartes:1985_csm2} 
+  p.right.grey-text Descartes, Meditation IV
+  .slide
+    +show('.purpose')
+  +show-timer('timer1')
+    .notes What is the proper purpose of sensory perceptions? (Have a guess.)
+  +start-timer('timer1')
+  .slide
+    +hide('#timer1')
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step4')
+  .slide
+    +show('.step5')
+  .slide
+    +invert('.distinct')
+    .notes: :t
+      What does this mean?
+  .slide
+    +uninvert('.distinct')
+  .slide
+    +invert('.essential-nature')
+    .notes: :t
+      What is this?
+  .slide
+    +uninvert('.essential-nature')
+  .slide
+    +reset-timer('timer1')
+    +show('#timer1')
+  +start-timer('timer1')
+    .notes: :t
+      What else is unclear in this passage?
+      (Make sure you keep notes on everything that is unclear.)
+
+  .slide
+    +hide('#timer1')
+  .slide
+    +blur('span span:not(.beneficial)', '5px')
+  .slide
+    +unblur('.essential-nature, .of-bodies')
+  .notes: :t
+    p related passage [*TODO: move to handout]
+  .handout: :t
+    ‘My nature, then, in this limited sense, does indeed teach me to avoid what induces a feeling of pain and to seek out what induces feelings of pleasure, and so
+    on. But it does not appear to teach us to draw any conclusions from these sensory perceptions about things located outside us without waiting until
+    the intellect has examined the matter. For knowledge of the truth about such things seems to belong to the mind alone, not to the combination of mind and body’
+    \citep[p.~57]{descartes:1985_csm2}.    
+
+
+
++slide_middle
+  p: +knowledgeQuestion
+  .slide
+    .hem-around-children
+      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+      p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.

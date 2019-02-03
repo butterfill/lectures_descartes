@@ -1,0 +1,163 @@
+---cson
+layout: 'deck_unit'
+title: "The Obscurity of Sensory Perceptions"
+tags: []
+description: """
+  Sensory perceptions provide only very obscure information about the essential nature of bodies.
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
+
++slide_timer({hide:true})
+  .notes: :t
+    Ok, so I was saying this ...
+  p: +knowledgeQuestion
+  .slide
+    .hem-around-children
+      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+      p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+  .slide
+    +blur('p:not(.main-claim)')
+  +show-timer('timer1')
+    .notes How might you defend this claim? (That sensory perceptions provide only very obscure information about the essential nature of bodies.)
+  +start-timer('timer1')
+  //- .slide
+  //-   .hem-around-children
+  //-     p.indent Or ... ?
+
+
+
++slide
+  .notes: :t
+    Recall this question
+  img.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+  p.right.source McCloskey et al, 1980 figure 1 (part)
+
++slide
+  img.fig.show(src='img/mccloskey_1980_fig2d.png', style='filter:invert(1)')
+  p.right.source McCloskey et al, 1980 figure 2D
+  +reset: +middle
+    .slide
+      +style('img.fig', {filter:'invert(1) blur(2px)'})
+      .handout \section{Impetus}
+      p.notes.handout.show.buridan: :t
+        The person who sets the ball moving impresses in it a certain impetus,
+        [which acts] in the direction toward which the mover was moving the body,
+        either up or down, or laterally, or circularly’ (Buridan, 13xx; cited by McCloskey et al).
+    .slide
+      +blur('.buridan, .source')
+      p.em-above But what does this tell us about sensory perceptions?
+      .notes: :t
+        People make wrong judgements. So what?
+        What does this tell us about sensory perceptions?
+
+
++slide_middle
+  .handout \section{Perceiving Impetus}
+  p.center representational momentum
+  .notes.handout: :t
+    Sometimes when adult humans observe a moving object that disappears, they will misremember the location of its disappearance in way that reflects its momentum; this effect is called \emph{representational momentum} \citep{freyd:1984_representational,hubbard:2010_rm}.
+  .notes.handout: :t
+    The trajectories implied by representational momentum reveal that the effect reflects impetus mechanics rather than Newtonian principles \citep{freyd:1994_representational,kozhevnikov:2001_impetus,hubbard:2001_representational,hubbard:2013_launching}.
+    And these trajectories are independent of subjects' scientific knowledge
+    \citep{freyd:1994_representational,kozhevnikov:2001_impetus}.
+    Representational momentum therefore reflects judgement-independent expectations about objects’ movements which 
+    track momentum in accordance with a principle of impetus.%
+    \footnote{
+    Note that momentum is only one of several factors which may influence mistakes about the location at which a moving object disappears \citep[p.\ 842]{hubbard:2005_representational}.
+    %:
+    %\begin{quote}
+    %`The empirical evidence is clear that (1) displacement does not always correspond to predictions based on physical principles and (2) variables unrelated to physical principles (e.g., the presence of landmarks, target identity, or expectations regarding a change in target direction) can influence displacement.'
+    %
+    %...
+    %
+    %`information based on a naive understanding of physical principles or on subjective consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target'
+    %\end{quote}
+    }
+
+
++slide
+  .lower
+    +img_clip('hubbard_2005_fig1a.png', 'rect(0,215,999,0)')
+  .top
+    +img_clip('hubbard_2005_fig1a.png', 'rect(0,215,999,0)')
+  .slide
+    +clip('.lower img',  'rect(0,345,999,0)')
+    +blur('.top img')
+  .slide
+    +clip('.top img',  'rect(0,345,999,0)')
+    +clip('.lower img',  'rect(0,515,999,0)')
+  .slide
+    +clip('.top img',  'rect(0,515,999,0)')
+    +clip('.lower img',  'auto')
+  p.source Hubbard 2005, figure 1a; redrawn from Freyd and Finke 1984, figure 1
+
++slide
+  +img('hubbard_2005_fig1b.png', 'max-width:700px')
+  p.source Hubbard 2005, figure 1b; drawn from Freyd and Finke 1984, table 1
+  .notes: :t
+    \textbf{Representational momentum suggests that there are automatic processes
+    which predict the future trajectories of physical objects.}
+
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘the representational momentum memory shift for a ball following a spiral path after exiting a tube is greater than the memory shift for a ball following the physically correct linear path. A curvilinear path, midway between the spiral and straight paths, produces shifts midway between those for the other two paths’
+  .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+  .slide
+    p.em-above.notes.handout.show: :t
+      Yet ‘our subjects had relatively accurate conscious knowledge of the trajectory of a ball exiting 
+      a spiral tube (63% to 83% chose the correct path; only 4% chose the spiral path).’
+    .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct’
+    .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+  p.source Freyd & Jones, 1994 p. 975
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.hide.tick ✓
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+      +blur('p:not(.main-claim, .tick)', '2px', 0)
+      .notes: :t
+        This is all by way of a demonstration that Descartes was right.
+        Sensory perceptions really do provide only very obscure information about the essential nature of bodies.
+    .slide
+      +show('.tick')
+    .slide
+      +blur('.tick, .main-claim')
+      +unblur('.knowledge-question')
+      .notes: :t
+        Just one small problem: how are we going to answer this question?
+      .notes: :t
+        Plan:
+        1. leave question hanging for now.
+        2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
+        3. then: discuss relation of sensory perceptions to its objects (Simmons)
+        4. then: return to the question (through mathematics)
+        5. Why is this the right way to start? Metaphysics as root of physics; method of doubt
+        used to show that sensory perceptions unreliable, whereas pure intellect is reliable.
+        (Descartes was a little unclear about his aim.
+        This matters because we should evaluate his arguments against his aims.
+        Same applies to you: always state your aim at the start of your essays.
+        Now Descartes has an excuse: doing so might have caused his execution
+        (and his works were put on the Index, etc).
+        You don’t have any such excuse, at least not as far as I’m concerned.)
+
+
+
+
+

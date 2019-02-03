@@ -1,0 +1,81 @@
+---cson
+layout: 'deck_unit'
+title: "A Question"
+tags: []
+description: """
+  How can we acquire knowledge about the essential nature of the bodies located outside us?
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
++slide_middle({bkg:'cat_photo_bendo.jpg'})
+  +hide('img.bkg', 0)
+  .notes: :t
+    The picture Descartes opposes on two counts: (i) extension is the single essence of all external bodies,
+    and (ii) we do not know essence through sensory perception.
+  p.theQ How can we acquire knowledge about the 
+    span.essential-nature essential nature
+    span  of the bodies located outside us?
+  .slide
+    +invert('.essential-nature')
+  .slide
+    p.em-above.indent Each body has a 
+      span.form form
+      span , which is its essential nature.
+  .slide
+    +invert('.form')
+    .notes: :t
+      What is that?
+    .notes.handout: :t
+      \section{Forms}
+      What is an Aristotelian form?
+      It ‘is not a subset of the properties that the organism [or thing] has, but rather a set of those that are 
+      proper to it, and towards which it strives or tends. Why does an acorn develop into an oak rather than 
+      a pig? Because of its special relation to the form that defines oak: it develops as it does because, 
+      while still an acorn, it lacks some of the properties that oaks have, and is somehow drawn towards 
+      instantiating that form more fully’ \citep[p.~10]{bennett:2003_learning}.
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      It’s cat form is what makes a cat catty,
+      and what makes the kitten grow into a cat (when things go well).
+  .slide
+    +fade('img.bkg', 0)
+    +blur('img.bkg', '5px')
+    +uninvert('.essential-nature, .form')
+  .slide
+    p.em-above.indent.form-enters-mind When a body is perceived, its form thereby enters the mind. 
+  .slide
+    +line-through('.form-enters-mind')
+    .notes: :t
+      No, be serious. How could a form enter the mind?
+      When you perceive a cat, it’s not that the cat gets inside your mind.
+      (Sounds painful.)
+      So how could the form enter your mind?
+  .slide
+    +hide('img.bkg')
+    .notes It’s that cat distracting us. Let’s get serious.
+  .slide
+    p.em-above.indent When a body is perceived, your sensory perception resembles the body’s form.
+  .slide
+    p.em-above.indent Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.
+    .notes: :t
+      This is based on:      ‘According to the scholastic theory, the forms that
+      entered the senses and thereafter the mind from external objects made the
+      contents of the senses and the mind like the external objects: the objects, the
+      senses, and the mind were supposed to have in them the very same forms’ (Sorell
+      2001 p. 75).
+  .slide
+    +reset
+      p.huge-glow(style='transform:rotate(-45deg)').center not 
+        br
+        span Descartes’ view
+      .notes: :t
+        In fact Descartes wanted to oppose this view.
+        Why did he want to oppose it? And how Descartes oppose it?
+  .slide
+    +fade('p:not(.theQ)', 0)
+    +blur('p:not(.theQ)')
