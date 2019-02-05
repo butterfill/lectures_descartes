@@ -28,5 +28,193 @@ section.slide
     We saw how in The World Descartes gives an argument for considering the claim that 
     Sensory perceptions provide only very obscure information about the essential nature of bodies.
   .notes: :t
-    How does the argument go in The Meditations
+    How does the argument go in The Meditations?
     [This is the task for next week’s seminars]
+
++slide_timer({hide:true})
+  p That we have grounds to doubt something 
+  p doesn’t imply we know it is false 
+    span.dots.hide ...
+  +show-timer('timer1')
+    .notes So what can we conclude if we discover that we have reason to doubt something?
+  +start-timer('timer1')
+  .slide
+    +hide('.timer-outer')
+    +show('.dots')
+    p.em-above ... but only that we have reason to withhold assent.
+
+mixin argumentIdeas()
+  +slide_middle
+    p Argument ideas from Meditation 1
+    .hem-around-children
+      p.indent.senses The senses sometimes deceive us
+      p.indent.melancholia My brain may be ‘damaged by the persistent vapours of melancholia’
+      p.indent.dream The dream argument
+      p.indent.god-deceives The deceiving God hypothesis
+      p.indent.demon The malicious demon
+    block
+
+
++argumentIdeas
+  .slide
+    +highlight-row('.dream')
+
++slide_middle
+  p: :t
+    ‘I see plainly that there are never any sure signs by means of which 
+    being awake can be distinguished from being asleep’
+  p.right.grey-text Meditation 1
+  p.em-above.slide: :t
+    ‘... the principal reason for doubt, namely my inability to distinguish 
+    between being asleep and being awake. 
+    For ... there is a vast difference between the two, in that dreams are 
+    never linked by memory with all the other actions of life 
+  p.slide: :t
+    ‘when I distinctly see where things come from and where and 
+    when they come to me, and when I can connect my perceptions of them with 
+    the whole of the rest of my life without a break, 
+    then I am quite certain that when I encounter these things 
+    I am not asleep but awake.’
+  p.right.grey-text Meditation 6
+  .handout: :t
+    \subsection{Dreaming}
+    ‘I see plainly that there are never any sure signs by means of which 
+    being awake can be distinguished from being asleep’ (Meditation I)
+  .handout: :t
+    ‘... the principal reason for doubt, namely my inability to distinguish 
+    between being asleep and being awake. 
+    For ... there is a vast difference between the two, in that dreams are 
+    never linked by memory with all the other actions of life’ (Meditation 6)
+  .handout: :t
+    ‘when I distinctly see where things come from and where and 
+    when they come to me, and when I can connect my perceptions of them with 
+    the whole of the rest of my life without a break, 
+    then I am quite certain that when I encounter these things 
+    I am not asleep but awake’ (Meditation 6).
+  .handout: :t
+    Do any considerations about dreaming provide 
+    ‘reasons ... which give us possible grounds for doubt about all things, especially material things, so long as we have no foundation for the sciences other than those we have had up until now’?
++slide_timer({hide:true})
+  p
+    span ‘
+    span.reasons reasons
+    span  are provided which give us possible grounds for doubt about all things, especially material things, so long as we have no foundation for the sciences other than those we have had up until now’
+  p.right.grey-text: span Synopsis
+  .slide
+    +blur('span:not(.reasons)')
+    .notes What are these reasons?
+  .slide
+    p.em-above What are these reasons?
+  .slide
+    p.em-above Do any considerations about dreaming provide such reasons?
+  +show-timer('timer1')
+  +start-timer('timer1')
+
+
++argumentIdeas
+  +highlight-row('.dream')
+  .slide
+    +unhighlight-row('.dream')
+    +highlight-row('.god-deceives')
+
++slide_timer({hide:true})
+  p: :t
+    ‘How do I know that he has not brought it about that there is no earth, 
+    no sky, no extended thing, no shape, no size, no place, while at the same 
+    time ensuring that all these things appear to me to exist just as they do now? 
+  p.slide.em-above: :t
+    What is more, since I sometimes believe that others go astray in cases 
+    where they think they have the most perfect knowledge, 
+    may I not similarly go wrong every time I add two and three or count the 
+    sides of a square, or in some even simpler matter, if that is imaginable?’
+  p.slide.em-above: :t
+    Is this a reason to doubt all things?
+  +show-timer('timer1')
+  +start-timer('timer1')
+  .handout: :t
+    \subsection{Cosmic deception}
+    ‘How do I know that he has not brought it about that there is no earth, 
+    no sky, no extended thing, no shape, no size, no place, while at the same 
+    time ensuring that all these things appear to me to exist just as they do now? 
+    What is more, since I sometimes believe that others go astray in cases 
+    where they think they have the most perfect knowledge, 
+    may I not similarly go wrong every time I add two and three or count the 
+    sides of a square, or in some even simpler matter, if that is imaginable?’
+  .handout: :t
+    Is this a reason to doubt all things?
+
+
++slide_middle
+  .hem-around-children
+    p.first You are not in a position to know that you aren’t cosmically deceived
+    p You do know this: if you are drinking coffee, then you are not cosmically deceived
+    p Suppose you knew you were drinking coffee.
+    p Then you would be in a position to know you are not cosmically deceived 
+    p Therefore you couldn’t know you are drinking coffee
+  .slide
+    +highlight-row('.first')
+    .notes: :t
+      I think Descartes’ idea is that this first claim is true insofar as you
+      rely only on the senses.
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.q ?
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only 
+          span.obscure very obscure
+          span  information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+      +blur('p:not(.main-claim, .tick, .q)', '2px', 0)
+  .notes: :t
+    How does this bear on our ultimate aim?
+  .slide
+    +invert('.obscure')
+    .notes Perhaps this is a key idea ...
+
++slide_timer({hide:true})
+  .hem-around-children
+    p: :t
+      obscure -> does not enable you to know you arn’t cosmically deceived
+    p: :t
+      not obscure (clear?) -> does enable you to know you aren’t cosmically deceived
+    p.slide: :t
+      For all your sensory perceptions reveal, you are not in a position to know that you aren’t cosmically deceived
+    p.slide: :t
+      Therefore, sensory perceptions provide only 
+      very obscure
+      information about the essential nature of bodies.    
+  +show-timer('timer1')
+  .notes: :t
+    How close do you think this is to Descartes’ argument in Meditation 1?
+    Can you do better
+  +start-timer('timer1')
+
+
++slide_middle
+  .notes: :t
+    In thinking about Descartes’ arguments in the first Meditation,
+    it is important to remember what he is using doubt for.
+    He does not want to establish that sensory perceptions actually deceive us.
+    He only wants to show that they cannot be relied on to provide information
+    about the essential nature of bodies.
+  .notes: :t
+    Recall from our discussion of The World
+  p: :t
+    ‘I have not brought up these examples to make you believe categorically that the light in the objects
+    is something different from what it is in our eyes
+  p: :t
+    I merely wanted you to suspect that there might be a difference’
+  p.right.grey-text Descartes, The World (AT IX:6)
+  .slide
+    .notes Compare Descartes’ strategy in The Meditations:
+    p.em-above.notes.handout.show: :t
+      The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions, 
+      and providing the easiest route by which the mind may be led away from the senses.’
+    p.right.grey-text Meditations (Synopsis)
+
