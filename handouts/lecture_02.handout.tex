@@ -1,0 +1,127 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Descartes}
+
+\def \isubtitle {Lecture 02}
+
+\def \iauthor {Stephen A. Butterfill}
+\def \iemail{s.butterfill @warwick.ac.uk}
+\date{}
+
+%for strikethrough
+\usepackage[normalem]{ulem}
+
+\input{$HOME/latex_imports/preamble_steve_handout}
+
+%\bibpunct{}{}{,}{s}{}{,}  %use superscript TICS style bib
+%remove hanging indent for TICS style bib
+%TODO doesnt work
+\setlength{\bibhang}{0em}
+%\setlength{\bibsep}{0.5em}
+
+
+%itemize bullet should be dash
+\renewcommand{\labelitemi}{$-$}
+
+\begin{document}
+
+\begin{multicols*}{3}
+
+\setlength\footnotesep{1em}
+
+
+\bibliographystyle{newapa} %apalike
+
+%\maketitle
+%\tableofcontents
+
+
+
+
+%---------------
+%--- start paste
+%---------------
+
+
+      
+\def \ititle {Lecture 02}
+ 
+\def \isubtitle {Descartes}
+ 
+\begin{center}
+ 
+{\Large
+ 
+\textbf{\ititle}: \isubtitle
+ 
+}
+ 
+ 
+ 
+\iemail %
+ 
+\end{center}
+ 
+
+
+
+
+
+\section{Against Resemblance}
+ 
+Do sensory perceptions resemble their causes?
+ 
+‘In putting forward an account of light, the first thing that I want to draw to your attention 
+is that it is possible for there to be a difference between the sensation that we have of it, 
+that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
+and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
+or in the Sun that we term ‘light’.’
+\citep[][p. 3 (AT 3)]{descartes:1998_world}
+ 
+‘if words, which signify something only through human convention, are sufficient to make us think of
+things to which they bear no resemblance, why could not Nature also have established some sign
+which would make us have a sensation of light, even if that sign had in it nothing that resembled
+this sensation? And is it not thus that Nature has established laughter and tears, to make us read
+joy and sorrow on the face of men?’
+\citep[][p. 4 (AT 4)]{descartes:1998_world}
+ 
+‘Do you think that, when we attend solely to the sound of words without attending to their
+signification, the idea of that sound which is formed in our thought is at all like the object that
+is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
+these actions which is in any way similar to the idea of the sound that they cause us to imagine.
+And most philosophers maintain that sound is only a certain vibration of the air striking our ears.4
+Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
+of making us think of the sound, it would have to make us think about the motion of the parts of the
+air that are vibrating against our ears.’
+\citep[][p. 4--5 (AT 5)]{descartes:1998_world}
+ 
+
+
+
+    
+    
+
+% --------------
+% ---- end paste
+% --------------
+
+
+% \vfill
+
+% \
+
+% \columnbreak
+
+% \ 
+% \vfill
+
+\footnotesize
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{multicols*}
+
+\end{document}

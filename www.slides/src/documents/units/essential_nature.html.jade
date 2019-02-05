@@ -12,9 +12,41 @@ include ../../../fragments/unit_mixins
 include ../../../fragments/descartes_mixins
 
 
++slide_middle
+  p
+    span  Letter to Mersenne (28 January 1641)
+  p.em-above.notes.handout.show
+    span ‘these six meditations contain all the foundations of 
+    span.my-physics my physics
+    span .  
+    span But please do not tell people, for that might make it harder for supporters of Aristotle to approve them.  
+    span I hope that readers will gradually get used to my principles, and recognize their truth,  
+    span before they notice that 
+    span.destroy 
+      span they destroy 
+      span.Aristotle-principles the principles of Aristotle
+    span .’ 
+  .notes: :t
+    (Descartes was a little unclear about his aim.
+    This matters because we should evaluate his arguments against his aims.
+    Same applies to you: always state your aim at the start of your essays.
+    Now Descartes has an excuse: doing so might have caused his execution
+    (and his works were put on the Index, etc).
+    You don’t have any such excuse, at least not as far as I’m concerned.)
+
+  .slide
+    +invert('.destroy')
+  .slide
+    +uninvert('.destroy')
+  .slide
+      +blur('span:not(.my-physics, .destroy, .Aristotle-principles)')
+      .notes: :t
+        What is this physics? What are the principles of Aristotle?
+
+
 +slide_rh_white({step:true})
   +left_half
-    p.center Aristotlian
+    p.center Aristotelian
     .hem-around-children
       p.slide bodies composed of form & matter
       p.slide form is, or determines, essence
@@ -30,17 +62,15 @@ include ../../../fragments/descartes_mixins
       p.slide these properties explain all their sensory effects (e.g. heat, colour, taste)
       p.slide these properties are measurable on ratio scales
 
++slide_middle
+  p.knowledge-question: +knowledgeQuestion
+  .notes: :t
+    So Descartes didn’t just want to explain how we know the natures of things;
+    he also thought that when we consider how we know them,
+    we arrive at an entirely different view of the nature of the physcial world.
+
 
 +slide_middle
-  p Letter to Mersenne (28 January 1641)
-  p.em-above.notes.handout.show: :t
-    ‘these six meditations contain all the foundations of my physics. But please do not tell people, for that might make it harder for supporters of Aristotle to approve them. I hope that readers will gradually get used to my principles, and recognize their truth, before they notice that they destroy the principles of Aristotle.’
-
-+slide_middle
-  p Meditations (Synopsis)
-  p.em-above.notes.handout.show: :t
-    Reasons are provided “which give us possible grounds for doubt about all things, especially material things, so long as we have no foundation for the sciences other than those we have had up until now”
-+slide_middle
-  p Meditations (Synopsis)
-  p.em-above.notes.handout.show: :t
-    The usefulness of extensive doubt “lies in freeing us from our preconceived opinions, and providing the easiest route by which the mind may be led away from the senses.”
+  p Two conclusions
+  p.em-above 1. aims of the meditations are ...
+  p.em-above 2. How know? linked to What essence?
