@@ -1,0 +1,66 @@
+---cson
+layout: 'deck_unit'
+title: "Descartes’ Aim in The Meditations"
+tags: []
+description: """
+  ‘these six meditations contain all the foundations of 
+  my physics 
+  ... they destroy 
+  the principles of Aristotle.’
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
+
+//- +slide_middle
+//-   p.center aside: Descartes’ aim
+
++slide_middle
+  .notes: :t
+    According to Sorell 2001, Descartes faced a trilemma:
+  p How to avoid being banned?
+  .hem-around-children
+    p.indent 1. Revise your physics
+    p.indent 2. Disguise the consequences of your physics
+    p.indent.winner 3. Base it on principles that religious authorities could not object to.
+  p.right.grey-text Sorell (2001, p.36)
+  .slide
+    +highlight-row('.winner')
+    .notes: :t
+      Eventually, in the Meditations and the Principles of Philosophy, he adopted the third of these approaches’ (Sorell 2001, p. 36)
+
++slide_middle
+  p
+    span  Letter to Mersenne (28 January 1641)
+  p.em-above.notes.handout.show
+    span ‘these six meditations contain all the foundations of 
+    span.my-physics my physics
+    span .  
+    span But please do not tell people, for that might make it harder for supporters of Aristotle to approve them.  
+    span I hope that readers will gradually get used to my principles, and recognize their truth,  
+    span before they notice that 
+    span.destroy 
+      span they destroy 
+      span.Aristotle-principles the principles of Aristotle
+    span .’ 
+  .notes: :t
+    (Descartes was a little unclear about his aim.
+    This matters because we should evaluate his arguments against his aims.
+    Same applies to you: always state your aim at the start of your essays.
+    Now Descartes has an excuse: doing so might have caused his execution
+    (and his works were put on the Index, etc).
+    You don’t have any such excuse, at least not as far as I’m concerned.)
+
+  .slide
+    +invert('.destroy')
+  .slide
+    +uninvert('.destroy')
+  .slide
+      +blur('span:not(.my-physics, .destroy, .Aristotle-principles)')
+      .notes: :t
+        What is this physics? What are the principles of Aristotle?
+        [links to essential_nature unit]

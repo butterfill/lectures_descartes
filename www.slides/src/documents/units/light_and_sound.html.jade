@@ -1,0 +1,235 @@
+---cson
+layout: 'deck_unit'
+title: "The World: Light and Sound"
+tags: []
+description: """
+  ‘It is possible for there to be a difference between the sensation that we have of it, 
+  and [...]
+  what it is in the flame or in the Sun that we term ‘light’.’
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
+
+
++slide_middle
+  .handout \section{Against Resemblance}
+  .handout Do sensory perceptions resemble their causes?
+  p.notes.handout.show
+    span ‘In putting forward an account of light, the first point I want to draw to your attention  
+    span is that 
+    span.core it is possible for there to be a difference between the sensation that we have of it,  
+    span that is, the idea that we form of it in our imagination through the intermediary of our eyes,  
+    span.core and 
+    span what it is in the objects that produces the sensation in us, that is, 
+    span.core what it is in the flame or in the Sun that we term ‘light’
+    span ’ 
+  .notes.handout.ctd \citep[][p. 81 (AT XI:3)]{descartes:1998_world}
+  p.right.grey-text Descartes, The World (AT 3)
+  .notes: :t
+    This quote is quite complex. Let's try to simplify.
+    (Do this when quoting in your own work.)
+  .slide
+    +blur('span:not(.core)')
+
++slide_middle
+  .hem-around-children
+    p.one The perceptual sensation of light is nothing like light itself.
+    p Therefore, sensory perceptions provide only very obscure information about the essential nature of bodies.
+  .notes Seems like a good argument to me.
+  .slide
+    +highlight-row('.one', 'red')
+    .notes: :t
+      But it’s not what Descartes wrote.
+      Descartes’ argument is actually more subtle.
+
++slide_rh_white({step:true})
+  +left_half
+    p.center words
+    .hem-around-children
+      p ‘bear no resemblance to the things they signify’
+      p ‘yet they make us think of those things’
+    .slide
+      p.center.em-above laughter & tears
+      .hem-around-children
+        p bear no resemblance to joy or sadness
+        p yet ‘make us read joy and sadness on faces’ 
+  +right_half({step:true})
+    p.center sensations
+    .hem-around-children
+      p ‘why could nature not also have stablished some sign
+      p which would make us have the sensation of light
+      p even if the sign contained nothing in itself which is similar to the sensation?’
+  .notes.handout: :t
+    ‘if words, which signify something only through human convention, are sufficient to make us think of
+    things to which they bear no resemblance, why could not Nature also have established some sign
+    which would make us have a sensation of light, even if that sign had in it nothing that resembled
+    this sensation? And is it not thus that Nature has established laughter and tears, to make us read
+    joy and sorrow on the face of men?’ 
+    \citep[][p.~81 (AT XI:4)]{descartes:1998_world}.
+
++slide_middle
+  .hem-around-children
+    p Words and expressions of emotion make us think of things which they do not resemble.
+    p Therefore, sensory perceptions need not resemble the things they make us think of.
+  .notes This argument seems closer to what Descartes had in mind.
+
++slide_middle({bkg:'cat_photo_bendo.jpg'})
+  +blur('img.bkg', '5px', 0)
+  +fade('img.bkg', 0)
+  .hem-around-children
+    p.theQ How can we acquire knowledge about the 
+      span.essential-nature essential nature
+      span  of the bodies located outside us?
+    p.indent Each body has a 
+      span.form form
+      span , which is its essential nature.
+    p.indent.form-enters-mind When a body is perceived, its form thereby enters the mind. 
+    p.indent.resembles When a body is perceived, your sensory perception resembles the body’s form.
+    p.indent Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.
+  .notes: :t
+    Which of these claim’s does Descartes claim about the proper purpose
+    of sensory perceptions justify us in rejecting?
+  +line-through('.form-enters-mind')
+  .slide
+    +highlight-row('.resembles')
+    .notes: :t
+      Has Descartes shown that this is incorrect?
+      Not yet: he’s undermined the assumption that it *must* be correct.
+      But why reject it?
+
++slide_middle
+  p.center a further argument
+
+
++slide_timer({hide:true})
+  p.notes.handout.show: :t
+    ‘Do you think that, when we attend solely to the sound of words without attending to their
+    signification, the idea of that sound which is formed in our thought is at all like the object that
+    is the cause of it? 
+  p.slide.hem-above.notes.handout.ctd.show: :t
+    A man opens his mouth, moves his tongue, and breathes out: 
+  p.slide.hem-above.notes.handout.ctd.show: :t
+    I see nothing in all
+    these actions which is in any way similar to the idea of the sound that they cause us to imagine.
+  p.slide.hem-above.notes.handout.ctd.show: :t
+    And most philosophers maintain that sound is only a certain vibration of the air striking our ears.
+  p.slide.hem-above.notes.handout.ctd.show: :t
+    Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
+    of making us think of the sound, it would have to make us think about the motion of the parts of the
+    air that are vibrating against our ears.’
+  .notes.handout.ctd \citep[][p. 4--5 (AT IX:5)]{descartes:1998_world}
+  +show-timer('timer1')
+    .notes What do you think the argument here is? Reconstruct it!
+  +start-timer('timer1')
+
++slide_middle
+  .hem-around-children
+    p Sound is only a certain vibration of the air striking our ears.
+    p The sensory perception of sound is nothing like vibration of the air striking.
+    p Therefore, sensory perceptions do not in general resemble their causes.
+
+
+
++slide_middle({bkg:'cat_photo_bendo.jpg'})
+  +blur('img.bkg', '5px', 0)
+  +fade('img.bkg', 0)
+  .hem-around-children
+    p.theQ How can we acquire knowledge about the 
+      span.essential-nature essential nature
+      span  of the bodies located outside us?
+    p.indent Each body has a 
+      span.form form
+      span , which is its essential nature.
+    p.indent.form-enters-mind When a body is perceived, its form thereby enters the mind. 
+    p.indent.resembles When a body is perceived, your sensory perception resembles the body’s form.
+    p.indent Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.
+  .notes: :t
+    Which of these claim’s does Descartes claim about the proper purpose
+    of sensory perceptions justify us in rejecting?
+  +line-through('.form-enters-mind')
+  +highlight-row('.resembles')
+  .notes: :t
+    Until now we didn’t see Descartes argue agains the view
+  .slide
+    +unhighlight-row('.resembles')
+    +highlight-row('.resembles', 'red')
+    .notes: :t
+      But now we have a good argument
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.q ?
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+      +blur('p:not(.main-claim, .tick, .q)', '2px', 0)
+  .notes: :t
+    So now we have an argument for the claim that 
+    Sensory perceptions provide only very obscure information about the essential nature of bodies.
+
+
++slide
+  img(src='/img/rainbow.gif', style='max-height:500px; filter:invert(1)')
+  .notes: :t
+    Descartes’ explanation of why the rainbow is a bow.
+    Relevant because of the gap between sensory perception and the things which cause it.
+  .slide
+    +reset-escape-inner: +_slide_middle_inner
+      p sensory perceptions 
+        br
+        span do not resemble 
+        br
+        span their causes
+
+
++slide_middle
+  .notes: :t
+    Descartes is more subtle in his argument
+    In the intro to The World, he does not conclude that
+    sensory perceptions do not resemble their causes.
+    Instead ...
+  p: :t
+    ‘I have not brought up these examples to make you believe categorically that the light in the objects
+    is something different from what it is in our eyes
+  p.slide: :t
+    I merely wanted you to suspect that there might be a difference’
+  p.right.grey-text Descartes, The World (AT IX:6)
+  .slide
+    .notes Compare Descartes’ strategy in The Meditations:
+    p.em-above.notes.handout.show: :t
+      The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions, 
+      and providing the easiest route by which the mind may be led away from the senses.’
+    p.right.grey-text Meditations (Synopsis)
+
+
+
++slide_middle
+  p: span The World vs The Meditations
+  p.em-above
+    span Why is the 
+    span.arg argument of The Meditations
+    span  so different?
+  .slide
+    p.hem-around.idea1: span Descartes only thought of this argument later.
+  .slide
+    +line-through('.idea1')
+    .notes The World was written before the Mediatations but never published.
+  .slide
+    p.hem-around.idea2: span Publishing The World would have got Descartes banned.
+    .notes (as he eventually was anyway).
+    .notes: :t
+      In writing philosophy, and in particular in writing the meditations, he had a very specific purpose: ‘In order to make his physics acceptable he had either to revise it in a way that would conciliate the Church, or to disguise its consequences, or to erect the whole doctrine on principles that not even the most hidebound of his religious critics could object to. Eventually, in the Meditations and the Principles of Philosophy, he adopted the third of these approaches’ (Sorell 2001, p. 36)
+  .slide
+    +blur('span:not(.arg)')
+    .notes: :t
+      Actually what was Descartes’ argument in the Mediatations?

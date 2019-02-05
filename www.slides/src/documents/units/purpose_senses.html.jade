@@ -101,10 +101,38 @@ include ../../../fragments/descartes_mixins
     \citep[p.~57]{descartes:1985_csm2}.    
 
 
++slide_middle({bkg:'cat_photo_bendo.jpg'})
+  +blur('img.bkg', '5px', 0)
+  +fade('img.bkg', 0)
+  .hem-around-children
+    p.theQ How can we acquire knowledge about the 
+      span.essential-nature essential nature
+      span  of the bodies located outside us?
+    p.indent Each body has a 
+      span.form form
+      span , which is its essential nature.
+    p.indent.form-enters-mind When a body is perceived, its form thereby enters the mind. 
+    p.indent.resembles When a body is perceived, your sensory perception resembles the body’s form.
+    p.indent Thanks to this resemblance, your sensory perception acquaints you with the forms (essential natures) of bodies.
+  .notes: :t
+    Which of these claim’s does Descartes claim about the proper purpose
+    of sensory perceptions justify us in rejecting?
+  +line-through('.form-enters-mind')
+  .slide
+    +highlight-row('.resembles', 'red')
 
-+slide_middle
++slide_timer({hide:true})
   p: +knowledgeQuestion
+  .notes: :t
+    So here’s the question, as I keep saying.
   .slide
     .hem-around-children
       p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
       p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+  .notes: :t
+    So far: Descartes view that 
+    Sensory perceptions provide only very obscure information about the essential nature of bodies
+  .notes: :t
+    We still don’t know why anyone should
+    think that sensory perceptions provide only very obscure information.
+    Nor do we know whether Descartes is right about this.

@@ -17,8 +17,13 @@ include ../../fragments/descartes_mixins
 
 
 section.slide
+  .notes.handout: :t
+    \emph{Overall Topic}:
+    What, according to Descartes, is the relation between a sensory perception 
+    and the thing perceived?
   +_slide_middle_inner
     p.center.huge-glow-180.hide.tick ✓
+    p.center.huge-glow-180.remove-me.q ?
   +reset
     +_slide_middle_inner
       p.knowledge-question: +knowledgeQuestion
@@ -34,26 +39,41 @@ section.slide
       +show('.tick')
       .notes: :t
         This is what we did last time ...
+    //- .slide
+    //-   +blur('.tick, .main-claim')
+    //-   +unblur('.knowledge-question')
+    //-   .notes: :t
+    //-     Just one small problem: how are we going to answer this question?
+    //-   .notes: :t
+    //-     Plan:
+    //-     1. leave question hanging for now.
+    //-     2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
+    //-     3. then: discuss relation of sensory perceptions to its objects (Simmons)
+    //-     4. then: return to the question (Descartes’ answer: through mathematics)
+    //-     5. Why is this the right way to start? Metaphysics as root of physics; method of doubt
+    //-     used to show that sensory perceptions unreliable, whereas pure intellect is reliable.
     .slide
-      +blur('.tick, .main-claim')
-      +unblur('.knowledge-question')
+      +remove('.tick')
+      +unremove('.q')
+      +unblur('.q')
       .notes: :t
-        Just one small problem: how are we going to answer this question?
-      .notes: :t
-        Plan:
-        1. leave question hanging for now.
-        2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
-        3. then: discuss relation of sensory perceptions to its objects (Simmons)
-        4. then: return to the question (Descartes’ answer: through mathematics)
-        5. Why is this the right way to start? Metaphysics as root of physics; method of doubt
-        used to show that sensory perceptions unreliable, whereas pure intellect is reliable.
-      .notes: :t
-        TODO: have argued that Descartes is right but not considered his reasons yet.
-        yyrama task is: 
+        have argued that Descartes is right but not considered his reasons yet.
+        [yyrama task is: 
         Why did Descartes hold that sensory perceptions provide only very obscure information 
-        about the essential nature of bodies?
+        about the essential nature of bodies?]
+
++insert_unit({unit:'light_and_sound', title_slide:true, images:images, handout:true})
 
 
+//- 
+  HERE: arguments in Meditation 1 against the senses
+
++insert_unit({unit:'doubt', title_slide:true, images:images, handout:true})
+
+
+
+
++insert_unit({unit:'descartes_aim', title_slide:true, images:images, handout:true})
 +insert_unit({unit:'essential_nature', title_slide:true, images:images, handout:true})
 
 
@@ -82,37 +102,6 @@ section.slide
   TODO bit more about Aristotelian physics stolen from Guy?
 
 
-
-+slide
-  .handout \section{Against Resemblance}
-  .handout Do sensory perceptions resemble their causes?
-  p.notes.handout.show: :t
-    ‘In putting forward an account of light, the first thing that I want to draw to your attention 
-    is that it is possible for there to be a difference between the sensation that we have of it, 
-    that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
-    and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
-    or in the Sun that we term ‘light’.’
-  .notes.handout.ctd \citep[][p. 3 (AT 3)]{descartes:1998_world}
-  p.right.grey-text The World (AT 3)
-
-  p.notes.handout.show: :t
-    ‘if words, which signify something only through human convention, are sufficient to make us think of
-    things to which they bear no resemblance, why could not Nature also have established some sign
-    which would make us have a sensation of light, even if that sign had in it nothing that resembled
-    this sensation? And is it not thus that Nature has established laughter and tears, to make us read
-    joy and sorrow on the face of men?’
-  .notes.handout.ctd \citep[][p. 4 (AT 4)]{descartes:1998_world}
-
-  p.notes.handout.show: :t
-    ‘Do you think that, when we attend solely to the sound of words without attending to their
-    signification, the idea of that sound which is formed in our thought is at all like the object that
-    is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
-    these actions which is in any way similar to the idea of the sound that they cause us to imagine.
-    And most philosophers maintain that sound is only a certain vibration of the air striking our ears.
-    Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
-    of making us think of the sound, it would have to make us think about the motion of the parts of the
-    air that are vibrating against our ears.’
-  .notes.handout.ctd \citep[][p. 4--5 (AT 5)]{descartes:1998_world}
 
 +slide_middle
   p: +knowledgeQuestion

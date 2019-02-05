@@ -1,0 +1,32 @@
+---cson
+layout: 'deck_unit'
+title: "Doubt"
+tags: []
+description: """
+  How did Descartes argue that 
+  sensory perceptions provide only very obscure information about the essential nature of bodies?
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.q ?
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+      +blur('p:not(.main-claim, .tick, .q)', '2px', 0)
+  .notes: :t
+    We saw how in The World Descartes gives an argument for considering the claim that 
+    Sensory perceptions provide only very obscure information about the essential nature of bodies.
+  .notes: :t
+    How does the argument go in The Meditations
+    [This is the task for next week’s seminars]
