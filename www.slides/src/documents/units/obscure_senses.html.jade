@@ -17,10 +17,9 @@ include ../../../fragments/descartes_mixins
   .notes: :t
     Ok, so I was saying this ...
   p: +knowledgeQuestion
-  .slide
-    .hem-around-children
-      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
-      p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+  .hem-around-children
+    p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+    p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
   .slide
     +blur('p:not(.main-claim)')
   +show-timer('timer1')
@@ -104,6 +103,31 @@ include ../../../fragments/descartes_mixins
     \textbf{Representational momentum suggests that there are automatic processes
     which predict the future trajectories of physical objects.}
 
++slide
+  .notes: :t
+    You can do RM with the spiral setup too ...
+  img.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+
++slide
+  img(src='freyd_1994_figure2.png', style='max-height:600px; filter:invert(1)')
+  p.source Freyd & Jones, 1994 figure 2
+  .notes: :t
+    predicted memory shifts: the representational momentum effect you would get 
+    if your subjects’ representational momentum were predicting the straight path.
+  .slide
+    +style('img', {filter:'invert(1) blur(5px)'})
+    +reset-escape-inner
+      +_slide_middle_inner 
+        p.em-above.notes.handout.show: :t
+          Yet ‘our subjects had relatively accurate conscious knowledge of the trajectory of a ball exiting 
+          a spiral tube (63% to 83% chose the correct path; only 4% chose the spiral path).’
+        .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+        .notes
+          So it really is perception!
+        .slide
+          p.em-above.notes.handout.show: :t
+            ‘subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct’
+          .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
 
 +slide_middle
   p.notes.handout.show: :t
@@ -142,20 +166,44 @@ section.slide
       +unblur('.knowledge-question')
       .notes: :t
         Just one small problem: how are we going to answer this question?
-      .notes: :t
-        Plan:
-        1. leave question hanging for now.
-        2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
-        3. then: discuss relation of sensory perceptions to its objects (Simmons)
-        4. then: return to the question (through mathematics)
-        5. Why is this the right way to start? Metaphysics as root of physics; method of doubt
-        used to show that sensory perceptions unreliable, whereas pure intellect is reliable.
-        (Descartes was a little unclear about his aim.
-        This matters because we should evaluate his arguments against his aims.
-        Same applies to you: always state your aim at the start of your essays.
-        Now Descartes has an excuse: doing so might have caused his execution
-        (and his works were put on the Index, etc).
-        You don’t have any such excuse, at least not as far as I’m concerned.)
+
+
++slide_middle
+  p.center one last thing
+
++slide_middle
+  .notes Bennett mentions  something Turnbull says about Aristotle's science:
+  p.notes.handout.show: :t
+    Aristotelian physics ‘is reasonably effective for organizing bodies of knowledge. 
+  p.slide.notes.handout.ctd.show: :t
+    From the 
+    perspective of modern physical and biological science, however, it is severely crippled by 
+    its close linkage with what Wilfrid Sellars calls ‘the manifest image’, i.e. what is available 
+    to us by means of our very limited sense organs. [...] 
+  p.slide.notes.handout.ctd.show: :t
+    The tie to entities known through 
+    perception prevents access to—much less the discoveries of—modern physics (and, consequently, 
+    chemistry and biology)’
+  .notes.handout.ctd  (Turnbull 1988, p. 120 cited by \citealp{bennett:2003_learning}.)
+  p.right.grey-text Turnbull 1988, p. 120
+  .notes: :t
+    This is what Descartes saw,
+    and that’s what he is trying to explain in the Meditations.
+  .notes: :t
+    The usefulness of extensive doubt “lies in freeing us from our preconceived opinions, 
+    and providing the easiest route by which the mind may be led away from the senses.”
+  .notes: :t
+    In studying the Mediations, we can have a lot of fun with sceptical
+    arguments involving dreams and demons,
+    and other bits and pieces.
+    These have been widely examined by philosophers,
+    most quiet critical.
+    What you must never forget is that Descartes’ fundamental 
+    insight was correct---
+    Adherence to Aristotelian physics is based on the assumption that 
+    the model of the physical implicit in human sensory perception is
+    the truest, most accurate model of the physical there is;
+    and this assumption is incorrect.
 
 
 

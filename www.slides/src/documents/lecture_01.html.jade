@@ -15,88 +15,42 @@ include ../../fragments/descartes_mixins
 
 +title_slide({document:document, images:images})
 
+
+
++slide
+  .notes.handout: :t
+    \emph{Overall Topic}:
+    What, according to Descartes, is the relation between a sensory perception and the thing perceived?
+  .notes.handout: :t
+    \emph{Question for this Lecture}: 
+    How can we acquire knowledge about the essential nature
+    of the bodies located outside us?
+  .notes.handout: :t
+    \emph{Argument of this Lecture}: 
+    \begin{enumerate}
+    \item Sensory perceptions provide only very obscure information about the essential nature of bodies.
+    \item Therefore, we cannot acquire knowledge about the essential nature of the bodies located outside us through sensory perceptions alone.
+    \end{enumerate}
+
+  img.handout.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+  .handout.notes: :t
+    \section{Exercise}
+    The diagram shows a thin curved metal tube.
+    Imagine you are looking down the tube.
+    A metal ball is put into the end of the tube indicated by the arrow.
+    The ball is then shot out of the other end of the tube at high speed.
+    Please draw the past the ball will follow after it comes out of the tube \citep{mccloskey:1980_curvilinear}.
+  p.right.source McCloskey et al, 1980 figure 1 (part)
+  .notes: :t
+    [Start with folk physics error (trajectories)
+    Later: Also use Freyd representational momentum: it is based on sensroy erros!]
+    
+
+
+
 +insert_unit({unit:'question', title_slide:false, images:images, handout:true})
 +insert_unit({unit:'purpose_senses', title_slide:false, images:images, handout:true})
 +insert_unit({unit:'obscure_senses', title_slide:true, images:images, handout:true})
 
 +insert_unit({unit:'practicalities', title_slide:true, images:images, handout:true})
-
-//- 
-  TODO bit more about Aristotelian physics stolen from Guy?
-
-+slide_middle
-  .notes Bennett mentions  something Turnbull says about Aristotle's science:
-  p.notes.handout.show: :t
-    Aristotelian physics ‘is reasonably effective for organizing bodies of knowledge. From the 
-    perspective of modern physical and biological science, however, it is severely crippled by 
-    its close linkage with what Wilfrid Sellars calls ‘the manifest image’, i.e. what is available 
-    to us by means of our very limited sense organs. . . . The tie to entities known through 
-    perception prevents access to—much less the discoveries of—modern physics (and, consequently, 
-    chemistry and biology)’
-  .notes.handout.ctd  (Turnbull 1988, p. 120 cited by \citealp{bennett:2003_learning}.)
-  p.right.grey-text Turnbull 1988, p. 120
-  .notes: :t
-    This is what Descartes saw,
-    and that’s what he is trying to explain in the Meditations.
-  .notes: :t
-    The usefulness of extensive doubt “lies in freeing us from our preconceived opinions, 
-    and providing the easiest route by which the mind may be led away from the senses.”
-  .notes: :t
-    In studying the Mediations, we can have a lot of fun with sceptical
-    arguments involving dreams and demons,
-    and other bits and pieces.
-    These have been widely examined by philosophers,
-    most quiet critical.
-    What you must never forget is that Descartes’ fundamental 
-    insight was correct---
-    Adherence to Aristotelian physics is based on the assumption that 
-    the model of the physical implicit in human sensory perception is
-    the truest, most accurate model of the physical there is;
-    and this assumption is incorrect.
-
-
-
-+slide
-  .handout \section{Against Resemblance}
-  .handout Do sensory perceptions resemble their causes?
-  p.notes.handout.show: :t
-    ‘In putting forward an account of light, the first thing that I want to draw to your attention 
-    is that it is possible for there to be a difference between the sensation that we have of it, 
-    that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
-    and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
-    or in the Sun that we term ‘light’.’
-  .notes.handout.ctd \citep[][p. 3 (AT 3)]{descartes:1998_world}
-  p.right.grey-text The World (AT 3)
-
-  p.notes.handout.show: :t
-    ‘if words, which signify something only through human convention, are sufficient to make us think of
-    things to which they bear no resemblance, why could not Nature also have established some sign
-    which would make us have a sensation of light, even if that sign had in it nothing that resembled
-    this sensation? And is it not thus that Nature has established laughter and tears, to make us read
-    joy and sorrow on the face of men?’
-  .notes.handout.ctd \citep[][p. 4 (AT 4)]{descartes:1998_world}
-
-  p.notes.handout.show: :t
-    ‘Do you think that, when we attend solely to the sound of words without attending to their
-    signification, the idea of that sound which is formed in our thought is at all like the object that
-    is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
-    these actions which is in any way similar to the idea of the sound that they cause us to imagine.
-    And most philosophers maintain that sound is only a certain vibration of the air striking our ears.
-    Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
-    of making us think of the sound, it would have to make us think about the motion of the parts of the
-    air that are vibrating against our ears.’
-  .notes.handout.ctd \citep[][p. 4--5 (AT 5)]{descartes:1998_world}
-
-+slide_middle
-  p: +knowledgeQuestion
-  .notes: :t
-    So how did Descartes answer his question?
-  .slide
-    p.indent Through reason alone.
-  .slide
-    p: :t
-      ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
-      these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
-      regarding them’ (PP 2:64, CSM 1:247). 
-   .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
 

@@ -1,0 +1,114 @@
+---
+layout: 'default2'
+title: 'Lecture 02'
+subtitle: 'Descartes'
+weburl: ''
+units: []
+lecture_date: '2019/02/06'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/descartes_mixins
+
+- var images = get_images('sunclouds')
+
++title_slide({document:document, images:images})
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.hide.tick ✓
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .slide
+        .hem-around-children
+          p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+          p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+        .notes: :t
+          This is all by way of a demonstration that Descartes was right.
+          Sensory perceptions really do provide only very obscure information about the essential nature of bodies.
+    .slide
+      +blur('p:not(.main-claim, .tick)', '2px', 0)
+      +show('.tick')
+      .notes: :t
+        This is what we did last time ...
+    .slide
+      +blur('.tick, .main-claim')
+      +unblur('.knowledge-question')
+      .notes: :t
+        Just one small problem: how are we going to answer this question?
+      .notes: :t
+        Plan:
+        1. leave question hanging for now.
+        2. next lecture: come back and make similar points by appeal to intro to The World (on feather)
+        3. then: discuss relation of sensory perceptions to its objects (Simmons)
+        4. then: return to the question (Descartes’ answer: through mathematics)
+        5. Why is this the right way to start? Metaphysics as root of physics; method of doubt
+        used to show that sensory perceptions unreliable, whereas pure intellect is reliable.
+        (Descartes was a little unclear about his aim.
+        This matters because we should evaluate his arguments against his aims.
+        Same applies to you: always state your aim at the start of your essays.
+        Now Descartes has an excuse: doing so might have caused his execution
+        (and his works were put on the Index, etc).
+        You don’t have any such excuse, at least not as far as I’m concerned.)
+      .notes: :t
+        TODO: have argued that Descartes is right but not considered his reasons yet.
+        yyrama task is: 
+        Why did Descartes hold that sensory perceptions provide only very obscure information 
+        about the essential nature of bodies?
+
+
+
++insert_unit({unit:'essential_nature', title_slide:false, images:images, handout:true})
+
+//- 
+  TODO bit more about Aristotelian physics stolen from Guy?
+
+
+
++slide
+  .handout \section{Against Resemblance}
+  .handout Do sensory perceptions resemble their causes?
+  p.notes.handout.show: :t
+    ‘In putting forward an account of light, the first thing that I want to draw to your attention 
+    is that it is possible for there to be a difference between the sensation that we have of it, 
+    that is, the idea that we form of it in our imagination through the intermediary of our eyes, 
+    and what it is in the objects that produces the sensation in us, that is, what it is in the flame 
+    or in the Sun that we term ‘light’.’
+  .notes.handout.ctd \citep[][p. 3 (AT 3)]{descartes:1998_world}
+  p.right.grey-text The World (AT 3)
+
+  p.notes.handout.show: :t
+    ‘if words, which signify something only through human convention, are sufficient to make us think of
+    things to which they bear no resemblance, why could not Nature also have established some sign
+    which would make us have a sensation of light, even if that sign had in it nothing that resembled
+    this sensation? And is it not thus that Nature has established laughter and tears, to make us read
+    joy and sorrow on the face of men?’
+  .notes.handout.ctd \citep[][p. 4 (AT 4)]{descartes:1998_world}
+
+  p.notes.handout.show: :t
+    ‘Do you think that, when we attend solely to the sound of words without attending to their
+    signification, the idea of that sound which is formed in our thought is at all like the object that
+    is the cause of it? A man opens his mouth, moves his tongue, and breathes out: I see nothing in all
+    these actions which is in any way similar to the idea of the sound that they cause us to imagine.
+    And most philosophers maintain that sound is only a certain vibration of the air striking our ears.
+    Thus if the sense of hearing transmitted to our thought the true image of its object, then instead
+    of making us think of the sound, it would have to make us think about the motion of the parts of the
+    air that are vibrating against our ears.’
+  .notes.handout.ctd \citep[][p. 4--5 (AT 5)]{descartes:1998_world}
+
++slide_middle
+  p: +knowledgeQuestion
+  .notes: :t
+    So how did Descartes answer his question?
+  .slide
+    p.indent Through reason alone.
+  .slide
+    p: :t
+      ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+      these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
+      regarding them’ (PP 2:64, CSM 1:247). 
+   .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
+
