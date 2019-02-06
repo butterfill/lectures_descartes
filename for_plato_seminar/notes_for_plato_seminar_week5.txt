@@ -1,23 +1,25 @@
 1. What does Nehemas mean by saying, “for Plato representation is transparent”?
---- p 248
-    ‘It is precisely because the difference between imitations and their
-    objects is ontological, a difference that cannot be perceived, that our
-    reactions to both, which are based on our perception, are so similar.
-    Plato's view is that the pleasure we feel at the representation of an
-    expression of sorrow in poetry is pleasure at that expression itself, and
-    for that reason likely to dispose us to enjoy such behavior in life. He
-    does not consider the possibility that the pleasure may be directed not at
-    the expression of sorrow but at its representation, and that this
-    representation is an independent object, having features in its own right
-    and subject to specific principles that determine its quality’
 
-    --- p. 288
-    ‘Realistic art is, just in the sense in which Plato thought ofimitation,
-    transparent. This transparency, I believe, is not real. It is only the
-    result of our often not being aware of the medi- ated and conventional
-    nature of the representations to which we are most commonly exposed.’
+  --- p 248 ‘It is precisely because the difference between imitations and
+  their objects is ontological, a difference that cannot be perceived, that our
+  reactions to both, which are based on our perception, are so similar. Plato's
+  view is that the pleasure we feel at the representation of an expression of
+  sorrow in poetry is pleasure at that expression itself, and for that reason
+  likely to dispose us to enjoy such behavior in life. He does not consider the
+  possibility that the pleasure may be directed not at the expression of sorrow
+  but at its representation, and that this representation is an independent
+  object, having features in its own right and subject to specific principles
+  that determine its quality’
+
+  --- p. 288 ‘Realistic art is, just in the sense in which Plato thought
+  ofimitation, transparent. This transparency, I believe, is not real. It is
+  only the result of our often not being aware of the medi- ated and
+  conventional nature of the representations to which we are most commonly
+  exposed.’
+
 
 2. How does this idea of transparency figure in Nehemas’s interpretation of Plato’s attitude towards poetry?
+
   --- It explains why Plato holds that our reactions to poetry are transferred
   directly to, and in fact often determine, our reactions to life, poetry is
   likely to make us behave in ways ofwhich we should be, and often are, ashamed.
@@ -45,18 +47,18 @@
 
 4. Does Nehemas’s comparison of Athenian poetry and television support, or undermine, Plato’s attitude towards poetry?
 
-  ‘The common view that television is aesthetically worthless seems to me
+  --- ‘The common view that television is aesthetically worthless seems to me
   profoundly flawed. This is ... because ...Television is a vast medium that
   includes a great variety ofgenres, some ofwhich have no connection ofany kind
   with the arts.’
 
-  ‘Television brings it, as it were, home to us. It imposes a routine on its
+  --- ‘Television brings it, as it were, home to us. It imposes a routine on its
   viewers, it portrays routine for them, and it sug- gests that their own life
   mirrors what it portrays. Television will be resisted as long as routine
   remains, in the absence ofcriticism and interpretation, its most salient
   feature.’
   
-  concluding lines tv is routine: ‘nothing, in principle, deprives the
+  --- concluding lines tv is routine: ‘nothing, in principle, deprives the
   depiction of routine of aesthetic value just as nothing, in principle,
   prevents the depiction of foolishness, cruelty, murder, incest, ignorance,
   arrogance, suicide, and self-mutilation from constituting, as it has on at
