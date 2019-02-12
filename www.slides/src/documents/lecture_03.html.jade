@@ -15,6 +15,49 @@ include ../../fragments/descartes_mixins
 
 +title_slide({document:document, images:images})
 
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.hide.why why?
+  +reset
+    +_slide_middle_inner
+        p: :t
+          Doubt  is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
+  .slide
+    +show('.why')
+    .notes: :t
+      Aim for this lecture is to understand why Descartes might say this.
+
++slide_middle
+  .notes: :t
+    Let’s start with an easier question ... maybe if we understand what reasons Descartes 
+    provides for doubt, we will understand better why doubt is necessary.
+  p Meditations (Synopsis)
+  p.em-above.notes.handout.show
+    span.reasons Reasons
+    span  are provided ‘which give us possible grounds for doubt about all things, especially material things,  
+    br
+    span
+      span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
+      span ’
+  .slide
+    +invert('.reasons')
+    .notes What are these reasons?
+
++argumentIdeas
+  .slide
+    +reset
+      p.huge-glow(style='transform:rotate(-5deg)') bad things might happen
+
++slide_middle
+  p: :t
+    How can the mere possibility that they might obtain give us grounds for doubt? 
+
++argumentIdeas
+  .slide
+    +highlight-row('.cosmic')
+
+
 +insert_unit({unit:'cosmic_doubt', title_slide:false, images:images, handout:true})
 
 
@@ -82,6 +125,33 @@ section.slide
   .slide
     +unblur('p:not(.main-claim, .tick, .q)', '2px', 0)
 
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 why?
+  +reset
+    +_slide_middle_inner
+        p: :t
+          Doubt  is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
+
++slide_rh_white({step:true})
+  +run_across
+    p.center Two Interpretations
+  +left_half
+    .hem-around-children
+      p 1. The sciences need a metaphysical foundation.
+      p 2. This foundation must include a refutation of scepticism.
+  +right_half({step:true})
+    .hem-around-children
+      p 1. The assumption that sensory perception enables us to know the essential nature of things leads to bad science.
+      p 2. Reflection on possible grounds for doubt provides reasons to reject this assumption.
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 why?
+  +reset
+    +_slide_middle_inner
+        p: :t
+          Doubt  is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
 
 //- recap : the argument from doubt and the argument from the World
 

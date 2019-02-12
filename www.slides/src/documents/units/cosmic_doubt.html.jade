@@ -82,6 +82,35 @@ include ../../../fragments/descartes_mixins
   +start-timer('timer1')
 
 
++slide_middle
+  p Meditations (Synopsis)
+  p.em-above.notes.handout.show
+    span.reasons Reasons
+    span  are provided ‘which give us possible grounds for doubt about all things, especially material things,  
+    br
+    span
+      span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
+      span ’
+  +invert('.reasons')
+  .notes Earlier I asked, what are those reasons? Now we know.
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.hide.tick ✓
+  +reset
+    +_slide_middle_inner
+      .notes Earlier I asked, How can the mere possibility that cosmic deception might occur give us grounds for doubt?  Now we know.
+      p How can the mere possibility cosmic deception might occur give us grounds for 
+        span.doubt doubt
+        span ? 
+      .slide
+        +show('.tick')
+      .slide
+        +invert('.doubt')
+      .slide
+        p: span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
 
 +slide_middle
   p Meditations (Synopsis)
@@ -127,6 +156,13 @@ include ../../../fragments/descartes_mixins
     +highlight-row('.dream')
 
 
++slide_middle
+  p.notes.handout.show: :t
+    ‘I had seen many ancient writings by the Academics and Sceptics on this subject, 
+    and was reluctant to reheat and serve this precooked material’
+  p.right.grey-text Second Replies
+  .notes.handout.ctd: :t
+    \citep[p.~94, AT VII:130]{descartes:1985_csm2}
 
 +slide_middle
   .notes: :t
