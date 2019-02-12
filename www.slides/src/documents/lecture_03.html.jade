@@ -1,0 +1,87 @@
+---
+layout: 'default2'
+title: 'Lecture 03'
+subtitle: 'Descartes'
+weburl: ''
+units: []
+lecture_date: '2019/02/19'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/descartes_mixins
+
+- var images = get_images('sunclouds')
+
++title_slide({document:document, images:images})
+
++insert_unit({unit:'cosmic_doubt', title_slide:false, images:images, handout:true})
+
+
+section.slide
+  .notes: :t
+    Recall our guiding question and the structure of the argument we are 
+    considering so far ...
+  +_slide_middle_inner
+    p.center.huge-glow-180.q.hide ?
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only 
+          span.obscure very obscure
+          span  information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about the essential nature of bodies.
+    .slide
+      +blur('p:not(.main-claim, .tick, .q)', '2px', 0)
+      +show('.q')
+  .notes: :t
+    How does this bear on our ultimate aim?
+  .slide
+    +invert('.obscure')
+    .notes Perhaps this is a key idea ...
+
++slide_timer({hide:true})
+  .hem-around-children
+    p: :t
+      obscure -> does not enable you to know you aren’t cosmically deceived
+    p.slide: :t
+      not obscure (clear?) -> does enable you to know you aren’t cosmically deceived
+    p.slide: :t
+      For all your sensory perceptions reveal, you are not in a position to know that you aren’t cosmically deceived
+    p.slide: :t
+      Therefore, sensory perceptions provide only 
+      very obscure
+      information about the essential nature of bodies.    
+  +show-timer('timer1')
+  .notes: :t
+    How close do you think this is to Descartes’ argument in Meditation 1?
+    Can you do better
+  +start-timer('timer1')
+
+
+section.slide
+  .notes: :t
+    Recall our guiding question and the structure of the argument we are 
+    considering so far ...
+  +_slide_middle_inner
+    p.center.huge-glow-180.remove-me.tick ✓
+    p.center.huge-glow-180.q ?
+  +reset
+    +_slide_middle_inner
+      p.knowledge-question: +knowledgeQuestion
+      .hem-around-children
+        p.indent.main-claim Sensory perceptions provide only 
+          span.obscure very obscure
+          span  information about the essential nature of bodies.
+        p.indent ∴ Not by treating sensory perceptions as a basis for judgements about the essential nature of bodies.
+    +blur('p:not(.main-claim, .tick, .q)', '2px', 0)
+  .slide
+    +unremove('.tick')
+    +remove('.q')
+  .slide
+    +unblur('p:not(.main-claim, .tick, .q)', '2px', 0)
+
+
+//- recap : the argument from doubt and the argument from the World
+

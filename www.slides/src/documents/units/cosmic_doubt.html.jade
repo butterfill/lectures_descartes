@@ -1,0 +1,154 @@
+---cson
+layout: 'deck_unit'
+title: "Cosmic Doubt"
+tags: []
+description: """
+  You are not in a position to know that you aren’t cosmically deceived on the basis of sensory
+  perception alone. What follows?
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
++slide_middle
+  p: :t
+    ‘How do I know that he has not brought it about that there is no earth, 
+    no sky, no extended thing, no shape, no size, no place, while at the same 
+    time ensuring that all these things appear to me to exist just as they do now?’
+  p.right.grey-text Meditation 1 
+  .slide
+    p.em-above Terminology: 
+      br
+      span you are cosmically deceived exactly if he has done this.
+  .handout: :t
+    \subsection{Cosmic deception}
+    ‘How do I know that he has not brought it about that there is no earth, 
+    no sky, no extended thing, no shape, no size, no place, while at the same 
+    time ensuring that all these things appear to me to exist just as they do now? 
+    What is more, since I sometimes believe that others go astray in cases 
+    where they think they have the most perfect knowledge, 
+    may I not similarly go wrong every time I add two and three or count the 
+    sides of a square, or in some even simpler matter, if that is imaginable?’
+  .handout: :t
+    Is this a reason to doubt all things?
+
+
++slide_timer({hide:true})
+  p.first Sensory perception plus knowledge of platitudes alone do not enable you to know that 
+    br
+    span.flat this planet is round, not flat.
+    span.birthplace.remove-me your birthplace has not been struck by a meteor.
+    span.outside.remove-me the world outside this room continues to exist.
+    span.cd.remove-me you aren’t cosmically deceived.
+  .slide
+    +collapse('.flat')
+    +uncollapse('.birthplace')
+  .slide
+    +collapse('.birthplace')
+    +uncollapse('.outside')
+  .slide
+    +collapse('.outside')
+    +uncollapse('.cd')
+  .notes: :t
+    The senses are concerned with the appearances of things here and now.
+  .slide
+    +remove('.flat, .birthplace, .outside')
+    +blur('.first')
+    p.hem-around You do know this platitude: 
+      br
+      span if you are drinking coffee, then you are not cosmically deceived
+  .slide
+    p Suppose sensory perception alone enables you to know you are drinking coffee.
+  .slide
+    p.hem-around Then you would be in a position to know you are not cosmically deceived 
+      span.slide on the basis of sensory perception plus knowledge of platitudes only.
+  .slide
+    p.hem-around Therefore 
+      span.spa sensory perception alone
+      span  does not enable you to know you are drinking coffee.
+  .slide
+    +unblur('.first')
+    +highlight-row('.first')
+  .slide
+    +unhighlight-row('.first')
+  .slide
+    +invert('.spa')
+  .slide
+    +uninvert('.spa')
+  +show-timer('timer1')
+  +start-timer('timer1')
+
+
+
++slide_middle
+  p Meditations (Synopsis)
+  p.em-above.notes.handout.show
+    span Reasons are provided ‘which give us possible grounds for doubt about all things, especially material things,  
+    br
+    span.slide
+      span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
+      span ’
+  .slide
+    +invert('.no-foundation')
+  .slide
+    +uninvert('.no-foundation')
++slide_middle
+
+  p Questions
+  p.indent.hem-around 1. Is Descartes’ appeal to cosmic deception supposed to provide reasons which give us possible grounds for doubt about all things ?
+  p.indent.hem-around 2. If so, how is Descartes’ appeal to cosmic deception supposed to provide  reasons which give us possible grounds for doubt about all things?
+  p.indent.hem-around 3. Does it succeed?
+  .handout: :t
+    \begin{enumerate}
+    \item Is Descartes’ appeal to cosmic deception supposed to provide reasons which give us possible grounds for doubt about all things ?
+    \item If so, how is Descartes’ appeal to cosmic deception supposed to provide  reasons which give us possible grounds for doubt about all things?
+    \item Does it succeed?
+    \end{enumerate}
+  .handout: :t
+    Steve’s attempt to answer question 2:
+    \begin{enumerate}
+    \item Sensory perception plus knowledge of platitudes alone do not enable you to know that you aren’t cosmically deceived.
+    \item You do know this platitude: if you are drinking coffee, then you are not cosmically deceived
+    \item Suppose (for a contradiction) that sensory perception alone enables you to know you are drinking coffee.
+    \item Then you would be in a position to know you are not cosmically deceived on the basis of sensory perception plus knowledge of platitudes only.
+    \item Therefore sensory perception alonedoes not enable you to know you are drinking coffee.
+    \end{enumerate}
+
++argumentIdeas
+  .slide
+    +highlight-row('.cosmic')
+    .notes: :t
+      Lots of arguments. Can ask the same three questions about each.
+  .slide
+    +unhighlight-row('.cosmic')
+    +highlight-row('.dream')
+
+
+
++slide_middle
+  .notes: :t
+    In thinking about Descartes’ arguments in the first Meditation,
+    it is important to remember what he is using doubt for.
+    He does not want to establish that sensory perceptions actually deceive us.
+    He only wants to show that they cannot be relied on to provide information
+    about the essential nature of bodies.
+  .notes: :t
+    Recall from our discussion of The World
+  .world.hide
+    p: :t
+      ‘I have not brought up these examples to make you believe categorically that the light in the objects
+      is something different from what it is in our eyes
+    p: :t
+      I merely wanted you to suspect that there might be a difference’
+    p.right.grey-text Descartes, The World (AT IX:6)
+  .notes Compare Descartes’ strategy in The Meditations:
+  p.em-above.notes.handout.show: :t
+    The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions, 
+    and providing the easiest route by which the mind may be led away from the senses.’
+  p.right.grey-text Meditations (Synopsis)
+  .slide
+    +show('.world')
+
