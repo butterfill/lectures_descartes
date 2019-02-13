@@ -45,61 +45,99 @@ include ../../fragments/descartes_mixins
 
 +slide_middle
   p.notes.handout.show
-    span ‘in practical life 
+    span ‘in 
+    span.practical-life.ct practical life 
     br
     span it is sometimes necessary to act upon opinons which one knows to be quite uncertain 
     span just as if they were indubitable’
   p.right.grey-text Discourse on Method
   .handout.notes.ctd: :t
     \citep[p.~126 AT 6:31]{descartes:1985_csm1}
+  .slide
+    p.notes.handout.show.em-above
+      span In devoting ‘myself soley to 
+      span.search-for-truth.ct the search for truth
+      br
+      span.slide ... I resolved to 
+        br
+        span.pretend pretend
+        br
+        span  that all the things that had ever
+        br
+        span entered my mind were no more true
+        br
+        span that the illusions of my dreams’
+    p.right.grey-text Discourse on Method
+    .handout.notes.ctd: :t
+      \citep[p.~127 AT 6:32]{descartes:1985_csm1}
+    .slide
+      +blur('span:not(.practical-life, .search-for-truth)')
+    .slide
+      +unblur('span:not(.practical-life, .search-for-truth)')
+      +invert('.pretend')
 
 +slide_middle
   p.notes.handout.show
-    span In devoting ‘myself soley to the search for truth
-    br
-    span ... I resolved to 
-    br
-    span.pretend pretend
-    br
-    span  that all the things that had ever
-    br
-    span entered my mind were no more true
-    br
-    span that the illusions of my dreams’
-  p.right.grey-text Discourse on Method
-  .handout.notes.ctd: :t
-    \citep[p.~127 AT 6:32]{descartes:1985_csm1}
-
-
-+slide_middle
-  p.notes.handout.show
-    span ‘I noticed that while I was trying thus ot think everything false
+    span ‘I noticed that while I was trying thus to think everything false
     br
     span it was necessary that I,
     br
     span who was thinking this,
     br
     span was something.’
-  p.right.grey-text Discourse on Method
   .handout.notes.ctd: :t
     \citep[p.~126 AT 6:31]{descartes:1985_csm1}
-
+  .slide
+    p.notes.handout.show.em-above
+      span ‘this truth
+      br
+      span “I am thinking, therefore I exist”
+      br
+      span [is] so firm and sure 
+      br
+      span that all the most extravagant suppositions of the sceptics [are] incapable of shaking it’
+    p.slide.notes.handout.show
+      span I took it as ‘the first principle’.
+    p.right.grey-text Discourse on Method
+    .handout.notes.ctd: :t
+      \citep[p.~126 AT 6:31]{descartes:1985_csm1}
 
 +slide_middle
-  p.notes.handout.show
-    span ‘this truth
+  .notes adapted from Hatfield p. 107
+  p
+    span 1. What precisely, is concluded? 
     br
-    span “I am thinking, therefore I exist”
+    span That something exists? 
     br
-    span [is] so firm and sure 
+    span That a mind exists? 
     br
-    span that all the most extravagant suppositions of the sceptics [are] incapable of shaking it’
-  p.slide.notes.handout.show
-    span I took it as ‘the first principle’.
-  p.right.grey-text Discourse on Method
-  .handout.notes.ctd: :t
-    \citep[p.~126 AT 6:31]{descartes:1985_csm1}
+    span That a temporally-extended mind exists? 
+  .slide
+    +blur('p:eq(0)')
+    p.em-above
+      span 2. How is the conclusion established? 
+      br
+      span Is there an argument? If so, what is the argument?
+  .slide
+    +blur('p:eq(1)')
+    p.em-above
+      span 3. What is the function of this conclusion in Descartes’ philosophy?
+      br
+      span (Descartes: I took it as ‘the first principle’.)
+
++slide_middle
+  p subject, attitude, content
 
 +slide_middle
   p: :t
-    (1) What exactly is the conclusion? That is, precisely what is established? The bare existence of the meditator? That a mind exists? That an immaterial substance exists? (2) How is the conclusion as stated in the Meditation, “I am, I exist” (Latin Ego sum, ego existo), established? Through deductive argument (perhaps using suppressed premises), or in some other way? (3) What is the function of this conclusion in Des- cartes’ philosophy?
+    Two thoughts in succession.
+    In fact they are thoughts of the same subject.
+    Could Descartes’ argument ever allow him to conclude that the thoughts have a common subject?
+
++slide_middle
+  p: :t
+    ‘As he explained in the Fifth Replies, someone cannot know that he exists without also knowing what he is, that is, his essence or nature (7:359)’
+  p.em-above: :t
+    The initial cogito passage concludes “that this proposition, I am, I exist, is necessa- rily true whenever it is put forward by me or conceived in my mind” (7:25). This makes it seem as if the “I” does not extend beyond present thoughts. On this “thin reading,” the thinking thing is wholly constituted by those thoughts currently before the meditator.
+  p.em-above: :t
+    Third and Fifth Replies. In reply to Hobbes, Descartes glosses the thinking thing as a “thing or sub- stance” (7:174), allows that “we cannot conceive of thought without a thinking thing” (7:175), and says further that “it is certain that a thought cannot exist without a thing that is thinking, and that in general no act or accident can exist without a substance to inhere in” (7:175–76). In other words, individual thoughts must be regarded as the acts of a persisting thing, which is capable of having one thought, then another, and so on. In reply to Gassendi, he restates his conclusion from the Second Meditation as “I am a thinking substance,” again treating this as equivalent to “I am a thinking thing” (7:355).
