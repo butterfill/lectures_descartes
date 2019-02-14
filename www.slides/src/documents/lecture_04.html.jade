@@ -104,7 +104,7 @@ include ../../fragments/descartes_mixins
 
 +slide_middle
   .notes adapted from Hatfield p. 107
-  p
+  p.q1.hem-around
     span 1. What precisely, is concluded? 
     br
     span That something exists? 
@@ -113,20 +113,29 @@ include ../../fragments/descartes_mixins
     br
     span That a temporally-extended mind exists? 
   .slide
-    +blur('p:eq(0)')
-    p.em-above
+    +blur('p.q1')
+    p.hem-around
       span 2. How is the conclusion established? 
       br
       span Is there an argument? If so, what is the argument?
   .slide
     +blur('p:eq(1)')
-    p.em-above
+    p.hem-around
       span 3. What is the function of this conclusion in Descartes’ philosophy?
       br
       span (Descartes: I took it as ‘the first principle’.)
+  .slide
+    +blur('p:eq(2)')
+    +unblur('p.q1')
+    +highlight-row('p.q1')
 
-+slide_middle
-  p subject, attitude, content
+
++slide({bkg:'minimal/Slide01.jpg'})
+  .notes subject, attitude, content
++slide({bkg:'minimal/Slide02.jpg'})
++slide({bkg:'minimal/Slide03.jpg'})
+
+
 
 +slide_middle
   p: :t
