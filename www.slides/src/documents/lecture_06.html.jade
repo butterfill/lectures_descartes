@@ -1,0 +1,66 @@
+---
+layout: 'default2'
+title: 'Lecture 06'
+subtitle: 'Descartes'
+weburl: ''
+units: []
+lecture_date: '2019/02/27'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/descartes_mixins
+
+- var images = get_images('sunclouds')
+
++title_slide({document:document, images:images})
+
+
+
++slide_middle
+  p: +knowledgeQuestion
+  .notes: :t
+    So how did Descartes answer his question?
+  .slide
+    p.em-above.indent Through reason alone.
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+      these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
+      regarding them’ 
+    .notes.handout.ctd: :t
+      \citep[p.~247, AT 2:64]{descartes:1985_csm1}
+    p.right.grey-text Principles 
+  .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
+
++slide_middle
+  p.theQ How could reason alone enable us to know the essential nature of things?
+  .step2.hide
+    p.em-above: :t
+      ‘I am certain that I am a thinking thing. 
+    p: :t
+      Do I not therefore also know what is required for my
+      being certain about anything? 
+    p: :t
+      In this first item of knowledge there is simply a clear and
+      distinct perception of what I am asserting; this would not be enough to make me certain of the
+      truth of the matter if it could ever turn out that something which I perceived with such
+      clarity and distinctness was false.’
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘I now seem to be able to lay it down as a general rule that 
+    p.notes.handout.show.ctd.whatever: :t
+      whatever I perceive clearly and distinctly is true’
+    p.em-above.notes.handout.ctd.show.grey-text.right (Meditation 3)
+  .slide
+    +blur('.theQ')
+  .slide
+    +hide('.step2 p:gt(0)', 0)
+    +show('.step2')
+  .slide
+    +show('.step2 p:eq(1)')
+  .slide
+    +show('.step2 p:eq(2)')
+  .slide
+    +unblur('.theQ')
+    +blur('p:not(.theQ,.whatever)')
