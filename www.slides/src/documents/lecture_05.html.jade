@@ -18,46 +18,155 @@ include ../../fragments/descartes_mixins
 
 
 
-+insert_unit({unit:'descartes_aim', title_slide:false, images:images, handout:true})
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.why why?
+  +reset
+    +_slide_middle_inner
+        p: :t
+          Doubt  is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
+  .notes: :t
+    Last week on Tuesday, I said the aim was to understand this.
+    I suggested it was because doubt shows us that we 
+    cannot know the essential nature of bodies by means of the senses.
+    In explaining this, I contrasted two interpretations of Descartes’ position ...
+
+
++slide_rh_white({step:true})
+  +run_across
+    p.center Two Interpretations
+  +left_half
+    .hem-around-children
+      p 1. The sciences need a metaphysical foundation.
+      p 2. This foundation must include a refutation of scepticism.
+  +right_half({step:true})
+    .hem-around-children
+      p 1. The assumption that sensory perception enables us to know the essential nature of things leads to bad science.
+      p 2. Reflection on possible grounds for doubt provides reasons to reject this assumption.
+
+
+mixin slide_ledAwayQ()
+  +slide_middle
+    .part1
+      p Meditations (Synopsis)
+      p.em-above.notes.handout.show
+        span The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions,  
+        span and providing the easiest route by which the mind may be  
+        span.led led away from the senses
+        span .’
+    .part2.hem-around-children.hem-above
+      p.q1 1. What is it to be led away from the senses?
+      p.q2 2. Why does Descartes want to lead us away from the senses?
+    block
+
+
++slide_ledAwayQ
+  +hide('.part2', 0)
+  .notes: :t
+    So the important thing about doubt is that it leads us away from the senses.
+  .slide
+    +invert('.led')
+    .notes: :t
+      This raises two questions
+  .slide
+    +blur('.part1')
+    +show('.part2')
+    .slide
+      +highlight-row('.q2')
+
+
+
+
++insert_unit({unit:'descartes_aim', title_slide:true, images:images, handout:true})
+
++slide_ledAwayQ
+  +blur('.part1', '2px',0)
+  +highlight-row('.q2')
+  .notes: :t
+    I asked, Why does Descartes want to lead us away from the senses? 
+    Because he sees this as they way to provide a foundation for his physics
+    But we can’t be satisfied with this answer. We need to know why this is 
+    relevant to Descates’ physics.
+
 +insert_unit({unit:'essential_nature', title_slide:true, images:images, handout:true})
 
 
 
-+slide_middle
-  p Meditations (Synopsis)
-  p.em-above.notes.handout.show
-    span Reasons are provided ‘which give us possible grounds for doubt about all things, especially material things,  
-    br
-    span.slide
-      span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
-      span ’
-  .slide
-    +invert('.no-foundation')
-    .notes: :t
-      I.e. we are not saying that 
++slide_ledAwayQ
+  +blur('.part1', '2px',0)
+  +highlight-row('.q2')
+  .notes: :t
+    I asked, Why does Descartes want to lead us away from the senses? 
+    Because he sees this as they way to provide a foundation for his physics
+    Then I asked, why does Descates’ physics require being led away?
+    And the answer is because understanding Descartes’ physics
+    requires recognising that the senses do not inform us about the 
+    essential natural of material bodies.
+
 
 +slide_middle
-  p Meditations (Synopsis)
-  p.em-above.notes.handout.show: :t
-    The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions, 
-    and providing the easiest route by which the mind may be led away from the senses.’
+  .notes: :t
+    As I’ve been saying since the first lecture ...
+    [new: doubt established the central claim about sensory perceptions]
+  p: +knowledgeQuestion
+  .hem-around-children
+    p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+    p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+
+
++slide_ledAwayQ
+  +blur('.part1', '2px',0)
+  +highlight-row('.q2')
+  .slide
+    +unhighlight-row('.q2')
+    +highlight-row('.q1')
+
++insert_unit({unit:'wax', title_slide:true, images:images, handout:true})
+
+
++slide_ledAwayQ
+  +blur('.part1', '2px',0)
+  +highlight-row('.q1')
+  .slide
+    +unhighlight-row('.q1')
 
 
 //- 
-  TODO bit more about Aristotelian physics stolen from Guy?
+  +slide_middle
+    p Meditations (Synopsis)
+    p.em-above.notes.handout.show
+      span Reasons are provided ‘which give us possible grounds for doubt about all things, especially material things,  
+      br
+      span.slide
+        span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
+        span ’
+    .slide
+      +invert('.no-foundation')
+      .notes: :t
+        I.e. we are not saying that 
+
+  +slide_middle
+    p Meditations (Synopsis)
+    p.em-above.notes.handout.show: :t
+      The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions, 
+      and providing the easiest route by which the mind may be led away from the senses.’
+
+
+  //- 
+    TODO bit more about Aristotelian physics stolen from Guy?
 
 
 
-+slide_middle
-  p: +knowledgeQuestion
-  .notes: :t
-    So how did Descartes answer his question?
-  .slide
-    p.indent Through reason alone.
-  .slide
-    p: :t
-      ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
-      these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
-      regarding them’ (PP 2:64, CSM 1:247). 
-   .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
+  +slide_middle
+    p: +knowledgeQuestion
+    .notes: :t
+      So how did Descartes answer his question?
+    .slide
+      p.indent Through reason alone.
+    .slide
+      p: :t
+        ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+        these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
+        regarding them’ (PP 2:64, CSM 1:247). 
+    .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
 
