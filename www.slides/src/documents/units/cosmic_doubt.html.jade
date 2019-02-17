@@ -57,28 +57,40 @@ include ../../../fragments/descartes_mixins
   .slide
     +remove('.flat, .birthplace, .outside')
     +blur('.first')
-    p.hem-around You do know this platitude: 
-      br
-      span if you are drinking coffee, then you are not cosmically deceived
+    .second
+      p.hem-around You do know this platitude: 
+        br
+        span if you are drinking coffee, then you are not cosmically deceived
   .slide
-    p Suppose sensory perception alone enables you to know you are drinking coffee.
+    .third
+      p Suppose sensory perception alone enables you to know you are drinking coffee.
   .slide
-    p.hem-around Then you would be in a position to know you are not cosmically deceived 
-      span.slide on the basis of sensory perception plus knowledge of platitudes only.
+    .fourth
+      p.hem-around Then you would be in a position to know you are not cosmically deceived 
+        span.slide on the basis of sensory perception plus knowledge of platitudes only.
   .slide
-    p.hem-around Therefore 
-      span.spa sensory perception alone
-      span  does not enable you to know you are drinking coffee.
+    .fifth
+      p.hem-around Therefore 
+        span.spa sensory perception alone
+        span  does not enable you to know you are drinking coffee.
   .slide
     +unblur('.first')
-    +highlight-row('.first')
-  .slide
-    +unhighlight-row('.first')
+    +blur('.second, .third, .fourth')
+    .notes: :t
+      Look where we got from and to!
+    //- +highlight-row('.first')
   .slide
     +invert('.spa')
+    .notes: :t
+      Note the limits of the argument.
+      It is not a general scepitcal argument.
   .slide
     +uninvert('.spa')
   +show-timer('timer1')
+    +unblur('.second, .third, .fourth')
+    .notes: :t
+      Are the premises of this argument true?
+      Is it valid?
   +start-timer('timer1')
 
 
@@ -93,6 +105,11 @@ include ../../../fragments/descartes_mixins
       span ’
   +invert('.reasons')
   .notes Earlier I asked, what are those reasons? Now we know.
+  .slide
+    +uninvert('.reasons')
+    +invert('.no-foundation')
+    .notes: :t
+      Note the qualification!
 
 
 
@@ -107,29 +124,25 @@ section.slide
         span ? 
       .slide
         +show('.tick')
+        .notes: :t
+          This question is answered by the argument.
+          The argument shows that we lack of knowledge of mundane things on the basis of sensory perception
+          and knowledge of platitudes alone.
       .slide
         +invert('.doubt')
       .slide
         p: span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
 
 +slide_middle
-  p Meditations (Synopsis)
-  p.em-above.notes.handout.show
-    span Reasons are provided ‘which give us possible grounds for doubt about all things, especially material things,  
-    br
-    span.slide
-      span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
-      span ’
-  .slide
-    +invert('.no-foundation')
-  .slide
-    +uninvert('.no-foundation')
-+slide_middle
-
+  .notes: :t
+    These are the questions I’ve been thinking about.
+    I’ve given you my answers.
+    You can find other answers by reading Descartes and the secondary literature.
+    What will your answers be?
   p Questions
-  p.indent.hem-around 1. Is Descartes’ appeal to cosmic deception supposed to provide reasons which give us possible grounds for doubt about all things ?
-  p.indent.hem-around 2. If so, how is Descartes’ appeal to cosmic deception supposed to provide  reasons which give us possible grounds for doubt about all things?
-  p.indent.hem-around 3. Does it succeed?
+  p.indent.hem-around 1. Is Descartes’ appeal to cosmic deception supposed to provide reasons which give us possible grounds for doubt about all things?
+  p.indent.hem-around.slide 2. If so, how is Descartes’ appeal to cosmic deception supposed to provide  reasons which give us possible grounds for doubt about all things?
+  p.indent.hem-around.slide 3. Does it succeed?
   .handout: :t
     \begin{enumerate}
     \item Is Descartes’ appeal to cosmic deception supposed to provide reasons which give us possible grounds for doubt about all things ?
