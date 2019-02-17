@@ -21,13 +21,26 @@ include ../../../fragments/descartes_mixins
     br
     span.step2.hide it was necessary that I,
     br
-    span.step2.hide who was thinking this,
+    span.step2.hide who was 
+    span.step2.hide.thinking thinking
+    span.step2.hide  this,
     br
     span.step2.hide was something.’
   .handout.notes.ctd: :t
     \citep[p.~126 AT 6:31]{descartes:1985_csm1}
   .slide
     +show('.step2')
+  .slide
+    +invert('.thinking')
+    .notes What is thinking?
+    .notes.handout: :t
+      ‘By the term ‘thought’, I understand everything which we are aware of as
+      happening within us, in so far as we have awareness of it. Hence,
+      thinking is to be identified here not merely with understanding, willing
+      and imagining, but also with sensory awareness’
+      \citep[p.~195 AT VIII:7]{descartes:1985_csm1}.
+  .slide
+    +uninvert('.thinking')
   .slide
     p.notes.handout.show.em-above
       span ‘this truth
@@ -95,6 +108,20 @@ include ../../../fragments/descartes_mixins
     .handout.notes.ctd: :t
       \citep[p.~355 AT V:192]{descartes:1984_vol3}
     p.right.grey-text For Arnauld, 4 June 1648
+
+
++slide_middle
+  p: :t
+    Could your thinking continue after you have ceased to exist?
+  .slide
+    p: :t
+      ‘He had believed once that he would be formed by the architecture of war, but now, he realized, he had been erased by it.’
+      p.right.grey-text Margret Atwood, A God in Ruins
+  .slide
+    p
+      span ‘It could be said that in the chaos of combat, the man known as Satch Dodd ceased to exist, even to himself
+      span.slide ; and when the dust cleared, and he found himself still standing, he experienced a rush of raw existence, as if he’d been shot from a cannon back into the world.’
+    p.right.grey-text Justin Cronin, The Twelve
 
 
 +slide_cogitoQuestions
@@ -165,7 +192,19 @@ include ../../../fragments/descartes_mixins
       that there cannot be breathing without existence, he proves nothing, because he would have to prove
       first that it is true that he is breathing, which is impossible unless he has also proved that 
       he exists’ 
-      \citep[p.~98 AT II:37]{descartes:1984_vol3}
+      \citep[p.~98 AT II:37]{descartes:1984_vol3}.
+    .notes.handout: :t
+      ‘if I say ‘I
+      am seeing, or I am walking, therefore I exist’, and take this as applying to
+      vision or walking as bodily activities, then the conclusion is not
+      absolutely certain. This is because, as often happens during sleep, it is
+      possible for me to think I am seeing or walking, though my eyes are
+      closed and I am not moving about; such thoughts might even be possible
+      if I had no body at all. But if I take 'seeing' or 'walking' to apply to the
+      actual sense or awareness of seeing or walking, then the conclusion is
+      quite certain, since it relates to the mind, which alone has the sensation
+      or thought that it is seeing or walking’
+      \citep[p.~195 AT VII:7]{descartes:1985_csm1}.
   .slide
     +blur('.right-half')
   .slide

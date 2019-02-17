@@ -16,6 +16,23 @@ include ../../fragments/descartes_mixins
 +title_slide({document:document, images:images})
 
 
++slide_middle
+  .notes: :t
+    Descartes’ organising question is ...
+  p.theQ How can we acquire knowledge about the 
+    span.essential-nature essential nature
+    span  of the bodies located outside us?
+  .slide
+    p.em-above So far ...
+    ol
+      li.hem-around Not by sensory perception alone
+        ul
+          li.hem-around sensory perceptions do not resemble (The World)
+          li.hem-around argument from doubt (Meditation 1)
+      li.hem-around There is a nonsensory route to knowledge that I exist,
+        br
+        span which provides a ‘first principle’
+
 
 section.slide
   +_slide_middle_inner
@@ -29,21 +46,22 @@ section.slide
     I suggested it was because doubt shows us that we 
     cannot know the essential nature of bodies by means of the senses.
     In explaining this, I contrasted two interpretations of Descartes’ position ...
+  .notes: :t
+    In this lecture I want to go a little deeper ...
 
-
-+slide_rh_white({step:true})
++slide_rh_white
   +run_across
     p.center Two Interpretations
   +left_half
     .hem-around-children
       p 1. The sciences need a metaphysical foundation.
       p 2. This foundation must include a refutation of scepticism.
-  +right_half({step:true})
+  +right_half
+    +blur('.left-half')
     .hem-around-children
       p 1. The assumption that sensory perception enables us to know the essential nature of things leads to bad science.
       p 2. Reflection on possible grounds for doubt provides reasons to reject this assumption.
-
-
+      .notes This is why doubt is necessary to establish anything in the sciences that is stable and likely to last.
 
 +slide_ledAwayQ
   +hide('.part2', 0)
@@ -52,13 +70,24 @@ section.slide
   .slide
     +invert('.led')
     .notes: :t
-      This raises two questions
+      This raises two questions, which are my concern today ...
   .slide
     +blur('.part1')
     +show('.part2')
     .slide
-      +highlight-row('.q2')
+      +highlight-row('.q1')
 
+
++insert_unit({unit:'wax', title_slide:true, images:images, handout:true})
+
+
++slide_ledAwayQ
+  +blur('.part1', '2px',0)
+  +highlight-row('.q1')
+  .slide
+    +unhighlight-row('.q1')
+    +highlight-row('.q2')
+  
 
 
 
@@ -88,32 +117,50 @@ section.slide
     requires recognising that the senses do not inform us about the 
     essential natural of material bodies.
 
-
 +slide_middle
+  p.knowledge-question: +knowledgeQuestion
   .notes: :t
-    As I’ve been saying since the first lecture ...
-    [new: doubt established the central claim about sensory perceptions]
-  p: +knowledgeQuestion
-  .hem-around-children
-    p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
-    p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+    So Descartes didn’t just want to explain how we know the natures of things;
+    he also thought that when we consider how we know them,
+    we arrive at an entirely different view of the nature of the physcial world.
+  .slide
+    p.em-above New answer -> new theory of essential nature
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics,
+      the trunk is Physics, and the branches which come out of this trunk are all the
+      other sciences ...’
+    .notes.handout.ctd \citep[p.~186]{descartes:1985_csm1}
+    p.right.grey-text Descates (Principles of Philosophy p. 186; AT IX–2: 14)
 
 
 +slide_ledAwayQ
   +blur('.part1', '2px',0)
   +highlight-row('.q2')
+  .notes: :t
+    So Descartes thought that leading us away from the senses 
+    provided a new foundation for science.
   .slide
     +unhighlight-row('.q2')
-    +highlight-row('.q1')
-
-+insert_unit({unit:'wax', title_slide:true, images:images, handout:true})
 
 
-+slide_ledAwayQ
-  +blur('.part1', '2px',0)
-  +highlight-row('.q1')
-  .slide
-    +unhighlight-row('.q1')
+//- 
+  +conclusion
+  +slide_middle
+    p Two interim conclusions
+    p.em-above 1. The aims of The Meditations are ...
+    p.em-above 2. The question How do we know? is linked to the question What are the essence natures of things?
+
+//- 
+  +slide_middle
+    .notes: :t
+      As I’ve been saying since the first lecture ...
+      [new: doubt established the central claim about sensory perceptions]
+    p: +knowledgeQuestion
+    .hem-around-children
+      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+      p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
+
 
 
 //- 

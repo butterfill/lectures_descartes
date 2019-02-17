@@ -1,0 +1,205 @@
+---cson
+layout: 'deck_unit'
+title: "The Proper Purpose of Sensory Perceptions"
+tags: []
+description: """
+  ‘I call a perception 'clear' when it is present and accessible to the
+  attentive mind - just as we say that we see something clearly when it is
+  present to the eye's gaze and stimulates it with a sufficient degree of
+  strength and accessibility. 
+  I call a perception 'distinct' if, as well as
+  being clear, it is so sharply separated from all other perceptions that it contains
+  within itself only what is clear’
+  (Principles of Philosophy CSM 1:207--8, AT VIII:21--22).
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
++slide_middle
+  p.theQ How could reason alone enable us to know the essential nature of things?
+  .step2.hide
+    p.em-above: :t
+      ‘I am certain that I am a thinking thing. 
+    p: :t
+      Do I not therefore also know what is required for my
+      being certain about anything? 
+    p: :t
+      In this first item of knowledge there is simply a clear and
+      distinct perception of what I am asserting; this would not be enough to make me certain of the
+      truth of the matter if it could ever turn out that something which I perceived with such
+      clarity and distinctness was false.’
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘I now seem to be able to lay it down as a general rule that 
+    p.notes.handout.show.ctd.whatever: :t
+      whatever I perceive clearly and distinctly is true’
+    p.em-above.notes.handout.ctd.show.grey-text.right (Meditation 3)
+  .slide
+    +blur('.theQ')
+  .slide
+    +hide('.step2 p:gt(0)', 0)
+    +show('.step2')
+  .slide
+    +show('.step2 p:eq(1)')
+  .slide
+    +show('.step2 p:eq(2)')
+  .slide
+    +unblur('.theQ')
+    +blur('p:not(.theQ,.whatever)')
+
++slide_middle
+  .notes: :t
+    At this point we face a flood of questions.
+  p.hem-around: :t
+    1. What are clear and distinct perceptions? 
+  p.hem-around: :t
+    2. Is a clear and distinct perception the perception of a claim for which there can be no grounds for withholding assent?
+  p.hem-around: :t
+    3. Why think perceptions which are not clear and distinct do not yield knowledge?
+  p.hem-around: :t
+    4. Why think clear and distinct perceptions do yield knowledge?
+  .notes: :t
+    But let’s not face them directly; let’s see whether we can feel our way towards them
+    by thinking about a particular case ...
+
+
++slide_middle
+  .notes recall from a moment ago
+  p.theQ How could reason alone enable us to know the essential nature of things?
+  .step2
+    p.em-above: :t
+      ‘I am certain that I am a thinking thing. 
+    p: :t
+      Do I not therefore also know what is required for my
+      being certain about anything? 
+    p: :t
+      In this first item of knowledge there is simply a clear and
+      distinct perception of what I am asserting; this would not be enough to make me certain of the
+      truth of the matter if it could ever turn out that something which I perceived with such
+      clarity and distinctness was false.’
+  p.em-above.notes.show: :t
+    ‘I now seem to be able to lay it down as a general rule that 
+  p.notes.show.ctd.whatever: :t
+    whatever I perceive clearly and distinctly is true’
+  p.em-above.notes.ctd.show.grey-text.right (Meditation 3)
+  +blur('p:not(.theQ,.whatever)', '2px', 0)
+
++slide_middle
+  p Example: the wax
+  p.notes.handout.show.em-above
+    span ‘the perception I have of it is a case not of 
+    br
+    span vision or touch or imagination 
+    br
+    span ... but of 
+    br
+    span purely mental scruitiny;
+    .slide
+      span and this can be 
+      br
+      span.inc imperfect and confused
+      br
+      span as it was before
+    .slide
+      span or
+      br
+      span.cnd clear and distinct
+      br
+      span as it is now,
+    .slide
+      span depending on how carefully I concentrate’
+  .slide
+    +blur('span:not(.inc,.cnd)')
+
+
++slide_lh_white
+  .notes: :t
+    This clear/imperfect distinction is related to another distinction Descartes makes between
+    the natural light and natural impulses.
+  +left_half_lh_white
+    p clear and distinct
+  +right_half_lh_white
+    p imperfect and confused
+  .clear
+  .slide
+    +left_half_lh_white
+      p natural light
+      p.notes.handout.show.em-above: :t
+        ‘whatever is revealed to me by the natural light — for example that from the fact that I
+        am doubting it follows that I exist, and so on — cannot in any way be open to doubt.
+        This is because there cannot be another faculty both as trustworthy as the natural
+        light and also capable of showing me that such things are not true.’
+      p.right.grey-text.notes.handout.ctd.show (Third Meditation).
+  .slide
+    +right_half_lh_white
+      p natural impuses
+      p.notes.handout.show.em-above: :t
+        ‘as for my natural impulses, I have often judged in the past that they were pushing me in the wrong direction when it
+        was a question of choosing the good, and I do not see why I should place any greater confidence in them in other
+        matters’
+      p.right.grey-text.notes.handout.ctd.show (Third Meditation).
+
+
+
++slide_timer({hide:true})
+  p.hem-around Option 1: ‘clear and distinct’ is a psychological property
+  p.hem-around Option 2: ‘clear and distinct’ is a lose way of talking about whatever underpins mathematical knowledge
+  .euclid.em-above.hide 
+    p.hem-around But Euclid’s fifth postulate (the ‘parallel postulate’) ...
+    .notes: :t
+      ‘If a line segment intersects two straight lines forming two interior
+      angles on the same side that sum to less than two right angles, then the
+      two lines, if extended indefinitely, meet on that side on which the
+      angles sum to less than two right angles.’
+    p.hem-around ... and the Axiom of Choice ...
+    p.hem-around ... and  ...
+
+  .slide
+    +highlight-row('p:eq(1)')
+    .notes: :t
+      This makes sense to me.
+      Unfortunately you cannot establish truths
+      about the nature of external bodies
+      on the basis of mathematics alone.
+      At least not the kind of truths Descartes was interested in.
+    .notes: :t
+      Physics doesn’t reduce to mathematics.
+      Although Descartes might have thought it would.
+      After all, he was working in the very first moments of a new scientific approach.
+  .slide
+    +unhighlight-row('p:eq(1)')
+    +highlight-row('p:eq(0)')
+  .slide
+    +show('.euclid')
+  .slide
+    +unhighlight-row('p:eq(0)')
+    +blur('.euclid', '5px')
+    .notes: :t
+
+  +show-timer('timer1')
+    .notes What do you think? Are either of these options viable? Is there another option?
+  +start-timer('timer1')
+
++slide_middle
+  .notes What does Descartes himself say? Nothing much in the Mediatations. But
+  p.notes.handout.show: :t
+    ‘What is meant by a clear perception, and by a distinct perception.
+  p.notes.handout.show.ctd: :t
+    I
+    call a perception 'clear' when it is present and accessible to the
+    attentive mind - just as we say that we see something clearly when it is
+    present to the eye's gaze and stimulates it with a sufficient degree of
+    strength and accessibility. 
+  p.notes.handout.show.ctd: :t
+    I call a perception 'distinct' if, as well as
+    being clear, it is so sharply separated from all other perceptions that it contains
+    within itself only what is clear’
+  .notes.handout.ctd: :t
+     \citep[pp.~207--8, AT VIII:21--22]{descartes:1985_csm1}
+  p.right.grey-text Descates (Principles of Philosophy)
+  .notes: :t
+    No idea what to make of this.

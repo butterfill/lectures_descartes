@@ -22,7 +22,7 @@ include ../../fragments/descartes_mixins
   .notes: :t
     So how did Descartes answer his question?
   .slide
-    p.em-above.indent Through reason alone.
+    p.em-above.indent Through the intellect alone.
   .slide
     p.em-above.notes.handout.show: :t
       ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
@@ -33,42 +33,36 @@ include ../../fragments/descartes_mixins
     p.right.grey-text Principles 
   .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
 
-+slide_middle
-  p.theQ How could reason alone enable us to know the essential nature of things?
-  .step2.hide
-    p.em-above: :t
-      ‘I am certain that I am a thinking thing. 
-    p: :t
-      Do I not therefore also know what is required for my
-      being certain about anything? 
-    p: :t
-      In this first item of knowledge there is simply a clear and
-      distinct perception of what I am asserting; this would not be enough to make me certain of the
-      truth of the matter if it could ever turn out that something which I perceived with such
-      clarity and distinctness was false.’
+
++insert_unit({unit:'clear_and_distinct', title_slide:true, images:images, handout:true})
+
+
++slide_timer({hide:true})
+  p: +knowledgeQuestion
+  .notes: :t
+    So here’s the question, as I keep saying.
   .slide
-    p.em-above.notes.handout.show: :t
-      ‘I now seem to be able to lay it down as a general rule that 
-    p.notes.handout.show.ctd.whatever: :t
-      whatever I perceive clearly and distinctly is true’
-    p.em-above.notes.handout.ctd.show.grey-text.right (Meditation 3)
+    p.em-above Negative part
+    .notes Negative part: full marks to Descartes
+    .hem-around-children
+      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
+      p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
   .slide
-    +blur('.theQ')
+    .notes Positive part: descartes is just wrong
+    p.em-above Positive part
+    .hem-around-children
+      p.indent.reason Through the intellect alone.
   .slide
-    +hide('.step2 p:gt(0)', 0)
-    +show('.step2')
+    +highlight-row('.main-claim', 'lime')
   .slide
-    +show('.step2 p:eq(1)')
-  .slide
-    +show('.step2 p:eq(2)')
-  .slide
-    +unblur('.theQ')
-    +blur('p:not(.theQ,.whatever)')
+    +unhighlight-row('.main-claim', 'lime')
+    +highlight-row('.reason', 'red')
 
 +slide_middle
-  p.hem-around: :t
-    1. What are clear and distinct perceptions? 
-  p.hem-around: :t
-    2. Is a clear and distinct perception the perception of a claim for which there can be no grounds for withholding assent?
-  p.hem-around: :t
-    3. Why think clear and distinct perceptions only yield knowledge?
+  p.center method: take only what is good, waste no time on flaws
+  .notes: :t
+    This is why we will not consider Descartes’ arguments for the existence of 
+    god on this course, for example.  I can find nothing of value in them.
+    Of course I might easily be wrong.
+
+
