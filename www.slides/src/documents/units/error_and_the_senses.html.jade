@@ -30,26 +30,139 @@ include ../../../fragments/descartes_mixins
     The will is what affirms or denies somthing represented
   p.slide.hem-around: :t
     Judgement occurs when the intellect represents something which the will affirms (or denies).
-  p.slide.hem-around.senses: :t
-    What about the senses? 
+  .slide
+    p.hem-around.senses: :t
+      What about the senses? 
     .notes Where do they fit in?
   .slide
     +highlight-row('.senses')
 
 +slide_middle
   p.notes.handout.show: :t
-    Sensations of tastes,
+    Sensory perceptions of tastes,
     smells, sounds, heat, cold, light, colors and the like ‘do not represent
     anything located outside our thought’
-  p.slide.notes.handout.ctd.show: :t
-    These sensations ‘vary according to the different movements which pass 
+  p.slide.notes.handout.ctd.show.hem-above: :t
+    These sensory perceptions ‘vary according to the different movements which pass 
     from all parts of our body to the ... brain’
   p.right.grey-text Principles
   .notes.handout.ctd: :t
     (\citealp[p.~ 219, AT VIII:35]{descartes:1985_csm1} cited by \citealp[p.~348]{simmons:1999_are})
-+slide
+  .slide
+    p.notes.handout.em-above.show: :t
+      ‘Something which I thought I was seeing with my eyes is in fact grasped solely by the faculty of
+      judgement which is in my mind’
+    p.right.grey-text.handout.ctd (Meditation 2).
+
+
++slide_middle
+  p.notes.handout.show(style='line-height:1.66em;')
+    span.step99.hide
+      span ‘I have been in the habit of misusing the order of nature. For
+    span.purpose.hide: span ‘the proper purpose of [...] 
+    span.perceptions: span sensory perceptions
+    span.step2.hide  
+      span [...] is simply to inform the 
+      span mind of 
+      span.beneficial what is beneficial or harmful
+      span  [...]; 
+    br
+    span.step3.hide 
+      span and to this extent they are sufficiently 
+      span.clear-word clear
+      span  and 
+      span.distinct distinct
+      span . 
+    br
+    span.step4.hide 
+      span But I misuse 
+      span them by treating them as reliable touchstones for immediate judgements about 
+      span the 
+      span.essential-nature essential nature
+      span.of-bodies  of the bodies located outside us
+      span ; 
+    br
+    span.step5.hide 
+      span yet this is an area 
+      span where they provide only very obscure information.’ 
+  .notes.handout.ctd \citep[pp.~57-8]{descartes:1985_csm2} 
+  p.right.grey-text Descartes, Meditation IV
+  .slide
+    +show('.purpose')
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step4')
+  .slide
+    +show('.step5')
+
+
+
++slide_middle
   .notes: :t
     \section{Error and The Wax}
     The claim that bodies are ‘not strictly perceived by the senses’ plays an essential
     role in Descartes account of error. Since the senses do not strictly perceive bodies,
-    they cannot be the cause of errors about bodies.
+    they cannot be the cause of errors about bodies.  p.hem-around: :t
+    The intellect is the faculty of representation.
+  p.hem-around: :t
+    The will is what affirms or denies somthing represented
+  p.hem-around: :t
+    Judgement occurs when the intellect represents something which the will affirms (or denies).
+  p.hem-around.senses: :t
+    What about the senses? 
+  .notes Where do they fit in?
+  +highlight-row('.senses')
+
++slide_rh_white({step:true})
+  .notes Simmons shows us that Descartes is not super consistent ...
+  +left_half
+    p.notes.handout.show: :t
+      Sensory perceptions of tastes,
+      smells, sounds, heat, cold, light, colors and the like ‘do not represent
+      anything located outside our thought’
+    p.right.grey-text Principles
+
+  +right_half({step:true})
+    p.notes.handout.show.quote1
+      span Sensory perceptions ‘normally 
+      span.tell tell us
+      span  of the benefit or harm that external 
+      span bodies may do [...], and do not, except occasionally and 
+      span accidentally, 
+      span.show-us show us
+      span  what external bodies are like in themselves’ 
+    .notes.handout.ctd: :t
+      (\citealp[p.~224, AT VIII: 41]{descartes:1985_csm1} cited by \citealp[p.~350]{simmons:1999_are}).
+    .slide
+      +invert('.tell')
+      .notes: :t
+        How can you *tell* and *show* if you do not represent?
+    .slide
+      +uninvert('.tell')
+      +invert('.show-us')
+    .slide
+      +blur('.quote1')
+    .slide
+      p.em-above.notes.quote2.show
+        span.purpose: span ‘the proper purpose of [...] 
+        span.perceptions: span sensory perceptions
+        span.step2  
+          span [...] is simply to 
+          span.inform inform
+          span  the 
+          span mind of 
+          span.beneficial what is beneficial or harmful’
+      .slide
+        +invert('.inform')
+        .notes: :t
+          How can you inform if you do not represent?
+
++slide_timer({hide:true})
+  p.hem-around 1. Sensory perceptions represent properties of external bodies.
+  p.hem-around 2. Sensory perceptions cannot be incorrect.
+  +show-timer('timer1')
+    .notes Could both claims be true?
+  +start-timer('timer1')
