@@ -58,14 +58,14 @@ section.slide
   .notes: :t
     In this lecture I want to go a little deeper ...
 
-+slide_rh_white
++slide_rh_white({step:true})
   +run_across
     p.center Two Interpretations
   +left_half
     .hem-around-children
       p 1. The sciences need a metaphysical foundation.
       p 2. This foundation must include a refutation of scepticism.
-  +right_half
+  +right_half({step:true})
     +blur('.left-half')
     .hem-around-children
       p 1. The assumption that sensory perception enables us to know the essential nature of things leads to bad science.
@@ -88,6 +88,15 @@ section.slide
 
 
 +insert_unit({unit:'wax', title_slide:true, images:images, handout:true})
+
++slide_ledAwayQ
+  +blur('.part1', '2px',0)
+  +highlight-row('.q1')
+
++slide_middle
+  p Led away from the senses ...
+  p.hem-around.indent 1. Sensory perception alone does not enable you to know you are drinking coffee (argument from cosmic doubt).
+  p.hem-around.indent 2. Sensory perceptions do not carry information about the essential natures of bodies (argument from Wax)
 
 
 +slide_ledAwayQ
