@@ -32,24 +32,44 @@ include ../../fragments/descartes_mixins
     span.essential-nature essential nature
     span  of the bodies located outside us?
   .slide
+    +invert('.essential-nature')
+    .notes fundamental physical properties (e.g. extension)
+  .slide
+    +uninvert('.essential-nature')
+  .slide
     p.em-above So far ...
     ol
       li.hem-around Not by sensory perception alone
         ul
-          li.hem-around sensory perceptions do not resemble (The World)
-          li.hem-around argument from doubt (Meditation 1)
-      li.hem-around There is a nonsensory route to knowledge that I exist,
+          li.step2.hide.hem-around sensory perceptions do not resemble (The World)
+          li.step3.hide.hem-around argument from doubt (Meditation 1)
+      li.slide.know.hem-around There is a nonsensory route to knowledge that I exist,
         br
         span which provides a ‘first principle’
-
+    .slide
+      +blur('.know')
+    .slide
+      +show('.step2')
+    .slide
+      +show('.step3')
 
 section.slide
   +_slide_middle_inner
     p.center.huge-glow-180.why why?
   +reset
     +_slide_middle_inner
-        p: :t
-          Doubt  is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
+        p
+          span Doubt  is necessary to establish ‘anything at all 
+          span.sciences in the sciences
+          span  that is stable and likely to last’
+    .slide
+      +invert('.sciences')
+      .notes: :t
+        I think Descartes didn’t care about ordinary notions of knowledge.
+        He was not arguing about whether you know where your pet tortiose is
+        (student example).
+        He is arguing about how you can know which are the fundamental
+        physical properties of material bodies.
   .notes: :t
     Last week on Tuesday, I said the aim was to understand this.
     I suggested it was because doubt shows us that we 
