@@ -1,0 +1,221 @@
+---cson
+layout: 'deck_unit'
+title: "Error (part II)"
+tags: []
+description: """
+  ‘I can avoid error [...] merely [... by] remembering to
+  withhold judgement on any occasion when the truth of the matter is not clear’
+  (Fourth Meditation).
+  """
+duration: 5
+---
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
++slide_middle
+  p.notes.handout.show
+    span ‘I know by experience that I am prone to countless errors’
+    br
+    span   ‘... [W]hat ... is the source of my mistakes? 
+  .notes.handout.ctd: :t
+    \citep[p.~38; AT VII: 54]{descartes:1985_csm2}
+  p.right.grey-text Fourth Meditation 
+  .slide
+    .em-above &nbsp;
+    p.hem-around: :t
+      The intellect is the faculty of representation.
+    p.slide.hem-around: :t
+      The will is what affirms or denies something represented
+    p.slide.hem-around: :t
+      Judgement occurs when the intellect represents something which the will affirms (or denies).
+  .slide
+    p.em-above The intellect is incapable of error (it merely represents).
+  .slide
+    p.em-above Error occurs when the will affirms (or deines) in
+      span.correctly correctly
+      span .
+  .slide
+    +invert('.correctly')
+    .notes What should the will not affirm?
+
++slide_rh_white({step:true})
+  +run_across
+    p.center When the will affirms, what makes it correct or incorrect?
+  +left_half
+    p To be correct is to affirm those of the intellect’s representions which are 
+      span.correct correct
+      span .
+    .slide
+      +highlight('.correct', 'red')
+    .slide
+      p.em-above Objection: The intellect is not supposed to be capable of error.
+  +right_half({step:true})
+    +blur('.left-half')
+    p To be correct is to affirm those of the intellect’s representions which are 
+      span.c-and-d clear and distinct
+      span .
+    .slide
+      +invert('.c-and-d')
+
++slide_middle
+  p.notes.handout.show
+      span ‘If [...] I simply refrain from making a judgement in cases where I do not 
+      span perceive the truth with sufficient 
+      span.c-and-d clarity and distinctness
+      span , then it is clear 
+      span that I am behaving 
+      span.correctly correctly
+      span  and avoiding error.  
+  p.notes.handout.show.ctd.hem-above
+      span But if in such cases I either 
+      span affirm or deny, then I am not using my free will 
+      span.correctly correctly
+      span ’
+  .notes.handout.ctd: :t
+    \citep[p.~41; AT VII: 59--60]{descartes:1985_csm2}
+  p.right.grey-text Fourth Meditation 
+  .slide
+    +invert('.correctly')
+  .slide
+    +uninvert('.correctly')
+  .slide
+    +invert('.c-and-d')
+    .notes: :t
+      We will come back to the question of what these are.
+      For now, the important thing is correctly.
+  .slide
+    +uninvert('.c-and-d')
+
+
++slide_middle
+  p.notes.handout.show
+    span ‘I know by experience that I am prone to countless errors’
+    br
+    span   ‘... [W]hat ... is the source of my mistakes? 
+  .notes.handout.ctd: :t
+    \citep[p.~38; AT VII: 54]{descartes:1985_csm2}
+  p.right.grey-text Fourth Meditation 
+  .em-above &nbsp;
+  p.hem-around: :t
+    The intellect is the faculty of representation.
+  p.slide.hem-around: :t
+    The will is what affirms or denies something represented
+  p.slide.hem-around: :t
+    Judgement occurs when the intellect represents something which the will affirms (or denies).
+  p.em-above The intellect is incapable of error (it merely represents).
+  p.em-above Error occurs when the will affirms (or deines) in
+    span.correctly correctly
+    span .
+  +invert('.correctly')
+  .notes So now we know what Descartes says on What should the will not affirm?
+  .slide
+    +uninvert('.correctly')
+
+
+
++slide_middle({bkg:'shaun_sheep.jpg'})
+  +hide('img.bkg', 0)
+  p.notes.handout.show: :t
+    ‘I can avoid error [...] merely [... by] remembering to
+    withhold judgement on any occasion when the truth of the matter is not clear.’
+  .notes.handout.ctd: :t
+    \citep[p.~43; AT VII: 62]{descartes:1985_csm2}
+  p.right.grey-text Fourth Meditation 
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      Here I can avoid error by not judging that what looks like
+      a person is a person.
+
+
++slide_timer({hide:true})
+  p: :t
+    Can Descartes’ strategy enable you to avoid error?
+  +show-timer('timer1')
+  +start-timer('timer1')
+
+
++slide_middle
+  p.notes.show
+    span ‘in 
+    span.practical-life.ct practical life 
+    br
+    span it is sometimes necessary to act upon opinons which one knows to be quite uncertain 
+    span just as if they were indubitable’
+  p.right.grey-text Discourse on Method
+  .notes.ctd: :t
+    \citep[p.~126 AT 6:31]{descartes:1985_csm1}
+  .slide
+    p.notes.show.em-above
+      span In devoting ‘myself soley to 
+      span.search-for-truth.ct the search for truth
+      br
+      span.slide ... I resolved to 
+        br
+        span.pretend pretend
+        br
+        span  that all the things that had ever
+        br
+        span entered my mind were no more true
+        br
+        span that the illusions of my dreams’
+    p.right.grey-text Discourse on Method
+    .slide
+      +blur('span:not(.practical-life, .search-for-truth)')
+
++slide_middle
+  p
+    span Can Descartes’ strategy enable you to avoid error 
+    span.slide in the search for truth
+    span ?
+  .slide
+    p.em-above 1. What is it for a representation to be clear and distinct?
+    p.em-above 2. Why think representations which are not clear and distinct do not yield knowledge (except accidentally)?
+    p.em-above 3. Why think clear and distinct perceptions do yield knowledge?
+
++slide_middle
+  p.center P.S.
+
++slide_middle
+  .notes: :t
+    Descartes says his method can also enable him to know the truth!
+    This is surely a step too far.
+
+  p.notes.handout.show: :t
+    ‘today I have learned not only what precautions to take to avoid ever going
+    wrong, 
+  p.notes.handout.show.ctd.slide.hem-above: :t
+    but also what to do to arrive at the truth. 
+  p.notes.handout.show.ctd.slide.hem-above: :t
+    For I shall unquestionably
+    reach the truth, if only I give sufficient attention to all the things which I
+    perfectly understand, and separate these from all the other cases where my
+    apprehension is more confused and obscure’
+  .notes.handout.ctd: :t
+    \citep[p.~43; AT VII: 62]{descartes:1985_csm2}
+  p.right.grey-text Fourth Meditation 
+
+
+//- CUT because I think it’s wrong
+//- The claim about error doesn’t hinge on whether it’s the senses or the intellect
+//- that perceives bodies
+//- 
+  +slide_rh_white({step:true})
+    .handout.notes: :t
+      \section{Error and The Wax}
+      The claim that bodies are ‘not strictly perceived by the senses’ plays an essential
+      role in Descartes account of error. Since the senses do not strictly perceive bodies,
+      they cannot be the cause of errors about bodies.
+    +left_half
+      .hem-around-children
+        p The Wax
+        p ‘even bodies are not strictly perceived by the senses or the faculty of the imagination but by the intellect alone’
+        p.grey-text.right Second Meditation 
+
+    +right_half({step:true})
+      .hem-around-children
+        p Erorr
+        p Error is not caused by the senses
+        p.slide nor by the intellect
+        p.slide but by (incorrect) operation of the will

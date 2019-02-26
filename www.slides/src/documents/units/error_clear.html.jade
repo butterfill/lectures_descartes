@@ -1,0 +1,56 @@
+---cson
+layout: 'deck_unit'
+title: "Error and Clarity"
+tags: []
+description: """
+  ‘whatever I perceive very clearly and distinctly is true’
+  (Third Meditation)
+  """
+duration: 5
+---
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
++slide_rh_white
+  +run_across
+    p.center When the will affirms, what makes it correct or incorrect?
+  +left_half
+    p To be correct is to affirm those of the intellect’s representions which are 
+      span.correct correct
+      span .
+    p.em-above Objection: The intellect is not supposed to be capable of error.
+  +right_half
+    +blur('.left-half')
+    p To be correct is to affirm those of the intellect’s representions which are 
+      span.c-and-d clear and distinct
+      span .
+    .slide
+      +invert('.c-and-d')
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘What is meant by a clear perception
+  p.notes.handout.show.ctd: :t
+    I
+    call a perception 'clear' when it is present and accessible to the
+    attentive mind - just as we say that we see something clearly when it is
+    present to the eye's gaze and stimulates it with a sufficient degree of
+    strength and accessibility. 
+  .notes.handout.ctd: :t
+     \citep[pp.~207--8, AT VIII:21--22]{descartes:1985_csm1}
+  p.right.grey-text Descates (Principles of Philosophy)
+  .notes: :t
+    No idea what to make of this.
+
+
++slide
+  +img_clip('map.jpg')
+  .notes: :t
+    For comparison, why should a map that is clear and distinct 
+    be thought to be more accurate than one that is blurry?
+
++slide_middle
+  p: :t
+    ‘Whatever I perceive very clearly and distinctly is true’
+  p.right.grey-text Third Meditation
