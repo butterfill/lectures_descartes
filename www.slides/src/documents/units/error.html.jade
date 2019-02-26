@@ -56,13 +56,13 @@ include ../../../fragments/descartes_mixins
 +slide_middle
   .handout.notes: :t
     \emph{The intellect} is the faculty of representation.
-    \emph{The will} is what affirms or denies somthing represented
+    \emph{The will} is what affirms or denies something represented
     \emph{Judgement} occurs when the intellect represents something which the will affirms (or denies).
     \emph{Error} occurs when will affirms (or denies) incorrectly.
   p.hem-around: :t
     The intellect is the faculty of representation.
   p.slide.hem-around: :t
-    The will is what affirms or denies somthing represented
+    The will is what affirms or denies something represented
   p.slide.hem-around: :t
     Judgement occurs when the intellect represents something which the will affirms (or denies).
 
@@ -72,7 +72,18 @@ include ../../../fragments/descartes_mixins
     Here is a representation.
     You cannot say that I have misled you until I tell you that it represents 
     the route from your hotel to the metro station.
+  .notes: :t
+    So the picture is this: the intellect passes images to the will.
+    And the will decides what to do with them.
+    Some it affirms or denies. Others it just hangs on a wall.
 
++slide_middle
+  p.hem-around: :t
+    The intellect is the faculty of representation.
+  p.slide.hem-around: :t
+    The will is what affirms or denies something represented
+  p.slide.hem-around: :t
+    Judgement occurs when the intellect represents something which the will affirms (or denies).
 
 +slide_middle
   p.notes.show: :t
@@ -123,14 +134,16 @@ include ../../../fragments/descartes_mixins
     \citep[p.~41; AT VII: 59--60]{descartes:1985_csm2}
   p.right.grey-text Fourth Meditation 
   .slide
+    +invert('.correctly')
+  .slide
+    +uninvert('.correctly')
+  .slide
     +invert('.c-and-d')
     .notes: :t
       We will come back to the question of what these are.
       For now, the important thing is correctly.
   .slide
     +uninvert('.c-and-d')
-  .slide
-    +invert('.correctly')
 
 +slide_middle
   p.notes.show: :t
@@ -205,9 +218,6 @@ include ../../../fragments/descartes_mixins
     p.right.grey-text Discourse on Method
     .slide
       +blur('span:not(.practical-life, .search-for-truth)')
-    .slide
-      +unblur('span:not(.practical-life, .search-for-truth)')
-      +invert('.pretend')
 
 +slide_middle
   p
