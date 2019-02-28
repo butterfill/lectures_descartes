@@ -49,7 +49,7 @@ include ../../../fragments/descartes_mixins
     .slide
       +highlight('.correct', 'red')
     .slide
-      p.em-above Objection: The intellect is not supposed to be capable of error.
+      p.em-above Objection: All errors are consequences of the will.
   +right_half({step:true})
     +blur('.left-half')
     p To be correct is to affirm those of the intellect’s representions which are 
@@ -57,35 +57,48 @@ include ../../../fragments/descartes_mixins
       span .
     .slide
       +invert('.c-and-d')
-
-+slide_middle
-  p.notes.handout.show
-      span ‘If [...] I simply refrain from making a judgement in cases where I do not 
-      span perceive the truth with sufficient 
-      span.c-and-d clarity and distinctness
-      span , then it is clear 
-      span that I am behaving 
-      span.correctly correctly
-      span  and avoiding error.  
-  p.notes.handout.show.ctd.hem-above
-      span But if in such cases I either 
-      span affirm or deny, then I am not using my free will 
-      span.correctly correctly
-      span ’
-  .notes.handout.ctd: :t
-    \citep[p.~41; AT VII: 59--60]{descartes:1985_csm2}
-  p.right.grey-text Fourth Meditation 
-  .slide
-    +invert('.correctly')
-  .slide
-    +uninvert('.correctly')
-  .slide
-    +invert('.c-and-d')
-    .notes: :t
-      We will come back to the question of what these are.
-      For now, the important thing is correctly.
-  .slide
-    +uninvert('.c-and-d')
+    .slide
+      +uninvert('.c-and-d')
+    .slide
+      p.notes.show.em-above
+        span ‘If [...] I simply refrain from making a judgement in cases where I do not 
+        span perceive the truth with sufficient 
+        span.c-and-d clarity and distinctness
+        span , then [....]
+        span I am behaving 
+        span correctly
+        span  and avoiding error.’  
+    .slide
+      +invert('.c-and-d')
+//- 
+  +slide_middle
+    p.notes.handout.show
+        span ‘If [...] I simply refrain from making a judgement in cases where I do not 
+        span perceive the truth with sufficient 
+        span.c-and-d clarity and distinctness
+        span , then it is clear 
+        span that I am behaving 
+        span.correctly correctly
+        span  and avoiding error.  
+    p.notes.handout.show.ctd.hem-above
+        span But if in such cases I either 
+        span affirm or deny, then I am not using my free will 
+        span.correctly correctly
+        span ’
+    .notes.handout.ctd: :t
+      \citep[p.~41; AT VII: 59--60]{descartes:1985_csm2}
+    p.right.grey-text Fourth Meditation 
+    .slide
+      +invert('.correctly')
+    .slide
+      +uninvert('.correctly')
+    .slide
+      +invert('.c-and-d')
+      .notes: :t
+        We will come back to the question of what these are.
+        For now, the important thing is correctly.
+    .slide
+      +uninvert('.c-and-d')
 
 
 +slide_middle
@@ -99,9 +112,9 @@ include ../../../fragments/descartes_mixins
   .em-above &nbsp;
   p.hem-around: :t
     The intellect is the faculty of representation.
-  p.slide.hem-around: :t
+  p.hem-around: :t
     The will is what affirms or denies something represented
-  p.slide.hem-around: :t
+  p.hem-around: :t
     Judgement occurs when the intellect represents something which the will affirms (or denies).
   p.em-above The intellect is incapable of error (it merely represents).
   p.em-above Error occurs when the will affirms (or deines) in
@@ -128,12 +141,10 @@ include ../../../fragments/descartes_mixins
       Here I can avoid error by not judging that what looks like
       a person is a person.
 
-
-+slide_timer({hide:true})
++slide_timer
+  .notes Not going to ask question yet ... postpone it
   p: :t
     Can Descartes’ strategy enable you to avoid error?
-  +show-timer('timer1')
-  +start-timer('timer1')
 
 
 +slide_middle
@@ -164,11 +175,14 @@ include ../../../fragments/descartes_mixins
     .slide
       +blur('span:not(.practical-life, .search-for-truth)')
 
-+slide_middle
+
++slide_timer
   p
     span Can Descartes’ strategy enable you to avoid error 
     span.slide in the search for truth
     span ?
+  +show-timer('timer1')
+  +start-timer('timer1')
   .slide
     p.em-above 1. What is it for a representation to be clear and distinct?
     p.em-above 2. Why think representations which are not clear and distinct do not yield knowledge (except accidentally)?

@@ -246,6 +246,23 @@ include ../../../fragments/descartes_mixins
       smells, sounds, heat, cold, light, colors and the like ‘do not represent
       anything located outside our thought’
     p.right.grey-text Principles
+    .slide
+      p.em-above.notes.quote2.show
+        span.purpose: span ‘the proper purpose of [...] 
+        span.perceptions: span sensory perceptions
+        span.step2  
+          span [...] is simply to 
+          span.inform inform
+          span  the 
+          span mind of 
+          span.beneficial what is beneficial or harmful’
+      .slide
+        +invert('.inform')
+        .notes: :t
+          How can you inform if you do not represent?
+          By being aversive or pleasurable.
+      .slide
+        +uninvert('.inform')
 
   +right_half({step:true})
     p.notes.handout.show.quote1
@@ -262,25 +279,15 @@ include ../../../fragments/descartes_mixins
       +invert('.tell')
       .notes: :t
         How can you *tell* and *show* if you do not represent?
+        Tell: it’s just a matter of creating something averive.
+        Show: you cannot!
     .slide
       +uninvert('.tell')
       +invert('.show-us')
     .slide
       +blur('.quote1')
-    .slide
-      p.em-above.notes.quote2.show
-        span.purpose: span ‘the proper purpose of [...] 
-        span.perceptions: span sensory perceptions
-        span.step2  
-          span [...] is simply to 
-          span.inform inform
-          span  the 
-          span mind of 
-          span.beneficial what is beneficial or harmful’
-      .slide
-        +invert('.inform')
-        .notes: :t
-          How can you inform if you do not represent?
+      p.em-above: :t
+        ‘from time to time I have found that the senses deceive’
 
 +slide_timer({hide:true})
   p.hem-around 1. Sensory perceptions represent (or present) things.

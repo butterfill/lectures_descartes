@@ -50,7 +50,13 @@ include ../../../fragments/descartes_mixins
     For comparison, why should a map that is clear and distinct 
     be thought to be more accurate than one that is blurry?
 
-+slide_middle
-  p: :t
-    ‘Whatever I perceive very clearly and distinctly is true’
-  p.right.grey-text Third Meditation
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.hide.why why?
+  +reset
+    +_slide_middle_inner
+      p.center: :t
+        ‘Whatever I perceive very clearly and distinctly is true’
+      p.right.grey-text Third Meditation
+  .slide
+    +show('.why')
