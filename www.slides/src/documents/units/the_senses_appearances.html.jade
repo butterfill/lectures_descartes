@@ -1,0 +1,193 @@
+---cson
+layout: 'deck_unit'
+title: "The Senses and Appearances"
+tags: []
+description: """
+    ‘when I see a stick, it should not be supposed that certain ‘intentional
+    forms’ fly off the stick towards the eye, but simply that rays of light
+    are reflected off the stick and set up certain movements in the optic nerve
+    and, via the optic nerve, in the brain, as I have explained at some length
+    in the Optics. This movement in the brain, which is common to us and the
+    brutes, is the first grade of sensory response.’
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
++slide_rh_white
+  +left_half
+    p.center 
+      span.step2.hide Lacks an 
+      span.io intentional object
+    p.center.step2.hide (~ does not represent)
+    p.hem-around.step3.hide a bruise
+    p.hem-around.step4.hide a meteor crater
+    p.hem-around.step5.hide an antique gold coin
+    p.hem-around.step6.hide an electric shock
+  +right_half
+    p.center.step2.hide Has an intentional object
+    p.center.step2.hide (~ does represent)
+    p.hem-around.step3.hide a tatoo of your Mum
+    p.hem-around.step4.hide an inscription
+    p.hem-around.step5.hide a treasure map
+    p.hem-around.step6.hide a thought about electricity
+  .notes: :t
+    Has an intentional object:
+    ie it represents or otherwise relates to properties of things?
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step4')
+  .slide
+    +show('.step5')
+  .slide
+    +blur('p:not(.step6)')
+    +show('.step6')
+
++slide_timer
+  p.center Do sensory perceptions have 
+    span.io intentional object
+    span s?
+  .slide
+    +invert('.io')
+    .notes: :t
+      Ie they represent or otherwise relate to properties of things?
+  .slide
+    +uninvert('.io')
+  +start-timer('timer1')
+
+
++slide_middle({bkg:'wire.jpg'})
+  +hide('img.bkg', 0)
+  p.notes.handout.show
+    span Sensory perceptions of tastes, 
+    span smells, sounds, heat, cold, light, colors and the like ‘do not represent 
+    span anything located outside our thought’  
+    span.slide [i.e. lack intentional objects]
+  p.slide.notes.handout.ctd.show.hem-above: :t
+    These sensory perceptions ‘vary according to the different movements which pass 
+    from all parts of our body to the ... brain’
+  p.right.grey-text Principles
+  .notes.handout.ctd: :t
+    (\citealp[p.~ 219, AT VIII:35]{descartes:1985_csm1} cited by \citealp[p.~348]{simmons:1999_are})
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      Sensations vs representations
+  .slide
+    +blur('img.bkg')
+    p.notes.handout.em-above.show: :t
+      ‘Something which I thought I was seeing with my eyes is in fact grasped solely by the faculty of
+      judgement which is in my mind’
+    p.right.grey-text.handout.ctd (Meditation 2).
+
+
++slide_middle
+  p.q1 What about appearances? 
+    br
+    span (Partially immersed stick appearing bent, e.g.)
+  .slide
+    +blur('.q1')
+    p.em-above How can things appear to be other than they are?
+  .slide
+    p.hem-around.indent -- Sensory perceptions can 
+      span.misrepresent misrepresent
+      span  them.
+  .slide
+    +highlight('.misrepresent', 'red')
+  .notes.handout: :t
+    \subsection{Descartes’ Three Grades of Sensory Response}
+    ‘when I see a stick, it should not be supposed that certain ‘intentional
+    forms’ fly off the stick towards the eye, but simply that rays of light
+    are reflected off the stick and set up certain movements in the optic nerve
+    and, via the optic nerve, in the brain, as I have explained at some length
+    in the Optics. This movement in the brain, which is common to us and the
+    brutes, is the \textbf{first grade of sensory response}. This leads to 
+    \textbf{the second
+    grade}, which extends to the mere perception of the colour and light
+    reflected from the stick; it arises from the fact that the mind is so
+    intimately conjoined with the body that it is affected by the movements
+    which occur in it. 
+    \emph{Nothing more than this should be referred to the sensory
+    faculty, if we wish to distinguish it carefully from the intellect.} 
+    But
+    suppose that, as a result of being affected by this sensation of colour, I
+    judge that a stick, located outside me, is coloured; and suppose that on
+    the basis of the extension of the colour and its boundaries together with
+    its position in relation to the parts of the brain, I make a rational
+    calculation about the size, shape and distance of the stick: although such
+    reasoning is commonly assigned to the senses (which is why I have here
+    referred it to \textbf{the third grade of sensory response}), it is clear that it
+    depends solely on the intellect’
+    \citep[p.~295, AT VII:437]{descartes:1985_csm2}.
+
+
++slide_middle
+  p: :t
+    ‘when I see a stick, it [is] simply that rays of light
+    are reflected off the stick and set up certain movements in the optic nerve
+    and, via the optic nerve, in the brain 
+  .slide
+    p.notes.handout.show: :t
+      This movement in the brain ... is the first grade of sensory response. 
+  .slide
+    p.notes.handout.show.hem-above: :t
+      the second grade ... extends to the mere perception of the colour and light
+      reflected from the stick [...] 
+  .slide
+    p.notes.handout.show: :t
+      Nothing more than this should be referred to the sensory
+      faculty, if we wish to distinguish it carefully from the intellect. 
+  .slide
+    p.notes.handout.show.hem-above: :t
+      But
+      suppose that ... I make a rational
+      calculation about the ... shape ... of the stick: 
+  .slide
+    p.notes.handout.show: :t
+      although such
+      reasoning is commonly assigned to the senses (which is why I have here
+      referred it to the third grade of sensory response), it ...
+      depends solely on the intellect.
+  p.right.grey-text Sixth Replies
+
+
++slide_middle
+  p.q1 What about appearances? 
+    br
+    span (Partially immersed stick appearing bent, e.g.)
+  +blur('.q1')
+  p.em-above How can things appear to be other than they are?
+  p.hem-around.indent.idea1 -- Sensory perceptions can 
+    span.misrepresent misrepresent
+    span  them.
+  +highlight('.misrepresent', 'red')
+  .slide
+    +line-through('.idea1')
+  .slide
+    p.hem-around.indent.idea2 -- There cannot. There are no incorrect appearances.
+    .notes: :t
+      The only appearances are colour and light.
+      Any representation of the stick’s shape ‘depends solely on the intellect’.
+
+
++slide_timer
+  p Does reflection on appearances show that sensory perceptions have intentional objects?
+  .notes: :t
+    What is Descartes claiming about perceptual appearances in that 
+    passage about the stick? (That there aren’t any.)
+  +start-timer('timer1')
+  .slide
+    +hide('.timer-outer')
+  .slide
+    p.em-above If source(sizes="", srcset="", type="image/"), is Descartes wrong about 
+      span.error error
+      span ?
+  .slide
+    +invert('.error')
+    .notes What did Descartes say about error? Let me remind you ...
