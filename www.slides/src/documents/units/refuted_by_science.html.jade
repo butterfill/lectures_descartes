@@ -1,0 +1,94 @@
+---cson
+layout: 'deck_unit'
+title: "Refuted by Science?"
+tags: []
+description: """
+    Do any scientific discoveries about sensory perception conflict with
+    Descartes’ claims about error?
+  """
+duration: 5
+---
+
+
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
++slide
+  +img_clip('mitroff_2005_fig2.png', 'rect(0,246px,999px,0)')
+  p.source Mitroff, Scholl and Wynn 2005, figure 2
+  .notes: :t
+    Compare Scholl and Mitroff’s bouncing/streaming study. This study:
+    (i) suggests solidity may be a constraint, at least sometimes;
+    (ii) indicates that phenomenology and object indexes may not perfectly align
+  .notes: :t
+    Mitroff et al p. 74: ‘we induced a strong bias to consciously perceive
+    streaming, by using smooth, constant, and reasonably fast motion. This
+    allows us to provide the clearest possible situation in which to evaluate
+    the relationship between conscious percepts and object files.’
+    expectations can come apart in some situations.
+  .slide
+    +clip('img', 'rect(0,481px,999px,244px)')
+  .slide
+    +clip('img', 'rect(0,999px,999px,479px)')
+  .slide
+    +clip('img', 'auto')
++slide
+  +img_clip('mitroff_2005_fig3.png')
+  p.source Mitroff, Scholl and Wynn 2005, figure 3
+
++slide_middle
+  p.center [video]
+
+
++slide_middle
+  p.hem-around(style='margin-right:300px') Descartes: The intellect is the sole source of error.
+  p.hem-around.slide.right(style='margin-left:300px') Steve: What about sensory perceptions?
+  p.hem-around.slide(style='margin-right:300px') Descartes: Sensory perceptions do not represent.
+    span.star *
+  .slide
+    +invert('.star')
+  .slide
+    +uninvert('.star')
+  p.hem-around.slide.right(style='margin-left:300px') Steve: That’s untrue because sensory perceptions can conflict with judgements.
+
+
+
++slide_middle
+  p.center also representational momentum ...
+
+
++slide
+  .notes: :t
+    You can do RM with the spiral setup too ...
+  img.show(src='img/mccloskey_1980_fig1b.png', style='filter:invert(1)')
+
++slide
+  img(src='/img/freyd_1994_figure2.png', style='max-height:600px; filter:invert(1)')
+  p.source Freyd & Jones, 1994 figure 2
+  .notes: :t
+    predicted memory shifts: the representational momentum effect you would get 
+    if your subjects’ representational momentum were predicting the straight path.
+  .slide
+    +style('img', {filter:'invert(1) blur(5px)'})
+    +reset-escape-inner
+      +_slide_middle_inner 
+        p.em-above.notes.handout.show: :t
+          Yet ‘our subjects had relatively accurate conscious knowledge of the trajectory of a ball exiting 
+          a spiral tube (63% to 83% chose the correct path; only 4% chose the spiral path).’
+        .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+        .notes
+          So it really is perception!
+        .slide
+          p.em-above.notes.handout.show: :t
+            ‘subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct’
+          .notes.handout.ctd \citep[p.~975]{freyd:1994_representational}
+
++slide_middle
+  p.hem-around(style='margin-right:300px') Descartes: The intellect is the sole source of error.
+  p.hem-around.right(style='margin-left:300px') Steve: What about sensory perceptions?
+  p.hem-around(style='margin-right:300px') Descartes: Sensory perceptions do not represent.
+    span.star *
+  p.hem-around.right(style='margin-left:300px') Steve: That’s untrue because sensory perceptions can conflict with judgements.
+
