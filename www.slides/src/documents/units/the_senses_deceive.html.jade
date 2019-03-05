@@ -1,0 +1,75 @@
+---cson
+layout: 'deck_unit'
+title: "Do the Senses Deceive?"
+tags: []
+description: """
+  ‘from time to time I have found that the senses deceive’ (Meditation 1) but 
+
+  """
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/descartes_mixins
+
+
+
+
++slide_rh_white({step:true})
+  +left_half
+    p.notes.handout.show: :t
+      Sensory perceptions of tastes,
+      smells, sounds, heat, cold, light, colors and the like ‘do not represent
+      anything located outside our thought’
+    p.right.grey-text Principles
+    .notes.handout.ctd: :t
+      (\citealp[p.~ 219, AT VIII:35]{descartes:1985_csm1} cited by \citealp[p.~348]{simmons:1999_are})
+
+  +right_half({step:true})
+    p.notes.handout.show: :t
+      ‘from time to time I have found that the senses deceive’ 
+    .notes.handout.ctd: :t
+      \citep[p.~17, AT VII:18]{descartes:1985_csm2}
+    p.right.grey-text Meditation 1
+  .notes: :t
+    How to resolve the puzzle?
+
+
++slide_middle
+  .first-grade
+    p: :t
+      ‘when I see a stick, it [is] simply that rays of light
+      are reflected off the stick and set up certain movements in the optic nerve
+      and, via the optic nerve, in the brain 
+    .slide
+      p.notes.show: :t
+        This movement in the brain ... is the first grade of sensory response. 
+  .second-grade
+    .slide
+      +blur('.first-grade')
+      p.notes.show.hem-above: :t
+        the second grade ... extends to the mere perception of the colour and light
+        reflected from the stick [...] 
+    .slide
+      p.notes.show: :t
+        Nothing more than this should be referred to the sensory
+        faculty, if we wish to distinguish it carefully from the intellect. 
+  .third-grade
+    .slide
+      +blur('.second-grade')
+      p.notes.show.hem-above: :t
+        But
+        suppose that ... I make a rational
+        calculation about the ... shape ... of the stick: 
+    .slide
+      p.notes.show
+        span although 
+        span.key such reasoning is commonly assigned to the senses 
+        span.slide (which is why I have here 
+          span referred it to the third grade of sensory response)
+        span.slide.intellect , it ... 
+          span.intellect depends solely on the intellect. 
+    .slide
+      +invert('.key')
+  p.right.grey-text Sixth Replies
+
