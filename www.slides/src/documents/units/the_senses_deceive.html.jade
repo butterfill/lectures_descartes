@@ -3,8 +3,9 @@ layout: 'deck_unit'
 title: "Do the Senses Deceive?"
 tags: []
 description: """
-  ‘from time to time I have found that the senses deceive’ (Meditation 1) but 
-
+  ‘[F]rom time to time I have found that the senses deceive’ (Meditation 1), yet
+  Sensory perceptions ‘do not represent
+  anything located outside our thought’ (Principles).
   """
 duration: 5
 ---
@@ -13,6 +14,14 @@ include ../../../fragments/unit_mixins
 include ../../../fragments/descartes_mixins
 
 
+//- +slide_middle
+  p.center *TODO*
+  p Uses grades of sensory perception to explain why Descartes says
+  p ‘from time to time I have found that the senses deceive’
+  p (Separate from the_senses_puzzle because resolvable )
+  p (Related to natural impulses)
+  p (Further puzzle: if the senses do not represent, where do these ‘natural impulses’ come from?)
+  p Link: dual-process to natural impulses
 
 
 +slide_rh_white({step:true})
@@ -72,4 +81,93 @@ include ../../../fragments/descartes_mixins
     .slide
       +invert('.key')
   p.right.grey-text Sixth Replies
+
+
+
++slide_rh_white
+  +left_half
+    p.notes.handout.show: :t
+      Sensory perceptions of tastes,
+      smells, sounds, heat, cold, light, colors and the like ‘do not represent
+      anything located outside our thought’
+    p.right.grey-text Principles
+    .notes.handout.ctd: :t
+      (\citealp[p.~ 219, AT VIII:35]{descartes:1985_csm1} cited by \citealp[p.~348]{simmons:1999_are})
+
+  +right_half
+    p.notes.handout.show: :t
+      ‘from time to time I have found that the senses deceive’ 
+    .notes.handout.ctd: :t
+      \citep[p.~17, AT VII:18]{descartes:1985_csm2}
+    p.right.grey-text Meditation 1
+  .notes: :t
+    How to resolve the puzzle?
+    Descartes is talking in the ordinary way, where
+    such reasoning is ‘commonly assigned to the senses’
+    He doesn’t really mean it.
+
+
+
++slide_middle
+  p.center Or?
+  .notes Always consider objections to your views!
+
+
++slide_timer({hide:true})
+  .notes: :t
+    In the Sixth Meditation, Descates returns to the topic and appears to say that 
+    the sense do deceive.
+  .notes.handout: :t
+    ‘there may be some occurrence, not in the foot but in one of the other
+    areas through which the nerves travel in their route from the foot to the
+    brain, or even in the brain itself; and if this cause produces the same
+    motion which is generally produced by injury to the foot, then pain will be
+    felt as if it were in the foot. This deception of the senses is natural’
+    \citep[p.~61, AT VII:88]{descartes:1985_csm2}.
+  p.first: :t
+    ‘there may be some occurrence, not in the foot but in one of the other
+    areas through which the nerves travel in their route from the foot to the
+    brain, or even in the brain itself; 
+  p.second.slide.hem-above
+    span and if this cause produces the same  
+    span motion which is generally produced by injury to the foot, then 
+    span.key pain will be felt as if it were in the foot
+    span .  
+  .slide
+    +blur('.first, .second span:not(.key)')
+  p.slide.hem-above: :t
+    This deception of the senses is natural’
+  p.right.grey-text  Sixth Meditation
+  +show-timer('timer1')
+    .notes: :t
+      Can we explain this away using the same strategy (ie its the third grade of 
+      sensory response)?
+  +start-timer('timer1')
+
+
+
++slide_rh_white
+  +run_across
+    p.center On Descartes’ view, can the senses deceive?
+  +left_half
+    p.notes.show: :t
+      Sensory perceptions of tastes,
+      smells, sounds, heat, cold, light, colors and the like ‘do not represent
+      anything located outside our thought’
+    p.right.grey-text Principles
+    .notes.ctd: :t
+      (\citealp[p.~ 219, AT VIII:35]{descartes:1985_csm1} cited by \citealp[p.~348]{simmons:1999_are})
+
+  +right_half
+    p.notes.show: :t
+      ‘from time to time I have found that the senses deceive’ 
+    .notes.ctd: :t
+      \citep[p.~17, AT VII:18]{descartes:1985_csm2}
+    p.right.grey-text Meditation 1
+    p.em-above: :t
+      ‘pain will be felt as if it were in the foot [...]
+      This deception of the senses is natural’
+    p.right.grey-text Meditation 6
+  .notes: :t
+    How to resolve the puzzle?
 
