@@ -81,40 +81,23 @@ include ../../../fragments/descartes_mixins
   .slide
     .notes: :t
       One attraction of this idea is that it gives us answers to all the questions ...
-    p.hem-above: :t
+    p.q1.hem-above: :t
       1. What are clear and distinct perceptions? 
-    p.indent Those involved in thinking mathematically.
+    p.q1.indent Those involved in thinking mathematically.
   .q2.hide
     p.hem-above: :t
       2. Why think perceptions which are not clear and distinct do not yield knowledge?
     p.answer.hide.indent Erm ... because only mathematics yields knowledge?
   .slide
-    p.hem-above: :t
+    p.q3.hem-above: :t
       3. Why think clear and distinct perceptions do yield knowledge?
-    p.indent Because mathematics is possible.
+    p.q3.indent Because mathematics is possible.
   .slide
     +show('.q2')
   .slide
     +show('.q2 .answer')
-    
-    
-
-
-+slide
-  p.hem-around Option 1: ‘clear and distinct’ is a psychological property
-  p.hem-around Option 2: ‘clear and distinct’ is a lose way of talking about whatever underpins mathematical knowledge
-  .euclid.em-above.hide 
-    p.hem-around But Euclid’s fifth postulate (the ‘parallel postulate’) ...
-    .notes: :t
-      ‘If a line segment intersects two straight lines forming two interior
-      angles on the same side that sum to less than two right angles, then the
-      two lines, if extended indefinitely, meet on that side on which the
-      angles sum to less than two right angles.’
-    p.hem-around ... and the Axiom of Choice ...
-    p.hem-around ... and  ...
-  +highlight-row('p:eq(1)')
   .slide
-    +show('.euclid')
+    +blur('.q1, .q2, .q3')
     .notes: :t
       Unfortunately you cannot establish truths
       about the nature of external bodies
@@ -124,6 +107,13 @@ include ../../../fragments/descartes_mixins
       Physics doesn’t reduce to mathematics.
       Although Descartes might have thought it would.
       After all, he was working in the very first moments of a new scientific approach.
+//- 
+  +slide_timer
+    .hem-around-children
+      p ‘[W]hatever I perceive clearly and distinctly is true’.
+      p Only perceptions which are clear and distinct are a basis for knowledge.
+      p Physics does not reduce to logic plus mathematics.
+
 
 
 //- 

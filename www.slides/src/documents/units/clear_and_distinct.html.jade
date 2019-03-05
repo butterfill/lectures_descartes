@@ -54,15 +54,26 @@ include ../../../fragments/descartes_mixins
 +slide_middle
   .notes: :t
     At this point we face a flood of questions.
-  p.hem-around: :t
+  p.q1.hem-around: :t
     1. What are clear and distinct perceptions? 
-  p.hem-around: :t
+  p.q2.hem-around: :t
     2. Why think perceptions which are not clear and distinct do not yield knowledge?
-  p.hem-around: :t
+  p.q3.hem-around: :t
     3. Why think clear and distinct perceptions do yield knowledge?
-  .notes: :t
-    But let’s not face them directly; let’s see whether we can feel our way towards them
-    by thinking about a particular case ...
+  .slide 
+    +highlight-row('.q3')
+    .notes So far: on the basis of a single case study
+  .slide
+    +unhighlight-row('.q3')
+    +highlight-row('.q2')
+    .notes So far: no reason
+  .slide
+    +unhighlight-row('.q2')
+    +highlight-row('.q1')
+    .notes So far: the kind involved in cogito-style arguments
+    .notes: :t
+      Let’s see whether we can get a bette sense
+      by thinking about a particular case ...
 
 
 +slide_middle
@@ -113,8 +124,39 @@ include ../../../fragments/descartes_mixins
   .slide
     +blur('span:not(.inc,.cnd)')
 
++slide
+  p.hem-around Option 1: ‘clear and distinct’ is a psychological property
+  .slide
+    p.hem-around Option 2: ‘clear and distinct’ is a lose way of talking about whatever underpins mathematical knowledge
+  .slide
+    +highlight-row('p:eq(1)')
+  .slide
+    .notes: :t
+      One attraction of this idea is that it gives us answers to all the questions ...
+    p.q1.hem-above: :t
+      1. What are clear and distinct perceptions? 
+    p.q1.indent Those involved in thinking mathematically.
+  .q2.hide
+    p.hem-above: :t
+      2. Why think perceptions which are not clear and distinct do not yield knowledge?
+    p.answer.hide.indent Erm ... because only mathematics yields knowledge?
+  .slide
+    +blur('.q1')
+    p.q3.hem-above: :t
+      3. Why think clear and distinct perceptions do yield knowledge?
+    p.q3.indent Because mathematics is possible.
+  .slide
+    +blur('.q3')
+    +show('.q2')
+  .slide
+    +show('.q2 .answer')
+  .slide
+    +blur('.q2')
+    .notes: :t
+      Only problem is that physics does not reduce to mathematics.
+      (Although Descartes might reasonably have thought otherwise.)
 
-+slide_timer({hide:true})
++slide
   p.hem-around Option 1: ‘clear and distinct’ is a psychological property
   p.hem-around Option 2: ‘clear and distinct’ is a lose way of talking about whatever underpins mathematical knowledge
   .euclid.em-above.hide 
@@ -126,44 +168,54 @@ include ../../../fragments/descartes_mixins
       angles sum to less than two right angles.’
     p.hem-around ... and the Axiom of Choice ...
     p.hem-around ... and  ...
-
-  .slide
-    +highlight-row('p:eq(1)')
-    .notes: :t
-      This makes sense to me.
-      Unfortunately you cannot establish truths
-      about the nature of external bodies
-      on the basis of mathematics alone.
-      At least not the kind of truths Descartes was interested in.
-    .notes: :t
-      Physics doesn’t reduce to mathematics.
-      Although Descartes might have thought it would.
-      After all, he was working in the very first moments of a new scientific approach.
+  +highlight-row('p:eq(1)')
   .slide
     +unhighlight-row('p:eq(1)')
     +highlight-row('p:eq(0)')
   .slide
     +show('.euclid')
   .slide
-    +unhighlight-row('p:eq(0)')
     +blur('.euclid', '5px')
-    .notes: :t
 
-  +show-timer('timer1')
-    .notes What do you think? Are either of these options viable? Is there another option?
++slide
+  p.hem-around Option 1: ‘clear and distinct’ is a psychological property
+  p.hem-around Option 2: ‘clear and distinct’ is a lose way of talking about whatever underpins mathematical knowledge
+  +highlight-row('p:eq(0)')
+  .slide
+    .dilemma
+      p.em-above Dilemma: is your perception of the parallel posulate clear and distinct?
+      p.hem-around.indent If not, you can never know which perceptions are clear and distinct.
+      p.hem-around.indent If it is, not all clear and distinct perceptions yield knowledge.
+  .slide
+    +blur('.dilemma')
+    +unhighlight-row('p:eq(0)')
+
++slide_timer
+  p.hem-around Option 1: ‘clear and distinct’ is a psychological property
+  p.hem-around Option 2: ‘clear and distinct’ is a lose way of talking about whatever underpins mathematical knowledge
+  .euclid.em-above.hide 
+    p.hem-around But Euclid’s fifth postulate (the ‘parallel postulate’) ...
+    .notes: :t
+      ‘If a line segment intersects two straight lines forming two interior
+      angles on the same side that sum to less than two right angles, then the
+      two lines, if extended indefinitely, meet on that side on which the
+      angles sum to less than two right angles.’
+    p.hem-around ... and the Axiom of Choice ...
+    p.hem-around ... and  ...
+  .notes What do you think? Are either of these options viable? Is there another option?
   +start-timer('timer1')
 
 +slide_middle
   .notes What does Descartes himself say? Nothing much in the Mediatations. But
   p.notes.handout.show: :t
     ‘What is meant by a clear perception, and by a distinct perception.
-  p.notes.handout.show.ctd: :t
+  p.slide.notes.handout.show.hem-around.ctd: :t
     I
     call a perception 'clear' when it is present and accessible to the
     attentive mind - just as we say that we see something clearly when it is
     present to the eye's gaze and stimulates it with a sufficient degree of
     strength and accessibility. 
-  p.notes.handout.show.ctd: :t
+  p.slide.notes.handout.show.hem-around.ctd: :t
     I call a perception 'distinct' if, as well as
     being clear, it is so sharply separated from all other perceptions that it contains
     within itself only what is clear’
@@ -226,3 +278,5 @@ include ../../../fragments/descartes_mixins
   img(src='/img/plutonium.png', style='max-height:500px; filter:invert(1)')
   p.source xkcd.com/2115
   .notes: :t
+    [To illustrate that common sense shouldn’t be used in 
+    deciding which hypotheses to test.]
