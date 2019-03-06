@@ -27,7 +27,7 @@ include ../../../fragments/descartes_mixins
     p: :t
       Do I not therefore also know what is required for my
       being certain about anything? 
-    p: :t
+    p.the-claim: :t
       In this first item of knowledge there is simply a clear and
       distinct perception of what I am asserting; this would not be enough to make me certain of the
       truth of the matter if it could ever turn out that something which I perceived with such
@@ -50,6 +50,57 @@ include ../../../fragments/descartes_mixins
   .slide
     +unblur('.theQ')
     +blur('p:not(.theQ,.whatever)')
+  .slide
+    +blur('p:not(.the-claim)')
+    +unblur('p.the-claim')
+
+
++slide_middle
+  .hem-after-children
+    p 1. I clearly and distinctly perceive that I am a thinking thing.
+    p.slide 2. This clear and distinct perception is enough for certainty.
+    .slide
+      p.three.indent 3. Suppose not all clear and distinct perceptions were enough for certainty about what is perceived.
+    .slide
+      p.indent.err 4. Then no clear and distinct perception would be enough for certainty.
+    p.indent.slide 5. But then my clear and distinct perception that I am thinking would not be enough for certainty.
+    p.indent.slide 6. Which it is.
+    .slide
+      +highlight-row('.three')
+      p 7. So #3 leads to contradiction.
+    .slide
+      +unhighlight-row('.three')
+    p.slide 8. So all clear and distinct perceptions are enough for certainty.
+  .slide
+    +highlight-row('.err', 'red')
+
+
+
++slide_middle
+  .notes recall from a moment ago
+  p.theQ How could the intellect alone enable us to know the essential nature of things?
+  .step2
+    p.em-above: :t
+      ‘I am certain that I am a thinking thing. 
+    p: :t
+      Do I not therefore also know what is required for my
+      being certain about anything? 
+    p.the-claim: :t
+      In this first item of knowledge there is simply a clear and
+      distinct perception of what I am asserting; this would not be enough to make me certain of the
+      truth of the matter if it could ever turn out that something which I perceived with such
+      clarity and distinctness was false.’
+  p.em-above.notes.show: :t
+    ‘I now seem to be able to lay it down as a general rule that 
+  p.notes.show.ctd.whatever: :t
+    whatever I perceive clearly and distinctly is true’
+  p.em-above.notes.ctd.show.grey-text.right (Meditation 3)
+  +blur('p:not(.the-claim)', '2px', 0)
+  .slide
+    +blur('p.the-claim')
+    +unblur('p.theQ, p.whatever')
+
+
 
 +slide_middle
   .notes: :t
@@ -96,6 +147,12 @@ include ../../../fragments/descartes_mixins
     whatever I perceive clearly and distinctly is true’
   p.em-above.notes.ctd.show.grey-text.right (Meditation 3)
   +blur('p:not(.theQ,.whatever)', '2px', 0)
+
+
+
+
+
+
 
 +slide_middle
   p Example: the wax
