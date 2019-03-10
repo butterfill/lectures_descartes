@@ -16,112 +16,13 @@ include ../../fragments/descartes_mixins
 +title_slide({document:document, images:images})
 
 //- these two units belong together ...
-+insert_unit({unit:'descartes_aim', title_slide:true, images:images, handout:true})
++insert_unit({unit:'descartes_aim', title_slide:false, images:images, handout:true})
 +insert_unit({unit:'essential_nature', title_slide:true, images:images, handout:true})
-+insert_unit({unit:'clear_and_distinct_reprise', title_slide:true, images:images, handout:true})
+
+//- This was incorporated into the clear and distinct discussion
+//- +insert_unit({unit:'clear_and_distinct_reprise', title_slide:true, images:images, handout:true})
 
 +insert_unit({unit:'essay_tips', title_slide:true, images:images, handout:true})
 
 
-+insert_unit({unit:'the_senses_puzzle', title_slide:true, images:images, handout:true})
-
-
-
-//- check where this belongs!!!
-+slide_ledAwayQ
-  +blur('.part1', '2px',0)
-  +highlight-row('.q2')
-  .notes: :t
-    I asked, Why does Descartes want to lead us away from the senses? 
-    Because he sees this as they way to provide a foundation for his physics
-    Then I asked, why does Descates’ physics require being led away?
-    And the answer is because understanding Descartes’ physics
-    requires recognising that the senses do not inform us about the 
-    essential natural of material bodies.
-
-+slide_middle
-  p.knowledge-question: +knowledgeQuestion
-  .notes: :t
-    So Descartes didn’t just want to explain how we know the natures of things;
-    he also thought that when we consider how we know them,
-    we arrive at an entirely different view of the nature of the physcial world.
-  .slide
-    p.em-above New answer -> new theory of essential nature
-  .slide
-    p.em-above.notes.handout.show: :t
-      ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics,
-      the trunk is Physics, and the branches which come out of this trunk are all the
-      other sciences ...’
-    .notes.handout.ctd \citep[p.~186]{descartes:1985_csm1}
-    p.right.grey-text Descates (Principles of Philosophy p. 186; AT IX–2: 14)
-
-
-+slide_ledAwayQ
-  +blur('.part1', '2px',0)
-  +highlight-row('.q2')
-  .notes: :t
-    So Descartes thought that leading us away from the senses 
-    provided a new foundation for science.
-  .slide
-    +unhighlight-row('.q2')
-
-
-//- 
-  +conclusion
-  +slide_middle
-    p Two interim conclusions
-    p.em-above 1. The aims of The Meditations are ...
-    p.em-above 2. The question How do we know? is linked to the question What are the essence natures of things?
-
-//- 
-  +slide_middle
-    .notes: :t
-      As I’ve been saying since the first lecture ...
-      [new: doubt established the central claim about sensory perceptions]
-    p: +knowledgeQuestion
-    .hem-around-children
-      p.indent.main-claim Sensory perceptions provide only very obscure information about the essential nature of bodies.
-      p.indent ∴ Not by treating sensory perceptions as a basis for judgements about them.
-
-
-
-//- 
-  +slide_middle
-    p Meditations (Synopsis)
-    p.em-above.notes.handout.show
-      span Reasons are provided ‘which give us possible grounds for doubt about all things, especially material things,  
-      br
-      span.slide
-        span.no-foundation so long as we have no foundation for the sciences other than those we have had up until now
-        span ’
-    .slide
-      +invert('.no-foundation')
-      .notes: :t
-        I.e. we are not saying that 
-
-  +slide_middle
-    p Meditations (Synopsis)
-    p.em-above.notes.handout.show: :t
-      The usefulness of extensive doubt ‘lies in freeing us from our preconceived opinions, 
-      and providing the easiest route by which the mind may be led away from the senses.’
-
-
-  //- 
-    TODO bit more about Aristotelian physics stolen from Guy?
-
-
-+conclusion
-  +_slide_inner
-    div(style='margin-top:-550px')
-      .slide
-        p Doubt is necessary for science because it can lead us ‘away from the senses’
-      .slide
-        p.em-above We cannot know the essential nature of things through the senses ...
-        p ... but only through the mind,
-        p as the wax shows.
-      .slide
-        p.em-above ‘the roots are Metaphysics’ : i.e. Descartes takes this epistemological claim to ground claims about the essential nature of things.
-
-
 +insert_unit({unit:'natural_light', title_slide:true, images:images, handout:true})
-+insert_unit({unit:'cartesian_circle', title_slide:true, images:images, handout:true})

@@ -60,7 +60,159 @@ include ../../../fragments/descartes_mixins
       p.slide these properties explain all their sensory effects (e.g. heat, colour, taste)
       p.slide these properties are measurable on ratio scales
 
+
+
 +slide_middle
+  p
+    span  Letter to Mersenne (28 January 1641)
+  p.em-above.notes.handout.show
+    span.foundations ‘these six meditations contain all the 
+    span.foundations.foundations-word foundations
+    span.foundations  of 
+    span.my-physics.foundations my physics
+    span.foundations .  
+    span But please do not tell people, for that might make it harder for supporters of Aristotle to approve them.  
+    span I hope that readers will gradually get used to my principles, and recognize their truth,  
+    span before they notice that 
+    span.destroy 
+      span they destroy 
+      span.Aristotle-principles the principles of Aristotle
+    span .’ 
+  +blur('span:not(.my-physics, .destroy, .Aristotle-principles)', '2px', 0)
+  .notes: :t
+    So we have answered two questions: 
+    What is this physics? What are the principles of Aristotle?
+  .slide
+    +show('span:not(.my-physics, .destroy, .Aristotle-principles)')
+    +blur('span:not(.foundations)')
+    .notes: :t
+      How could the meditations contain the foundations of his physicas?
+  .slide
+    +invert('.foundations-word')
+    .notes: :t
+      And what does he mean by a foundation?
+
+
++slide_middle
+  p.em-above.notes.handout.show
+    span ‘The whole of of Philosophy is like a tree, of which the  
+    span.roots roots
+    span  are Metaphysics, 
+    span the trunk is Physics, and the branches which come out of this trunk are all the 
+    span other sciences ...’ 
+  .notes.handout.ctd \citep[p.~186, AT IX:14]{descartes:1985_csm1}
+  p.right.grey-text Principles of Philosophy 
+  .slide
+    +invert('.roots')
+    .notes: :t
+      Aargh! Another metaphor. (Foundations. Roots. Make your mind up.)
+
+
++slide_middle
+  p.center How to make sense of the metaphors?
++slide_middle
+  p.center What principles did Descartes think physics rested on?
+  .notes geometry plus maths ...
+
+
++slide_middle
+  p.em-above.notes.handout.show: :t
+    ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+  p.em-above.notes.handout.ctd.show: :t
+    these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
+    regarding them’ 
+  .notes.handout.ctd: :t
+    \citep[p.~247, AT 2:64]{descartes:1985_csm1}
+  p.right.grey-text Principles 
+  .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
+
++slide_timer({hide:true})
+  p How to make sense of the metaphors?
+  .slide
+    p.hem-around 1. It’s the intellect, not the senses, that enables us to know the essential nature of material bodies.
+    .notes: :t
+      Significance: whatever the intellect enables us to know, those are the essential properties
+      of material bodies.
+  .slide
+    p.hem-around 2. The intellect does not enable us to know forms.
+  .slide
+    p.hem-around 3. The intellect does enable us to know mathematical principles.
+  .slide
+    p.hem-around.fourth 4. Those principles must characterise the essential nature of bodies.
+  +show-timer('timer1')
+  +start-timer('timer1')
+  .slide
+    +hide('.timer-outer')
+    +highlight-row('.fourth')
+    .notes: :t
+      I find this deeply puzzling. Yet it is in Descartes ...
+
++slide_middle
+  .notes: :t
+    
+  p.notes.handout.show
+    span.noblur External bodies 
+    br 
+    span ‘may not exist in a way that 
+    br 
+    span exactly corresponds with my  sensory grasp of them, 
+  p.notes.handout.ctd.show
+    span for in many cases the 
+    br
+    span.grasp grasp of the senses
+    br
+    span  is very 
+    span obscure and confused. 
+  p.notes.handout.ctd.show
+    span But at least they 
+    span.noblur possess all the properties which 
+    span  I 
+    span.c-d clearly and distinctly
+    span  understand, 
+  p.notes.handout.ctd.show
+    span that is all those which, viewed in 
+    span general terms, 
+    span.noblur are comprised within the subject matter of pure mathematics.’
+  +hide('span:not(.noblur)', 0)
+  .slide
+    +show('p:eq(0) span:not(.noblur)')
+  .slide
+    +show('p:eq(1) span:not(.noblur)')
+  .slide
+    +show('p:eq(2) span:not(.noblur)')
+  .slide
+    +show('p:eq(3) span:not(.noblur)')
+  .slide
+    +invert('.c-d')
+  .slide
+    +uninvert('.c-d')
+  .slide
+    +invert('.grasp')
+    .notes: :t
+      Aside: Mere sensations could not grasp.
+  .slide
+    +uninvert('.grasp')
+  .slide
+    +blur('span:not(.noblur)', '2px')
+
+
++slide_middle
+  p How to make sense of the metaphors?
+  p.hem-around 1. It’s the intellect, not the senses, that enables us to know the essential nature of material bodies.
+  .notes: :t
+    Significance: whatever the intellect enables us to know, those are the essential properties
+    of material bodies.
+  p.hem-around 2. The intellect does not enable us to know forms.
+  p.hem-around 3. The intellect does enable us to know mathematical principles.
+  p.hem-around.fourth 4. Those principles must characterise the essential nature of bodies.
+  +highlight-row('.fourth')
+  .notes: :t
+    I was saying that I find this deeply puzzling. Yet it is in Descartes ...
+
+
++slide_middle
+  .notes: :t
+    Let’s take a look at another quote to the same effect ...
   p.notes.handout.show: :t
     ‘in the whole history of physics up to now people have
     only tried to imagine some causes to explain the phenomena of nature, with
@@ -79,13 +231,51 @@ include ../../../fragments/descartes_mixins
   .notes.handout.ctd (\citealp[p.~107]{descartes:1984_vol3} AT 2:199-200 quoted (with incorrect page number) by \citealp{sorell:2018_experimental}).
   p.right.grey-text Descartes, Letter to Morin, 13 July 1638 (AT 2:196)
 
++slide_rh_white({step:true})
+  .notes: :t
+    It’s important to understand how counterintuitive Descartes’ approach is ...
+  +left_half
+    p.center Descartes
+    .hem-around-children
+      p How could we know the essential nature of bodies?
+      p Through the intellect.
+        br
+        span &nbsp;
+      p The intellect reveals mathematical principles.
+      p Therefore these principles must characterise the essential nature of bodies.
+  +right_half({step:true})
+    p.center Undescartes
+    .hem-around-children
+      p How could we know the essential nature of bodies?
+      p Bodies are made of up tiny cats.
+      p The intellect cannot reveal the tiny cats.
+      p Therefore we cannot know the essential nature of bodies through the intellect.
+
+section.slide
+  .notes: :t
+    To conclude so far ...
+  +_slide_middle_inner
+    p.huge-glow-180.q ?
+  +reset
+    +_slide_middle_inner
+      p Discoveries about how we know 
+      p support claims
+      p about what is.
+
 +slide_middle
-  p.notes.handout.show
-    span ‘The only principles which I accept or require in physics are those of geometry and pure mathematics;  
-    span.explain-all these principles explain all natural phenomena
-    span , and enable us to provide quite certain demonstrations  
-    span regarding them’  
-  .notes.handout.ctd \citep[p.~247 AT 2:64]{descartes:1985_csm1}
-  p.right.grey-text Principles of Philosophy 2:64, CSM 1:247
+  p.knowledge-question: +knowledgeQuestion
+  .notes: :t
+    So Descartes didn’t just want to explain how we know the natures of things;
+    he also thought that when we consider how we know them,
+    we arrive at an entirely different view of the nature of the physcial world.
   .slide
-    +blur('span:not(.explain-all)')
+    p.em-above New answer -> new theory of essential nature
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics,
+      the trunk is Physics, and the branches which come out of this trunk are all the
+      other sciences ...’
+    .notes.handout.ctd \citep[p.~186]{descartes:1985_csm1}
+    p.right.grey-text Descates (Principles of Philosophy p. 186; AT IX–2: 14)
+
+
