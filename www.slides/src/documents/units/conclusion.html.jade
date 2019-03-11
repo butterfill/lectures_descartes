@@ -40,6 +40,8 @@ include ../../../fragments/descartes_mixins
   .notes But refuting scepticism isn’t going to help establish anything in the sciences.
 
 +slide
+  .notes: :t
+    Why is doubt necessary? To lead us away from the senses!
   +img_clip('fire.png')
   +style('img', {filter:'invert(1)'})
   +reset
@@ -48,19 +50,32 @@ include ../../../fragments/descartes_mixins
       there is no convincing argument for supposing that there is something in the
       fire which resembles the heat, any more than for supposing that there is
       something which resembles the pain. 
-    p.slide.notes.handout.ctd.em-above.show: :t
-      There is simply reason to suppose that
-      there is something in the fire, whatever it may eventually turn out to be,
-      which produces in us the feelings of heat or pain’
+    .slide
+      +blur('img')
+      p.notes.handout.ctd.em-above.show: :t
+        There is simply reason to suppose that
+        there is something in the fire, whatever it may eventually turn out to be,
+        which produces in us the feelings of heat or pain’
     .notes.handout.ctd: :t
       \citep[p.~58, AT VII:83]{descartes:1985_csm2}
     p.right.grey-text Meditation VI 
       br
       span Treatise on Man figure 1
 
++slide
+  +img_clip('eye.png')
+  +style('img', {filter:'invert(1)'})
+  p.source Treatise on Man, figure 2
+  +reset
+    p(style='margin-top:270px') Why doubt?
+    p.hem-above.indent Not to refute scepticism.
+    p.hem-above.indent But because doubt is ‘the easiest route by which the mind may be led away from the senses’.
+
 +slide_middle
   .notes: :t
-    Descartes is quite dismissive of doubt (earlier said could not distinguish
+    Note also that 
+    Descartes is quite dismissive of doubt by the end of the Meditations
+    (earlier said could not distinguish
     dreaming from waking)
   p.notes.handout.show: :t
     ‘... the principal reason for doubt, namely my inability
@@ -85,33 +100,42 @@ include ../../../fragments/descartes_mixins
     \citep[p.~61--2, AT VII:89--90]{descartes:1985_csm2}
   p.right.grey-text Meditation VI
 
-+slide
-  +img_clip('eye.png')
-  +style('img', {filter:'invert(1)'})
-  p.source Treatise on Man, figure 2
-  +reset
-    p(style='margin-top:270px') Why doubt?
-    p.hem-above.indent Not to refute scepticism.
-    p.hem-above.indent But because doubt is ‘the easiest route by which the mind may be led away from the senses’.
-
 +slide_middle
   p.center ... or?
 
 +slide_middle
-  p.notes.handout.show: :t
+  p.notes.handout.show: span: :t
     ‘I wanted to show the firmness of the truths which I propound later on, in the
     light of the fact that they cannot be shaken by these metaphysical doubts.
     ...
-  p.slide.notes.handout.ctd.hem-above.show: :t
-    I could not have left them out, any more than a medical writer can
-    leave out the description of a disease when he wants to explain how it can
-    be cured.’
+  p.slide.notes.handout.ctd.hem-above.show
+    span I could not have left them out, any more than a medical writer can 
+    span leave out the description of 
+    span.noblur a disease
+    span  when 
+    span.noblur he wants to explain how it can be cured
+    span .’ 
   .notes.handout.ctd: :t
     \citep[p.~121, AT VII:172]{descartes:1985_csm2}
   p.right.grey-text Third Replies
+  .slide
+    +blur('span:not(.noblur)')
 
-+slide_middle
-  p.notes.handout.show: :t
-  .notes.handout.ctd: :t
-    \citep[p.~58, AT VII:83]{descartes:1985_csm2}
-  p.right.grey-text Meditation VI
++conclusion
+  +_slide_inner
+    div(style='margin-top:-550px')
+      .slide
+        p Why doubt?
+        p.hem-above Even at the end, 
+          br
+          span the reasons Descartes gives for doubting
+          br
+          span remain a mystery.
+        .notes (Enlighten me!)
+
+
+//- +slide_middle
+//-   p.notes.handout.show: :t
+//-   .notes.handout.ctd: :t
+//-     \citep[p.~58, AT VII:83]{descartes:1985_csm2}
+//-   p.right.grey-text Meditation VI
