@@ -33,15 +33,36 @@ include ../../../fragments/descartes_mixins
 +slide_middle
   .notes: :t
     Some passages suggest the God-first idea
-  p.notes.handout.show: :t
-    ‘[F]rom this contemplation of the true God ... I think I can see a way forward to the knowledge
-    of other things. To begin with, I recognize that it is impossible that God
-    should ever deceive me. . . . And since God does not wish to deceive me, he
-    surely did not give me the kind of faculty which would ever enable me to go
-    wrong while using it correctly’
-  .notes.handout.ctd \citep[p.~37, AT VII:53–54)]{descartes:1985_csm2}
+  p.notes.handout.show
+    span ‘[F]rom this contemplation of the true God ... 
+    span.forward I think I can see a way forward 
+    span  to the knowledge 
+    span of other things. To begin with, I recognize that it is impossible that God 
+    span should ever deceive me. . . . And since God does not wish to deceive me, he 
+    span surely did not give me the kind of faculty which would ever enable me to go 
+    span wrong while using it correctly’ 
+  .notes.handout.ctd \citep[p.~37, AT VII:53–54]{descartes:1985_csm2}
   p.right.grey-text Meditation IV
+  .slide
+    +blur('span:not(.forward)')
+    .notes: :t
+      Not really convicing: does a ‘way forward’ mean a basis for knowledge?
 
++slide_timer({hide:true})
+  p also: doubt about clear and distinct perception 
+  p (e.g. doubt that 2+3=5)
+  .slide
+    p.hem-around.indent 1. It is possible to doubt things that are clearly perceived.
+    p.hem-around.indent.two 2. We must find justification for removing doubt.
+    p.hem-around.indent 3. Therefore, we must find justification for not doubting what is clearly perceived.
+  +show-timer('timer1')
+    .notes: :t
+      Is this a good argument.
+      Can we reject any premises?
+  +start-timer('timer1')
+  .slide
+    +hide('.timer-outer')
+    +highlight-row('.two', 'red')
 
 +slide_middle
   .notes: :t
@@ -58,10 +79,6 @@ include ../../../fragments/descartes_mixins
   .notes.handout.ctd: :t
     \citep[p.~130, AT VI:38]{descartes:1985_csm1}
   p.right.grey-text Discourse on Method 
-
-+slide_middle
-  p also: doubt about clear and distinct perception 
-  p (e.g. doubt that 2+3=5)
 
 
 +slide_middle
@@ -89,31 +106,33 @@ include ../../../fragments/descartes_mixins
   p.center God exists therefore clear perceptions are true 
   p.center or 
   p.center Clear perceptions are true therefore God exists?
-
+  +start-timer('timer1')
 
 +slide_middle
   .notes: :t
     Recall a key passage suggesting the God-first idea ...
-  p.notes.handout.show: :t
-    ‘[F]rom this contemplation of the true God ... I think I can see a way forward to the knowledge
-    of other things. To begin with, I recognize that it is impossible that God
-    should ever deceive me. . . . And since God does not wish to deceive me, he
+  p.notes.handout.show: span: :t
+    ‘I think I can see a way forward to the knowledge
+    of other things ... since God does not wish to deceive me, he
     surely did not give me the kind of faculty which would ever enable me to go
     wrong while using it correctly’
-  .notes.handout.ctd \citep[p.~37, AT VII:53–54)]{descartes:1985_csm2}
+  .notes.handout.ctd \citep[p.~37, AT VII:53–54]{descartes:1985_csm2}
   p.right.grey-text Meditation IV
   .slide
-    p.em-above.notes.handout.show: :t
+    p.em-above.notes.handout.show: span: :t
       ‘there arises in me a clear and distinct idea of a being who is independent and
       complete, that is, an idea of God. 
-    p.slide.em-above.notes.handout.show: :t
+    p.slide.em-above.notes.handout.show: span: :t
       And from the mere fact that there is such an
       idea within me [...] I clearly infer that God
       also exists [...] 
-    p.slide.em-above.notes.handout.show: :t
-      So clear is this conclusion that I am confident that the human intellect
-      cannot know anything that is more evident or more certain.’
+    p.slide.em-above.notes.handout.show
+      span So clear is this conclusion that I am confident that 
+      span.noblur the human intellect 
+      span.noblur  cannot know anything that is more evident or more certain.’ 
     p.right.grey-text Meditation VI
+  .slide
+    +blur('span:not(.noblur)')
     .notes: :t
       I think Descartes’ strategy might be this ...
 
@@ -171,10 +190,14 @@ include ../../../fragments/descartes_mixins
 
 +slide_timer
   p.center ... or?
+  +start-timer('timer1')
 
 +slide_middle
   .notes: :t
     This passage appears to refute my position.
+  .notes: :t
+    Actually it’s doubly bad for me (a) knowledge depends on God, and
+    (b) it’s not knowledge if it can be doubted.
   p.notes.handout.show: :t
     ’an atheist can be clearly aware that the three angles of a triangle are equal to two 
     right angles [...]. But I maintain that this awareness of his is not 

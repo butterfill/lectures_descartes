@@ -14,33 +14,33 @@ include ../../../fragments/descartes_mixins
 
 
 
-
-+slide_middle
-  p
-    span  Letter to Mersenne (28 January 1641)
-  p.em-above.notes.handout.show
-    span ‘these six meditations contain all the foundations of 
-    span.my-physics my physics
-    span .  
-    span But please do not tell people, for that might make it harder for supporters of Aristotle to approve them.  
-    span I hope that readers will gradually get used to my principles, and recognize their truth,  
-    span before they notice that 
-    span.destroy 
-      span they destroy 
-      span.Aristotle-principles the principles of Aristotle
-    span .’ 
-  .notes: :t
-    (Descartes was a little unclear about his aim.
-    This matters because we should evaluate his arguments against his aims.
-    Same applies to you: always state your aim at the start of your essays.
-    Now Descartes has an excuse: doing so might have caused his execution
-    (and his works were put on the Index, etc).
-    You don’t have any such excuse, at least not as far as I’m concerned.)
-  .slide
-      +blur('span:not(.my-physics, .destroy, .Aristotle-principles)')
-      .notes: :t
-        What is this physics? What are the principles of Aristotle?
-        [links to essential_nature unit]
+//- 
+  +slide_middle
+    p
+      span  Letter to Mersenne (28 January 1641)
+    p.em-above.notes.handout.show
+      span ‘these six meditations contain all the foundations of 
+      span.my-physics my physics
+      span .  
+      span But please do not tell people, for that might make it harder for supporters of Aristotle to approve them.  
+      span I hope that readers will gradually get used to my principles, and recognize their truth,  
+      span before they notice that 
+      span.destroy 
+        span they destroy 
+        span.Aristotle-principles the principles of Aristotle
+      span .’ 
+    .notes: :t
+      (Descartes was a little unclear about his aim.
+      This matters because we should evaluate his arguments against his aims.
+      Same applies to you: always state your aim at the start of your essays.
+      Now Descartes has an excuse: doing so might have caused his execution
+      (and his works were put on the Index, etc).
+      You don’t have any such excuse, at least not as far as I’m concerned.)
+    .slide
+        +blur('span:not(.my-physics, .destroy, .Aristotle-principles)')
+        .notes: :t
+          What is this physics? What are the principles of Aristotle?
+          [links to essential_nature unit]
 
 +slide_rh_white({step:true})
   +left_half
@@ -83,7 +83,7 @@ include ../../../fragments/descartes_mixins
     So we have answered two questions: 
     What is this physics? What are the principles of Aristotle?
   .slide
-    +show('span:not(.my-physics, .destroy, .Aristotle-principles)')
+    +unblur('span:not(.my-physics, .destroy, .Aristotle-principles)')
     +blur('span:not(.foundations)')
     .notes: :t
       How could the meditations contain the foundations of his physicas?
@@ -95,7 +95,7 @@ include ../../../fragments/descartes_mixins
 
 +slide_middle
   p.em-above.notes.handout.show
-    span ‘The whole of of Philosophy is like a tree, of which the  
+    span ‘The whole of Philosophy is like a tree, of which the  
     span.roots roots
     span  are Metaphysics, 
     span the trunk is Physics, and the branches which come out of this trunk are all the 
@@ -110,35 +110,34 @@ include ../../../fragments/descartes_mixins
 
 +slide_middle
   p.center How to make sense of the metaphors?
+
 +slide_middle
   p.center What principles did Descartes think physics rested on?
   .notes geometry plus maths ...
-
-
-+slide_middle
-  p.em-above.notes.handout.show: :t
-    ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
-  p.em-above.notes.handout.ctd.show: :t
-    these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
-    regarding them’ 
-  .notes.handout.ctd: :t
-    \citep[p.~247, AT 2:64]{descartes:1985_csm1}
-  p.right.grey-text Principles 
-  .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘The only principles which I accept or require in physics are those of geometry and pure mathematics; 
+    p.em-above.notes.handout.ctd.show: :t
+      these principles explain all natural phenomena, and enable us to provide quite certain demonstrations 
+      regarding them’ 
+    .notes.handout.ctd: :t
+      \citep[p.~247, AT 2:64]{descartes:1985_csm1}
+    p.right.grey-text Principles 
+    .notes Bennett Learning: ‘That plainly makes physics a part or a consequence of mathematics’
 
 +slide_timer({hide:true})
   p How to make sense of the metaphors?
   .slide
-    p.hem-around 1. It’s the intellect, not the senses, that enables us to know the essential nature of material bodies.
+    p.hem-around.indent 1. It’s the intellect, not the senses, that enables us to know the essential nature of material bodies.
     .notes: :t
       Significance: whatever the intellect enables us to know, those are the essential properties
       of material bodies.
   .slide
-    p.hem-around 2. The intellect does not enable us to know forms.
+    p.hem-around.indent  2. The intellect does not enable us to know forms.
   .slide
-    p.hem-around 3. The intellect does enable us to know mathematical principles.
+    p.hem-around.indent  3. The intellect does enable us to know mathematical principles.
   .slide
-    p.hem-around.fourth 4. Those principles must characterise the essential nature of bodies.
+    p.hem-around.indent.fourth 4. Those principles must characterise the essential nature of bodies.
   +show-timer('timer1')
   +start-timer('timer1')
   .slide
@@ -272,7 +271,7 @@ section.slide
     p.em-above New answer -> new theory of essential nature
   .slide
     p.em-above.notes.handout.show: :t
-      ‘The whole of of Philosophy is like a tree, of which the roots are Metaphysics,
+      ‘The whole of Philosophy is like a tree, of which the roots are Metaphysics,
       the trunk is Physics, and the branches which come out of this trunk are all the
       other sciences ...’
     .notes.handout.ctd \citep[p.~186]{descartes:1985_csm1}

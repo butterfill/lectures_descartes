@@ -16,28 +16,33 @@ include ../../../fragments/unit_mixins
 include ../../../fragments/lecture_mixins
 include ../../../fragments/descartes_mixins
 
-+slide_middle
-  p.center Why doubt?
++slide_middle({bkg:'heisenberg.jpg'})
+  +hide('img.bkg', 0)
+  p Why doubt?
   .notes: :t
     My Descartes is not interested in refuting the sceptic;
     his focus is the scientific revoltion.
     Doubt is an alternative to the more direct approach taken in The World.
-
-
-+slide_middle({bkg:'heisenberg.jpg'})
-  p ... to refute scepticism?
-  .notes: :t
-    image: heisenberg, founder of quantum mechanics.
-  .notes: :t
-    (a) you cannot refute scepticism,
-    and (b) scepticism is correct in this sense: 
-    the world is almost certainly quite different
-    from how you think it is.
-
-+slide_middle
-  p: :t
-    Doubt is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
-  .notes But refuting scepticism isn’t going to help establish anything in the sciences.
+  .slide
+    p.em-above.refute ... to refute scepticism?
+    .notes: :t
+      image: heisenberg, founder of quantum mechanics.
+    .notes: :t
+      (a) you cannot refute scepticism,
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      and (b) scepticism is correct in this sense: 
+      the world is almost certainly quite different
+      from how you think it is.
+  .slide
+    +line-through('.refute')
+    +blur('img.bkg', '5px')
+  .slide
+    +fade('img.bkg')
+    p.em-above: :t
+      Doubt is necessary to establish ‘anything at all in the sciences that is stable and likely to last’
+    .notes But refuting scepticism isn’t going to help establish anything in the sciences.
 
 +slide
   .notes: :t
@@ -45,13 +50,14 @@ include ../../../fragments/descartes_mixins
   +img_clip('fire.png')
   +style('img', {filter:'invert(1)'})
   +reset
-    p.notes.handout.show: :t
-      ‘although I feel heat when I go near a fire and feel pain when I go too near,
-      there is no convincing argument for supposing that there is something in the
-      fire which resembles the heat, any more than for supposing that there is
-      something which resembles the pain. 
     .slide
-      +blur('img')
+      +style('img', {filter:'invert(1) blur(5px) opacity(.7)'})
+      p.notes.handout.show: :t
+        ‘although I feel heat when I go near a fire and feel pain when I go too near,
+        there is no convincing argument for supposing that there is something in the
+        fire which resembles the heat, any more than for supposing that there is
+        something which resembles the pain. 
+    .slide
       p.notes.handout.ctd.em-above.show: :t
         There is simply reason to suppose that
         there is something in the fire, whatever it may eventually turn out to be,
@@ -81,7 +87,7 @@ include ../../../fragments/descartes_mixins
     ‘... the principal reason for doubt, namely my inability
     to distinguish between being asleep and being awake. For I now notice that
     there is a vast difference between the two, in that dreams are never linked by
-    memory with all the other actions of life as waking experiences are. 
+    memory with all the other actions of life as waking experiences are.’
   .notes.handout.ctd: :t
     If, while
     I am awake, anyone were suddenly to appear to me and then disappear
