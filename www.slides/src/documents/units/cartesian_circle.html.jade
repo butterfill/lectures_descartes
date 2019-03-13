@@ -139,12 +139,13 @@ include ../../../fragments/descartes_mixins
 +slide_middle
   .hem-around-children
     p.one   1. If we can know anything, then we can know God exists.
-    p.slide 2. We can know something.
+    .slide
+      p.two 2. We can know something.
     p.slide 3. Therefore, we can know God exists.
     p.slide 4. But God doesn’t deceive us.
     p.slide 5. Therefore what we clearly perceive is true.
   .slide
-    +highlight-row('.one')
+    +highlight-row('.two')
     .notes: :t
       On my interpretation, Descartes is not offering an anti-sceptical argument.
     .handout: :t
@@ -182,15 +183,38 @@ include ../../../fragments/descartes_mixins
       p 2. Reflection on possible grounds for doubt provides reasons to reject this assumption.
       .notes This is why doubt is necessary to establish anything in the sciences that is stable and likely to last.
 
+
++slide({bkg:'descartes_flow_chart/slide1.jpg'})
++slide({bkg:'descartes_flow_chart/slide2.jpg'})
++slide({bkg:'descartes_flow_chart/slide3.jpg'})
++slide({bkg:'descartes_flow_chart/slide4.jpg'})
++slide({bkg:'descartes_flow_chart/slide5.jpg'})
++slide({bkg:'descartes_flow_chart/slide6.jpg'})
+
+
 +slide_middle
   .hem-around-children
     p If Descartes were refuting scepticism, the Cartesian Circle would be inescapable.
     p But it isn’t.
     p So Descartes isn’t refuting scepticism. 
 
-+slide_timer
-  p.center ... or?
+
+
++slide_timer({hide:true})
+  .hem-around-children
+    p.one   1. If we can know anything, then we can know God exists.
+    p.two 2. We can know something.
+    p 3. Therefore, we can know God exists.
+    p 4. But God doesn’t deceive us.
+    p 5. Therefore what we clearly perceive is true.
+  +highlight-row('.two')
+  .slide
+    +unhighlight-row('.two')
+  .slide
+    p.em-above ... or?
+  +show-timer('timer1')
   +start-timer('timer1')
+
 
 +slide_middle
   .notes: :t
@@ -199,7 +223,7 @@ include ../../../fragments/descartes_mixins
     Actually it’s doubly bad for me (a) knowledge depends on God, and
     (b) it’s not knowledge if it can be doubted.
   p.notes.handout.show: :t
-    ’an atheist can be clearly aware that the three angles of a triangle are equal to two 
+    ‘an atheist can be clearly aware that the three angles of a triangle are equal to two 
     right angles [...]. But I maintain that this awareness of his is not 
     true knowledge, since no act of awareness that can be rendered doubtful seems 
     fit to be called knowledge’
